@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | KidCamp</title>
+    <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Dashboard Responsive CSS -->
+    <link rel="stylesheet" href="css/dashboard-responsive.css">
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+
+    <div
+        class="dashboard-overlay"
+        id="dashboardOverlay">
+    </div>
+
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="dashboard-sidebar"
+        id="dashboardSidebar">
+
+
+        <!-- Logo -->
+
+        <div class="dashboard-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.png"
+                    alt="KidCamp"
+                >
+
+            </a>
+
+        </div>
+
+
+
+        <!-- Navigation -->
+
+        <nav class="dashboard-nav">
+
+
+            <!-- Dashboard -->
+
+            <a
+                href="dashboard.html"
+                class="dashboard-nav-link active">
+
+                <i class="fa-solid fa-table-columns"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <!-- Programs -->
+
+            <a
+                href="program.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-campground"></i>
+
+                <span>Programs</span>
+
+            </a>
+
+
+            <!-- My Children -->
+
+            <a
+                href="children.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-children"></i>
+
+                <span>My Children</span>
+
+            </a>
+
+
+            <!-- Enrollments -->
+
+            <a
+                href="enrollments.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                <span>Enrollments</span>
+
+            </a>
+
+
+            <!-- Schedule -->
+
+            <a
+                href="schedules.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span>Schedule & Calendar</span>
+
+            </a>
+
+
+            <!-- Daily Activities -->
+
+            <a
+                href="activities.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>Daily Activities</span>
+
+            </a>
+
+
+            <!-- Payments -->
+
+            <a
+                href="payments.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <span>Payments</span>
+
+            </a>
+
+
+            
+
+        </nav>
+
+
+
+        <!-- Logout -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <a
+    href="javascript:void(0)"
+    class="logout-btn"
+    id="logoutBtn"
+>
+    <i class="fas fa-sign-out-alt"></i>
+    <span>Logout</span>
+</a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="dashboard-header">
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                type="button"
+                class="dashboard-menu-toggle"
+                id="dashboardMenuToggle"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+            <!-- Header Title -->
+
+            <div class="dashboard-header-title">
+
+                <span>
+                    Parent Portal
+                </span>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+
+            <!-- Header Actions -->
+
+            <div class="dashboard-header-actions">
+
+
+                <!-- Notification -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button notification-button"
+                    aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+
+                <!-- Settings -->
+
+                <a
+                    href="#"
+                    class="dashboard-icon-button"
+                    aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </a>
+
+
+
+                <!-- Dark Mode -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button"
+                    id="dashboardDarkMode"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button dashboard-rtl-button"
+                    id="dashboardRtl"
+                    aria-label="Toggle RTL">
+
+                    <span>RTL</span>
+
+                </button>
+
+
+
+                <!-- Parent Profile -->
+
+                <a
+                    href="profile.html"
+                    class="dashboard-user">
+
+
+                    <div class="dashboard-user-avatar">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="dashboard-user-info">
+
+                        <strong>
+                            Parent
+                        </strong>
+
+                        <span>
+                            Parent Account
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             WELCOME HERO
+        ================================================== -->
+
+        <section class="dashboard-hero">
+
+
+            <!-- Hero Content -->
+
+            <div class="dashboard-hero-content">
+
+
+                <span class="dashboard-hero-badge">
+                    Parent Portal
+                </span>
+
+
+                <h2>
+                    Manage Your Children's
+                    <strong>
+                        Camp Activities.
+                    </strong>
+                </h2>
+
+
+                <p>
+                    Browse camp programs, enroll your children,
+                    select preferred camp dates and session slots,
+                    track enrollment status, view schedules and
+                    manage your camp payments from one convenient
+                    dashboard.
+                </p>
+
+
+
+                <!-- Hero Buttons -->
+
+                <div class="dashboard-hero-actions">
+
+
+                    <a
+                        href="programs.html"
+                        class="dashboard-primary-btn">
+
+                        <i class="fa-solid fa-campground"></i>
+
+                        Browse Programs
+
+                    </a>
+
+
+                    <a
+                        href="enrollments.html"
+                        class="dashboard-secondary-btn">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                        My Enrollments
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Hero Image -->
+
+            <div class="dashboard-hero-visual">
+
+                <img
+                    src="images/dashboard-camp.jpg"
+                    alt="Children enjoying camp activities"
+                >
+
+
+
+                <!-- Floating Card -->
+
+                <div class="dashboard-floating-card dashboard-floating-top">
+
+                    <div class="floating-icon">
+
+                        <i class="fa-solid fa-children"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Children Enrolled
+                        </span>
+
+                        <strong>
+                            2 Children
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Floating Card -->
+
+                <div class="dashboard-floating-card dashboard-floating-bottom">
+
+                    <div class="floating-icon">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Next Activity
+                        </span>
+
+                        <strong>
+                            Swimming · 10:00 AM
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CAMP OVERVIEW
+        ================================================== -->
+
+        <section class="dashboard-overview">
+
+
+            <!-- Section Heading -->
+
+            <div class="dashboard-section-heading">
+
+                <div>
+
+                    <h2>
+                        Camp Overview
+                    </h2>
+
+                    <p>
+                        Your children's camp activity at a glance
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="enrollments.html"
+                    class="dashboard-view-link">
+
+                    View History
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Statistics -->
+
+            <div class="dashboard-stats">
+
+
+                <!-- Children -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="dashboard-stat-icon">
+
+                        <i class="fa-solid fa-children"></i>
+
+                    </div>
+
+                    <div class="dashboard-stat-content">
+
+                        <span>
+                            My Children
+                        </span>
+
+                        <strong>
+                            2
+                        </strong>
+
+                        <small>
+                            Registered children
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Enrollments -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="dashboard-stat-icon">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                    </div>
+
+                    <div class="dashboard-stat-content">
+
+                        <span>
+                            Active Enrollments
+                        </span>
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <small>
+                            Current programs
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Upcoming Sessions -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="dashboard-stat-icon">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                    </div>
+
+                    <div class="dashboard-stat-content">
+
+                        <span>
+                            Upcoming Sessions
+                        </span>
+
+                        <strong>
+                            2
+                        </strong>
+
+                        <small>
+                            This week
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Payment -->
+
+                <div class="dashboard-stat-card">
+
+                    <div class="dashboard-stat-icon">
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                    </div>
+
+                    <div class="dashboard-stat-content">
+
+                        <span>
+                            Pending Payment
+                        </span>
+
+                        <strong>
+                            1
+                        </strong>
+
+                        <small>
+                            Payment required
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DASHBOARD LOWER CONTENT
+        ================================================== -->
+
+        <section class="dashboard-lower-grid">
+
+
+
+            <!-- =================================================
+                 UPCOMING SCHEDULE
+            ================================================== -->
+
+            <div class="dashboard-panel">
+
+
+                <div class="dashboard-panel-header">
+
+                    <div>
+
+                        <h2>
+                            Upcoming Schedule
+                        </h2>
+
+                        <p>
+                            Your children's upcoming activities
+                        </p>
+
+                    </div>
+
+
+                    <a href="schedule.html">
+                        View All
+                    </a>
+
+                </div>
+
+
+
+                <!-- Schedule List -->
+
+                <div class="dashboard-schedule-list">
+
+
+                    <!-- Schedule 1 -->
+
+                    <article class="dashboard-schedule-item">
+
+
+                        <div class="schedule-date">
+
+                            <span>
+                                MON
+                            </span>
+
+                            <strong>
+                                28
+                            </strong>
+
+                        </div>
+
+
+                        <div class="schedule-info">
+
+                            <h3>
+                                Swimming
+                            </h3>
+
+                            <p>
+                                <i class="fa-solid fa-child"></i>
+                                Emma
+                            </p>
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                10:00 AM – 11:30 AM
+                            </span>
+
+                        </div>
+
+
+                        <span class="schedule-status confirmed">
+                            Confirmed
+                        </span>
+
+                    </article>
+
+
+
+                    <!-- Schedule 2 -->
+
+                    <article class="dashboard-schedule-item">
+
+
+                        <div class="schedule-date">
+
+                            <span>
+                                WED
+                            </span>
+
+                            <strong>
+                                30
+                            </strong>
+
+                        </div>
+
+
+                        <div class="schedule-info">
+
+                            <h3>
+                                Arts & Crafts
+                            </h3>
+
+                            <p>
+                                <i class="fa-solid fa-child"></i>
+                                Noah
+                            </p>
+
+                            <span>
+                                <i class="fa-regular fa-clock"></i>
+                                02:00 PM – 03:30 PM
+                            </span>
+
+                        </div>
+
+
+                        <span class="schedule-status confirmed">
+                            Confirmed
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ENROLLMENT STATUS
+            ================================================== -->
+
+            <div class="dashboard-panel">
+
+
+                <div class="dashboard-panel-header">
+
+                    <div>
+
+                        <h2>
+                            Enrollment Status
+                        </h2>
+
+                        <p>
+                            Recent program enrollments
+                        </p>
+
+                    </div>
+
+
+                    <a href="enrollments.html">
+                        View All
+                    </a>
+
+                </div>
+
+
+
+                <!-- Enrollment List -->
+
+                <div class="dashboard-enrollment-list">
+
+
+                    <!-- Enrollment 1 -->
+
+                    <article class="dashboard-enrollment-item">
+
+
+                        <div class="enrollment-icon">
+
+                            <i class="fa-solid fa-water"></i>
+
+                        </div>
+
+
+                        <div class="enrollment-info">
+
+                            <h3>
+                                Swimming
+                            </h3>
+
+                            <p>
+                                Emma · Summer Camp
+                            </p>
+
+                        </div>
+
+
+                        <span class="enrollment-status confirmed">
+                            Confirmed
+                        </span>
+
+                    </article>
+
+
+
+                    <!-- Enrollment 2 -->
+
+                    <article class="dashboard-enrollment-item">
+
+
+                        <div class="enrollment-icon">
+
+                            <i class="fa-solid fa-palette"></i>
+
+                        </div>
+
+
+                        <div class="enrollment-info">
+
+                            <h3>
+                                Arts & Crafts
+                            </h3>
+
+                            <p>
+                                Noah · Summer Camp
+                            </p>
+
+                        </div>
+
+
+                        <span class="enrollment-status confirmed">
+                            Confirmed
+                        </span>
+
+                    </article>
+
+
+
+                    <!-- Enrollment 3 -->
+
+                    <article class="dashboard-enrollment-item">
+
+
+                        <div class="enrollment-icon">
+
+                            <i class="fa-solid fa-code"></i>
+
+                        </div>
+
+
+                        <div class="enrollment-info">
+
+                            <h3>
+                                Coding
+                            </h3>
+
+                            <p>
+                                Emma · Summer Camp
+                            </p>
+
+                        </div>
+
+
+                        <span class="enrollment-status pending">
+                            Pending
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- =========================================================
+     MY CHILDREN
+========================================================= -->
+
+<section class="dashboard-children-section">
+
+    <!-- Section Header -->
+    <div class="dashboard-section-heading">
+
+        <div>
+            <h2>My Children</h2>
+
+            <p>
+                Manage your children's camp profiles
+            </p>
+        </div>
+
+        <a href="children.html" class="dashboard-view-link">
+            View All <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+
+    <!-- Children Grid -->
+    <div class="dashboard-children-grid">
+
+
+        <!-- =================================================
+             CHILD 1
+        ================================================== -->
+
+        <article class="dashboard-child-card">
+
+            <div class="dashboard-child-top">
+
+                <!-- Child Avatar -->
+                <div class="dashboard-child-avatar">
+
+                    <img
+                        src="images/emma.jpg"
+                        alt="Emma"
+                    >
+
+                </div>
+
+
+                <!-- Child Information -->
+                <div class="dashboard-child-info">
+
+                    <h3>Emma</h3>
+
+                    <p>
+                        <i class="fas fa-birthday-cake"></i>
+                        Age 8
+                    </p>
+
+                </div>
+
+
+                <!-- Status -->
+                <span class="dashboard-child-status">
+                    Active
+                </span>
+
+            </div>
+
+
+            <!-- Child Details -->
+            <div class="dashboard-child-details">
+
+                <div class="dashboard-child-detail">
+
+                    <span>Active Programs</span>
+
+                    <strong>2</strong>
+
+                </div>
+
+
+                <div class="dashboard-child-detail">
+
+                    <span>Upcoming Sessions</span>
+
+                    <strong>2</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Programs -->
+            <div class="dashboard-child-programs">
+
+                <span class="dashboard-program-tag">
+                    Swimming
+                </span>
+
+                <span class="dashboard-program-tag">
+                    Summer Camp
+                </span>
+
+            </div>
+
+
+            <!-- Action -->
+            <a
+                href="child-details.html"
+                class="dashboard-child-button"
+            >
+                View Profile
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+
+        <!-- =================================================
+             CHILD 2
+        ================================================== -->
+
+        <article class="dashboard-child-card">
+
+            <div class="dashboard-child-top">
+
+                <!-- Child Avatar -->
+                <div class="dashboard-child-avatar">
+
+                    <img
+                        src="images/noha.jpg"
+                        alt="Noah"
+                    >
+
+                </div>
+
+
+                <!-- Child Information -->
+                <div class="dashboard-child-info">
+
+                    <h3>Noah</h3>
+
+                    <p>
+                        <i class="fas fa-birthday-cake"></i>
+                        Age 10
+                    </p>
+
+                </div>
+
+
+                <!-- Status -->
+                <span class="dashboard-child-status">
+                    Active
+                </span>
+
+            </div>
+
+
+            <!-- Child Details -->
+            <div class="dashboard-child-details">
+
+                <div class="dashboard-child-detail">
+
+                    <span>Active Programs</span>
+
+                    <strong>1</strong>
+
+                </div>
+
+
+                <div class="dashboard-child-detail">
+
+                    <span>Upcoming Sessions</span>
+
+                    <strong>1</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Programs -->
+            <div class="dashboard-child-programs">
+
+                <span class="dashboard-program-tag">
+                    Arts &amp; Crafts
+                </span>
+
+                <span class="dashboard-program-tag">
+                    Summer Camp
+                </span>
+
+            </div>
+
+
+            <!-- Action -->
+            <a
+                href="child-details.html"
+                class="dashboard-child-button"
+            >
+                View Profile
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </article>
+
+
+
+        <!-- =================================================
+             ADD CHILD
+        ================================================== -->
+
+        <a
+            href="register-child.html"
+            class="dashboard-add-child-card"
+        >
+
+            <div class="dashboard-add-child-icon">
+
+                <i class="fas fa-plus"></i>
+
+            </div>
+
+            <h3>Add Child</h3>
+
+            <p>
+                Register another child for camp
+            </p>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+    </main>
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="logout-overlay"
+    id="logoutOverlay"
+    hidden
+>
+
+    <div
+        class="logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="logoutPopupTitle"
+    >
+
+        <!-- Icon -->
+
+        <div class="logout-popup-icon">
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+
+
+        <!-- Content -->
+
+        <div class="logout-popup-content">
+
+            <h2 id="logoutPopupTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout
+                from your account?
+            </p>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="logout-popup-actions">
+
+            <button
+                type="button"
+                class="logout-no-btn"
+                id="logoutNoBtn"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="logout-yes-btn"
+                id="logoutYesBtn"
+            >
+                <i class="fas fa-sign-out-alt"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

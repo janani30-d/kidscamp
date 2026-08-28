@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | KidCamp</title>
+    <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Dashboard Responsive CSS -->
+    <link rel="stylesheet" href="css/dashboard-responsive.css">
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+
+    <div
+        class="dashboard-overlay"
+        id="dashboardOverlay">
+    </div>
+
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="dashboard-sidebar"
+        id="dashboardSidebar">
+
+
+        <!-- Logo -->
+
+        <div class="dashboard-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.png"
+                    alt="KidCamp"
+                >
+
+            </a>
+
+        </div>
+
+
+
+        <!-- Navigation -->
+
+        <nav class="dashboard-nav">
+
+
+            <!-- Dashboard -->
+
+            <a
+                href="dashboard.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-table-columns"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <!-- Programs -->
+
+            <a
+                href="program.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-campground"></i>
+
+                <span>Programs</span>
+
+            </a>
+
+
+            <!-- My Children -->
+
+            <a
+                href="children.html"
+                class="dashboard-nav-link active">
+
+                <i class="fa-solid fa-children"></i>
+
+                <span>My Children</span>
+
+            </a>
+
+
+            <!-- Enrollments -->
+
+            <a
+                href="enrollments.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                <span>Enrollments</span>
+
+            </a>
+
+
+            <!-- Schedule -->
+
+            <a
+                href="schedules.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span>Schedule & Calendar</span>
+
+            </a>
+
+
+            <!-- Daily Activities -->
+
+            <a
+                href="activities.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>Daily Activities</span>
+
+            </a>
+
+
+            <!-- Payments -->
+
+            <a
+                href="payments.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <span>Payments</span>
+
+            </a>
+
+
+            
+
+        </nav>
+
+
+
+        <!-- Logout -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <a
+    href="javascript:void(0)"
+    class="logout-btn"
+    id="logoutBtn"
+>
+    <i class="fas fa-sign-out-alt"></i>
+    <span>Logout</span>
+</a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="dashboard-header">
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                type="button"
+                class="dashboard-menu-toggle"
+                id="dashboardMenuToggle"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+            <!-- Header Title -->
+
+            <div class="dashboard-header-title">
+
+                <span>
+                    Parent Portal
+                </span>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+
+            <!-- Header Actions -->
+
+            <div class="dashboard-header-actions">
+
+
+                <!-- Notification -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button notification-button"
+                    aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+
+                <!-- Settings -->
+
+                <a
+                    href="#"
+                    class="dashboard-icon-button"
+                    aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </a>
+
+
+
+                <!-- Dark Mode -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button"
+                    id="dashboardDarkMode"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button dashboard-rtl-button"
+                    id="dashboardRtl"
+                    aria-label="Toggle RTL">
+
+                    <span>RTL</span>
+
+                </button>
+
+
+
+                <!-- Parent Profile -->
+
+                <a
+                    href="profile.html"
+                    class="dashboard-user">
+
+
+                    <div class="dashboard-user-avatar">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="dashboard-user-info">
+
+                        <strong>
+                            Parent
+                        </strong>
+
+                        <span>
+                            Parent Account
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+            <!-- =================================================
+                 PAGE HEADER
+            ================================================== -->
+
+            <section class="children-page-header">
+
+
+                <div class="children-heading">
+
+                    <span class="dashboard-section-label">
+                        FAMILY
+                    </span>
+
+                    <h1>
+                        My Children
+                    </h1>
+
+                    <p>
+                        Manage your children's profiles,
+                        programs, and activities.
+                    </p>
+
+                </div>
+
+
+                <!-- ADD CHILD BUTTON -->
+
+                <a
+                    href="add-child.html"
+                    class="add-child-btn"
+                >
+
+                    <i class="fas fa-plus"></i>
+
+                    Add Child
+
+                </a>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CHILDREN SUMMARY
+            ================================================== -->
+
+            <section class="children-summary">
+
+
+                <div class="children-summary-card">
+
+                    <span class="children-summary-icon">
+                        <i class="fas fa-children"></i>
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Total Children
+                        </small>
+
+                        <strong>
+                            2
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="children-summary-card">
+
+                    <span class="children-summary-icon">
+                        <i class="fas fa-book-open"></i>
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Active Programs
+                        </small>
+
+                        <strong>
+                            3
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="children-summary-card">
+
+                    <span class="children-summary-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Upcoming Activities
+                        </small>
+
+                        <strong>
+                            4
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CHILDREN SECTION
+            ================================================== -->
+
+            <section class="children-section">
+
+
+                <div class="children-section-header">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            PROFILES
+                        </span>
+
+                        <h2>
+                            Your Children
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     CHILDREN GRID
+                ================================================== -->
+
+                <div class="children-grid">
+
+
+                    <!-- =============================================
+                         CHILD 1
+                    ============================================== -->
+
+                    <article class="child-card">
+
+
+                        <!-- CARD TOP -->
+
+                        <div class="child-card-top">
+
+
+                            <div class="child-profile-image">
+
+                                <img
+                                    src="images/noha.jpg"
+                                    alt="Child profile"
+                                >
+
+                            </div>
+
+
+                            <span class="child-status active">
+                                <i class="fas fa-circle"></i>
+                                Active
+                            </span>
+
+                        </div>
+
+
+                        <!-- CHILD INFO -->
+
+                        <div class="child-card-content">
+
+
+                            <h3>
+                                Noah
+                            </h3>
+
+
+                            <span class="child-age">
+                                <i class="fas fa-child"></i>
+                                8 Years Old
+                            </span>
+
+
+                            <!-- DETAILS -->
+
+                            <div class="child-details">
+
+
+                                <div class="child-detail-item">
+
+                                    <span>
+                                        <i class="fas fa-cake-candles"></i>
+                                        Date of Birth
+                                    </span>
+
+                                    <strong>
+                                        12 March 2018
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="child-detail-item">
+
+                                    <span>
+                                        <i class="fas fa-book-open"></i>
+                                        Programs
+                                    </span>
+
+                                    <strong>
+                                        2 Enrolled
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="child-detail-item">
+
+                                    <span>
+                                        <i class="fas fa-calendar-days"></i>
+                                        Next Activity
+                                    </span>
+
+                                    <strong>
+                                        28 August
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ACTION -->
+
+                            <a
+                                href="child-profile.html"
+                                class="child-view-btn"
+                            >
+
+                                View Profile
+
+                                <i class="fas fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         CHILD 2
+                    ============================================== -->
+
+                    <article class="child-card">
+
+
+                        <!-- CARD TOP -->
+
+                        <div class="child-card-top">
+
+
+                            <div class="child-profile-image">
+
+                                <img
+                                    src="images/emma.jpg"
+                                    alt="Child profile"
+                                >
+
+                            </div>
+
+
+                            <span class="child-status active">
+                                <i class="fas fa-circle"></i>
+                                Active
+                            </span>
+
+                        </div>
+
+
+                        <!-- CHILD INFO -->
+
+                        <div class="child-card-content">
+
+
+                            <h3>
+                                Emma
+                            </h3>
+
+
+                            <span class="child-age">
+                                <i class="fas fa-child"></i>
+                                6 Years Old
+                            </span>
+
+
+                            <!-- DETAILS -->
+
+                            <div class="child-details">
+
+
+                                <div class="child-detail-item">
+
+                                    <span>
+                                        <i class="fas fa-cake-candles"></i>
+                                        Date of Birth
+                                    </span>
+
+                                    <strong>
+                                        24 July 2020
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="child-detail-item">
+
+                                    <span>
+                                        <i class="fas fa-book-open"></i>
+                                        Programs
+                                    </span>
+
+                                    <strong>
+                                        1 Enrolled
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="child-detail-item">
+
+                                    <span>
+                                        <i class="fas fa-calendar-days"></i>
+                                        Next Activity
+                                    </span>
+
+                                    <strong>
+                                        30 August
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- ACTION -->
+
+                            <a
+                                href="child-profile.html"
+                                class="child-view-btn"
+                            >
+
+                                View Profile
+
+                                <i class="fas fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- =============================================
+                         ADD CHILD CARD
+                    ============================================== -->
+
+                    <a
+                        href="add-child.html"
+                        class="add-child-card"
+                    >
+
+                        <span class="add-child-icon">
+
+                            <i class="fas fa-plus"></i>
+
+                        </span>
+
+
+                        <h3>
+                            Add Another Child
+                        </h3>
+
+
+                        <p>
+                            Create a profile to manage
+                            programs and activities.
+                        </p>
+
+
+                        <span class="add-child-link">
+                            Add Child
+                            <i class="fas fa-arrow-right"></i>
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+            
+
+
+            <!-- =================================================
+                 UPCOMING ACTIVITIES
+            ================================================== -->
+
+            <section class="children-activity-section">
+
+
+                <div class="children-section-header">
+
+                    <div>
+
+                        <span class="dashboard-section-label">
+                            UPCOMING
+                        </span>
+
+                        <h2>
+                            Upcoming Activities
+                        </h2>
+
+                    </div>
+
+
+                    <a
+                        href="activities.html"
+                        class="children-see-all"
+                    >
+                        View All
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+
+                <div class="children-activity-list">
+
+
+                    <!-- ACTIVITY 1 -->
+
+                    <div class="children-activity-item">
+
+
+                        <div class="activity-date">
+
+                            <strong>
+                                28
+                            </strong>
+
+                            <span>
+                                AUG
+                            </span>
+
+                        </div>
+
+
+                        <div class="activity-info">
+
+                            <h3>
+                                Junior Sports Camp
+                            </h3>
+
+                            <p>
+                                Noah · 09:00 AM
+                            </p>
+
+                        </div>
+
+
+                        <span class="activity-badge">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- ACTIVITY 2 -->
+
+                    <div class="children-activity-item">
+
+
+                        <div class="activity-date">
+
+                            <strong>
+                                30
+                            </strong>
+
+                            <span>
+                                AUG
+                            </span>
+
+                        </div>
+
+
+                        <div class="activity-info">
+
+                            <h3>
+                                Little Artists
+                            </h3>
+
+                            <p>
+                                Emma · 10:00 AM
+                            </p>
+
+                        </div>
+
+
+                        <span class="activity-badge">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- ACTIVITY 3 -->
+
+                    <div class="children-activity-item">
+
+
+                        <div class="activity-date">
+
+                            <strong>
+                                02
+                            </strong>
+
+                            <span>
+                                SEP
+                            </span>
+
+                        </div>
+
+
+                        <div class="activity-info">
+
+                            <h3>
+                                Creative Stars
+                            </h3>
+
+                            <p>
+                                noah · 09:30 AM
+                            </p>
+
+                        </div>
+
+
+                        <span class="activity-badge">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+<!-- =========================================================
+     COMPLETED ACTIVITIES
+========================================================= -->
+
+<section class="children-completed-section">
+
+    <!-- Section Header -->
+    <div class="children-section-header">
+
+        <div>
+            <span class="dashboard-section-label">
+                ACTIVITY HISTORY
+            </span>
+
+            <h2>Completed Activities</h2>
+        </div>
+
+        <a href="#" class="children-see-all">
+            View All
+            <i class="fas fa-arrow-right"></i>
+        </a>
+
+    </div>
+
+
+    <!-- Completed Activities List -->
+    <div class="completed-activities-list">
+
+
+        <!-- Activity 1 -->
+        <div class="completed-activity-item">
+
+            <div class="completed-activity-icon">
+                <i class="fas fa-palette"></i>
+            </div>
+
+
+            <div class="completed-activity-info">
+
+                <h3>Art &amp; Creativity Workshop</h3>
+
+                <p>
+                    Noah
+                    <span>•</span>
+                    Creative Arts
+                </p>
+
+            </div>
+
+
+            <div class="completed-activity-date">
+
+                <span>Completed</span>
+
+                <strong>Aug 18, 2026</strong>
+
+            </div>
+
+
+            <div class="completed-activity-status">
+                <i class="fas fa-check"></i>
+                Completed
+            </div>
+
+        </div>
+
+
+
+        <!-- Activity 2 -->
+        <div class="completed-activity-item">
+
+            <div class="completed-activity-icon">
+                <i class="fas fa-pencil-alt"></i>
+            </div>
+
+
+            <div class="completed-activity-info">
+
+                <h3>Summer Drawing Camp</h3>
+
+                <p>
+                    Emma
+                    <span>•</span>
+                    Arts Program
+                </p>
+
+            </div>
+
+
+            <div class="completed-activity-date">
+
+                <span>Completed</span>
+
+                <strong>Aug 12, 2026</strong>
+
+            </div>
+
+
+            <div class="completed-activity-status">
+                <i class="fas fa-check"></i>
+                Completed
+            </div>
+
+        </div>
+
+
+
+        <!-- Activity 3 -->
+        <div class="completed-activity-item">
+
+            <div class="completed-activity-icon">
+                <i class="fas fa-running"></i>
+            </div>
+
+
+            <div class="completed-activity-info">
+
+                <h3>Kids Sports Activity</h3>
+
+                <p>
+                    Noah
+                    <span>•</span>
+                    Sports Program
+                </p>
+
+            </div>
+
+
+            <div class="completed-activity-date">
+
+                <span>Completed</span>
+
+                <strong>Aug 05, 2026</strong>
+
+            </div>
+
+
+            <div class="completed-activity-status">
+                <i class="fas fa-check"></i>
+                Completed
+            </div>
+
+        </div>
+
+
+
+        <!-- Activity 4 -->
+        <div class="completed-activity-item">
+
+            <div class="completed-activity-icon">
+                <i class="fas fa-music"></i>
+            </div>
+
+
+            <div class="completed-activity-info">
+
+                <h3>Music &amp; Rhythm Class</h3>
+
+                <p>
+                    Emma
+                    <span>•</span>
+                    Music Program
+                </p>
+
+            </div>
+
+
+            <div class="completed-activity-date">
+
+                <span>Completed</span>
+
+                <strong>Jul 28, 2026</strong>
+
+            </div>
+
+
+            <div class="completed-activity-status">
+                <i class="fas fa-check"></i>
+                Completed
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  
+
+    </main>
+
+
+
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="logout-overlay"
+    id="logoutOverlay"
+    hidden
+>
+
+    <div
+        class="logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="logoutPopupTitle"
+    >
+
+        <!-- Icon -->
+
+        <div class="logout-popup-icon">
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+
+
+        <!-- Content -->
+
+        <div class="logout-popup-content">
+
+            <h2 id="logoutPopupTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout
+                from your account?
+            </p>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="logout-popup-actions">
+
+            <button
+                type="button"
+                class="logout-no-btn"
+                id="logoutNoBtn"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="logout-yes-btn"
+                id="logoutYesBtn"
+            >
+                <i class="fas fa-sign-out-alt"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

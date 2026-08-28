@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | KidCamp</title>
+    <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Dashboard Responsive CSS -->
+    <link rel="stylesheet" href="css/dashboard-responsive.css">
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+
+    <div
+        class="dashboard-overlay"
+        id="dashboardOverlay">
+    </div>
+
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="dashboard-sidebar"
+        id="dashboardSidebar">
+
+
+        <!-- Logo -->
+
+        <div class="dashboard-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.png"
+                    alt="KidCamp"
+                >
+
+            </a>
+
+        </div>
+
+
+
+        <!-- Navigation -->
+
+        <nav class="dashboard-nav">
+
+
+            <!-- Dashboard -->
+
+            <a
+                href="dashboard.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-table-columns"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <!-- Programs -->
+
+            <a
+                href="program.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-campground"></i>
+
+                <span>Programs</span>
+
+            </a>
+
+
+            <!-- My Children -->
+
+            <a
+                href="children.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-children"></i>
+
+                <span>My Children</span>
+
+            </a>
+
+
+            <!-- Enrollments -->
+
+            <a
+                href="enrollments.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                <span>Enrollments</span>
+
+            </a>
+
+
+            <!-- Schedule -->
+
+            <a
+                href="schedules.html"
+                class="dashboard-nav-link active">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span>Schedule & Calendar</span>
+
+            </a>
+
+
+            <!-- Daily Activities -->
+
+            <a
+                href="activities.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>Daily Activities</span>
+
+            </a>
+
+
+            <!-- Payments -->
+
+            <a
+                href="payments.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <span>Payments</span>
+
+            </a>
+
+
+            <!-- Profile -->
+
+           
+
+        </nav>
+
+
+
+        <!-- Logout -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <a
+    href="javascript:void(0)"
+    class="logout-btn"
+    id="logoutBtn"
+>
+    <i class="fas fa-sign-out-alt"></i>
+    <span>Logout</span>
+</a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="dashboard-header">
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                type="button"
+                class="dashboard-menu-toggle"
+                id="dashboardMenuToggle"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+            <!-- Header Title -->
+
+            <div class="dashboard-header-title">
+
+                <span>
+                    Parent Portal
+                </span>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+
+            <!-- Header Actions -->
+
+            <div class="dashboard-header-actions">
+
+
+                <!-- Notification -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button notification-button"
+                    aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+
+                <!-- Settings -->
+
+                <a
+                    href="#"
+                    class="dashboard-icon-button"
+                    aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </a>
+
+
+
+                <!-- Dark Mode -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button"
+                    id="dashboardDarkMode"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button dashboard-rtl-button"
+                    id="dashboardRtl"
+                    aria-label="Toggle RTL">
+
+                    <span>RTL</span>
+
+                </button>
+
+
+
+                <!-- Parent Profile -->
+
+                <a
+                    href="profile.html"
+                    class="dashboard-user">
+
+
+                    <div class="dashboard-user-avatar">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="dashboard-user-info">
+
+                        <strong>
+                            Parent
+                        </strong>
+
+                        <span>
+                            Parent Account
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+<!-- =========================================================
+     SCHEDULE & CALENDAR PAGE
+     PART 1 — HTML
+========================================================= -->
+
+<section class="schedule-page">
+
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+
+    <div class="schedule-page-header">
+
+        <div class="schedule-header-content">
+
+            <span class="dashboard-section-label">
+                SCHEDULE
+            </span>
+
+            <h1>Schedule &amp; Calendar</h1>
+
+            <p>
+                Keep track of your children's activities,
+                programs, and upcoming events.
+            </p>
+
+        </div>
+
+
+        <div class="schedule-header-actions">
+
+            <button
+                type="button"
+                class="schedule-today-btn"
+                id="scheduleTodayBtn"
+            >
+                <i class="fas fa-calendar-day"></i>
+                Today
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CALENDAR CARD
+    ====================================================== -->
+
+    <div class="schedule-calendar-card">
+
+        <!-- Calendar Header -->
+
+        <div class="schedule-calendar-header">
+
+            <div class="schedule-calendar-title">
+
+                <button
+                    type="button"
+                    class="schedule-calendar-nav"
+                    id="schedulePrevMonth"
+                    aria-label="Previous month"
+                >
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+
+                <div class="schedule-month-year">
+
+                    <h2 id="scheduleMonth">
+                        August
+                    </h2>
+
+                    <span id="scheduleYear">
+                        2026
+                    </span>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="schedule-calendar-nav"
+                    id="scheduleNextMonth"
+                    aria-label="Next month"
+                >
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+
+            <!-- Calendar View -->
+
+            <div class="schedule-calendar-view">
+
+                <button
+                    type="button"
+                    class="schedule-view-btn active"
+                    data-view="month"
+                >
+                    Month
+                </button>
+
+                <button
+                    type="button"
+                    class="schedule-view-btn"
+                    data-view="week"
+                >
+                    Week
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Calendar -->
+
+        <div
+            class="schedule-calendar"
+            id="scheduleCalendar"
+        >
+
+            <!-- Week Days -->
+
+            <div class="schedule-weekdays">
+
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+
+            </div>
+
+
+            <!-- Calendar Days -->
+
+            <div
+                class="schedule-calendar-days"
+                id="scheduleCalendarDays"
+            >
+
+                <!-- JavaScript will generate days -->
+
+            </div>
+
+        </div>
+
+
+        <!-- Calendar Legend -->
+
+        <div class="schedule-calendar-legend">
+
+            <span class="schedule-legend-item">
+                <i class="fas fa-circle"></i>
+                Activity
+            </span>
+
+            <span class="schedule-legend-item">
+                <i class="fas fa-circle"></i>
+                Program
+            </span>
+
+            <span class="schedule-legend-item">
+                <i class="fas fa-circle"></i>
+                Event
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         UPCOMING SCHEDULE
+    ====================================================== -->
+
+    <div class="schedule-upcoming-section">
+
+        <div class="schedule-section-header">
+
+            <div>
+
+                <span class="dashboard-section-label">
+                    UPCOMING
+                </span>
+
+                <h2>Upcoming Schedule</h2>
+
+                <p>
+                    See what's coming up for your children.
+                </p>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="schedule-filter-btn"
+                id="scheduleFilterBtn"
+            >
+                <i class="fas fa-filter"></i>
+                Filter
+            </button>
+
+        </div>
+
+
+        <!-- Schedule List -->
+
+        <div class="schedule-list">
+
+
+            <!-- Schedule Item 1 -->
+
+            <div class="schedule-item">
+
+                <div class="schedule-date-box">
+
+                    <span>MON</span>
+
+                    <strong>31</strong>
+
+                    <small>Aug</small>
+
+                </div>
+
+
+                <div class="schedule-item-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+
+
+                <div class="schedule-item-content">
+
+                    <div class="schedule-item-top">
+
+                        <h3>
+                            Creative Arts
+                        </h3>
+
+                        <span class="schedule-status">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Alex • Creative Arts Program
+                    </p>
+
+                    <div class="schedule-item-meta">
+
+                        <span>
+                            <i class="fas fa-clock"></i>
+                            4:00 PM – 5:30 PM
+                        </span>
+
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Activity Room
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Schedule Item 2 -->
+
+            <div class="schedule-item">
+
+                <div class="schedule-date-box">
+
+                    <span>WED</span>
+
+                    <strong>02</strong>
+
+                    <small>Sep</small>
+
+                </div>
+
+
+                <div class="schedule-item-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+
+
+                <div class="schedule-item-content">
+
+                    <div class="schedule-item-top">
+
+                        <h3>
+                            Music &amp; Rhythm
+                        </h3>
+
+                        <span class="schedule-status">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Emma • Music Program
+                    </p>
+
+                    <div class="schedule-item-meta">
+
+                        <span>
+                            <i class="fas fa-clock"></i>
+                            3:00 PM – 4:00 PM
+                        </span>
+
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Music Room
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Schedule Item 3 -->
+
+            <div class="schedule-item">
+
+                <div class="schedule-date-box">
+
+                    <span>FRI</span>
+
+                    <strong>04</strong>
+
+                    <small>Sep</small>
+
+                </div>
+
+
+                <div class="schedule-item-icon">
+                    <i class="fas fa-running"></i>
+                </div>
+
+
+                <div class="schedule-item-content">
+
+                    <div class="schedule-item-top">
+
+                        <h3>
+                            Kids Sports
+                        </h3>
+
+                        <span class="schedule-status">
+                            Upcoming
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Alex • Sports Program
+                    </p>
+
+                    <div class="schedule-item-meta">
+
+                        <span>
+                            <i class="fas fa-clock"></i>
+                            5:00 PM – 6:30 PM
+                        </span>
+
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Sports Ground
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Empty State -->
+
+        <div
+            class="schedule-empty-state"
+            id="scheduleEmptyState"
+            hidden
+        >
+
+            <div class="schedule-empty-icon">
+                <i class="fas fa-calendar-times"></i>
+            </div>
+
+            <h3>No Upcoming Activities</h3>
+
+            <p>
+                There are no upcoming activities scheduled
+                for your children.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+    </main>
+    <!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="logout-overlay"
+    id="logoutOverlay"
+    hidden
+>
+
+    <div
+        class="logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="logoutPopupTitle"
+    >
+
+        <!-- Icon -->
+
+        <div class="logout-popup-icon">
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+
+
+        <!-- Content -->
+
+        <div class="logout-popup-content">
+
+            <h2 id="logoutPopupTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout
+                from your account?
+            </p>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="logout-popup-actions">
+
+            <button
+                type="button"
+                class="logout-no-btn"
+                id="logoutNoBtn"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="logout-yes-btn"
+                id="logoutYesBtn"
+            >
+                <i class="fas fa-sign-out-alt"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

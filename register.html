@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kidscamp | summar fun & activities</title>
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!=========================================================
+   AUTH CONTROL BUTTONS
+   DARK MODE + RTL
+========================================================= !>
+
+<div class="auth-controls">
+
+    <!-- DARK MODE -->
+
+    <button
+        type="button"
+        id="dark-mode-toggle"
+        class="auth-control-button"
+        aria-label="Switch to dark mode"
+        title="Dark Mode"
+    >
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+
+
+    <!-- RTL -->
+
+    <button
+    type="button"
+    id="rtl-toggle"
+    class="auth-control-button"
+    aria-label="Switch to right-to-left"
+    title="RTL"
+>
+    <span>RTL</span>
+</button>
+
+</div>
+<! =========================================================
+   REGISTER PAGE
+   PART 1 — HTML
+========================================================= !>
+
+<main class="register-page">
+
+    <div class="register-container">
+
+        <!-- =================================================
+             REGISTER CARD
+        ================================================== -->
+
+        <div class="register-card">
+
+
+            <!-- =================================================
+                 LOGO
+            ================================================== -->
+
+            <div class="register-logo">
+
+                <a href="index.html">
+
+                    <img
+                        src="images/logo.png"
+                        alt="Website Logo"
+                    >
+
+                </a>
+
+            </div>
+
+
+            <!-- =================================================
+                 REGISTER HEADER
+            ================================================== -->
+
+            <div class="register-header">
+
+                <span class="register-label">
+                    GET STARTED
+                </span>
+
+                <h1>
+                    Create your
+                    <span>account.</span>
+                </h1>
+
+                <p>
+                    Enter your details to create your account.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 REGISTER FORM
+            ================================================== -->
+
+            <form
+                class="register-form"
+                id="register-form"
+                action="#"
+                method="post"
+            >
+
+
+                <!-- =================================================
+                     FULL NAME
+                ================================================== -->
+
+                <div class="register-form-group">
+
+                    <label for="register-name">
+                        Full Name
+                    </label>
+
+                    <div class="register-input-wrap">
+
+                        <i
+                            class="fa-solid fa-user"
+                            aria-hidden="true"
+                        ></i>
+
+                        <input
+                            type="text"
+                            id="register-name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     EMAIL
+                ================================================== -->
+
+                <div class="register-form-group">
+
+                    <label for="register-email">
+                        Email Address
+                    </label>
+
+                    <div class="register-input-wrap">
+
+                        <i
+                            class="fa-solid fa-envelope"
+                            aria-hidden="true"
+                        ></i>
+
+                        <input
+                            type="email"
+                            id="register-email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PHONE
+                ================================================== -->
+
+                <div class="register-form-group">
+
+                    <label for="register-phone">
+                        Phone Number
+                    </label>
+
+                    <div class="register-input-wrap">
+
+                        <i
+                            class="fa-solid fa-phone"
+                            aria-hidden="true"
+                        ></i>
+
+                        <input
+                            type="tel"
+                            id="register-phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PASSWORD
+                ================================================== -->
+
+                <div class="register-form-group">
+
+                    <label for="register-password">
+                        Password
+                    </label>
+
+                    <div class="register-input-wrap">
+
+                        <i
+                            class="fa-solid fa-lock"
+                            aria-hidden="true"
+                        ></i>
+
+                        <input
+                            type="password"
+                            id="register-password"
+                            name="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="register-password-toggle"
+                            id="register-password-toggle"
+                            aria-label="Show password"
+                        >
+
+                            <i
+                                class="fa-solid fa-eye"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     CONFIRM PASSWORD
+                ================================================== -->
+
+                <div class="register-form-group">
+
+                    <label for="register-confirm-password">
+                        Confirm Password
+                    </label>
+
+                    <div class="register-input-wrap">
+
+                        <i
+                            class="fa-solid fa-lock"
+                            aria-hidden="true"
+                        ></i>
+
+                        <input
+                            type="password"
+                            id="register-confirm-password"
+                            name="confirm_password"
+                            placeholder="Confirm your password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="register-password-toggle"
+                            id="register-confirm-password-toggle"
+                            aria-label="Show password"
+                        >
+
+                            <i
+                                class="fa-solid fa-eye"
+                                aria-hidden="true"
+                            ></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     TERMS & CONDITIONS
+                ================================================== -->
+
+                <div class="register-terms">
+
+                    <label class="register-terms-label">
+
+                        <input
+                            type="checkbox"
+                            name="terms"
+                            required
+                        >
+
+                        <span class="register-checkmark"></span>
+
+                        <span class="register-terms-text">
+                            I agree to the
+                            <a href="terms.html">
+                                Terms & Conditions
+                            </a>
+                            and
+                            <a href="privacy.html">
+                                Privacy Policy
+                            </a>
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- =================================================
+                     CREATE ACCOUNT BUTTON
+                ================================================== -->
+
+                <button
+                    type="submit"
+                    class="register-submit"
+                >
+
+                    <span>
+                        Create Account
+                    </span>
+
+                    <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+            </form>
+
+
+            <!-- =================================================
+                 DIVIDER
+            ================================================== -->
+
+            <div class="register-divider">
+
+                <span></span>
+
+                <p>
+                    Or continue with
+                </p>
+
+                <span></span>
+
+            </div>
+
+
+            <!-- =================================================
+                 SOCIAL SIGN UP
+            ================================================== -->
+
+            <div class="register-social">
+
+
+                <!-- =================================================
+                     GOOGLE
+                ================================================== -->
+
+                <button
+                    type="button"
+                    class="register-social-button register-google"
+                    aria-label="Continue with Google"
+                >
+
+                    <svg
+                        class="register-social-icon"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M21.35 12.27c0-.79-.07-1.55-.23-2.27H12v4.3h5.22a4.46 4.46 0 0 1-1.94 2.92v2.42h3.14c1.84-1.69 2.93-4.18 2.93-7.37Z"
+                            fill="#4285F4"
+                        />
+
+                        <path
+                            d="M12 21.75c2.63 0 4.84-.87 6.45-2.36l-3.14-2.42c-.87.58-1.98.93-3.31.93-2.55 0-4.71-1.72-5.49-4.03H3.27v2.5A9.75 9.75 0 0 0 12 21.75Z"
+                            fill="#34A853"
+                        />
+
+                        <path
+                            d="M6.51 13.87A5.86 5.86 0 0 1 6.2 12c0-.65.11-1.28.31-1.87v-2.5H3.27A9.75 9.75 0 0 0 2.25 12c0 1.57.38 3.05 1.02 4.37l3.24-2.5Z"
+                            fill="#FBBC05"
+                        />
+
+                        <path
+                            d="M12 6.1c1.43 0 2.71.49 3.72 1.46l2.79-2.79C16.84 3.18 14.63 2.25 12 2.25a9.75 9.75 0 0 0-8.73 5.38l3.24 2.5C7.29 7.82 9.45 6.1 12 6.1Z"
+                            fill="#EA4335"
+                        />
+
+                    </svg>
+
+                    <span>
+                        Google
+                    </span>
+
+                </button>
+
+
+                <!-- =================================================
+                     FACEBOOK
+                ================================================== -->
+
+                <button
+                    type="button"
+                    class="register-social-button register-facebook"
+                    aria-label="Continue with Facebook"
+                >
+
+                    <svg
+                        class="register-social-icon"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.04 1.79-4.73 4.55-4.73 1.32 0 2.7.24 2.7.24v2.98h-1.52c-1.5 0-1.97.94-1.97 1.9v2.27h3.35l-.54 3.49h-2.81V24C19.61 23.1 24 18.1 24 12.07Z"
+                            fill="currentColor"
+                        />
+
+                    </svg>
+
+                    <span>
+                        Facebook
+                    </span>
+
+                </button>
+
+
+                <!-- =================================================
+                     APPLE
+                ================================================== -->
+
+                <button
+                    type="button"
+                    class="register-social-button register-apple"
+                    aria-label="Continue with Apple"
+                >
+
+                    <svg
+                        class="register-social-icon"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M17.05 12.54c-.02-2.06 1.68-3.05 1.76-3.1a3.76 3.76 0 0 0-2.97-1.61c-1.25-.13-2.46.74-3.1.74-.65 0-1.64-.72-2.7-.7-1.39.02-2.67.81-3.38 2.05-1.45 2.51-.37 6.2 1.04 8.23.7.99 1.51 2.1 2.59 2.06 1.04-.04 1.43-.67 2.68-.67 1.25 0 1.6.67 2.7.65 1.12-.02 1.82-1 2.5-2 .79-1.13 1.12-2.23 1.14-2.28-.02-.01-2.24-.86-2.26-3.37Z"
+                            fill="currentColor"
+                        />
+
+                        <path
+                            d="M15.01 6.56c.57-.7.95-1.68.85-2.66-.82.03-1.82.55-2.4 1.25-.52.6-.97 1.59-.85 2.53.92.07 1.84-.47 2.4-1.12Z"
+                            fill="currentColor"
+                        />
+
+                    </svg>
+
+                    <span>
+                        Apple
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- =================================================
+                 LOGIN LINK
+            ================================================== -->
+
+            <div class="register-login">
+
+                <p>
+                    Already have an account?
+                </p>
+
+                <a href="login.html">
+                    Sign in
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+<!-- JS -->
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

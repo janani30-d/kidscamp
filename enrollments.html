@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | KidCamp</title>
+    <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Dashboard Responsive CSS -->
+    <link rel="stylesheet" href="css/dashboard-responsive.css">
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+
+    <div
+        class="dashboard-overlay"
+        id="dashboardOverlay">
+    </div>
+
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="dashboard-sidebar"
+        id="dashboardSidebar">
+
+
+        <!-- Logo -->
+
+        <div class="dashboard-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.png"
+                    alt="KidCamp"
+                >
+
+            </a>
+
+        </div>
+
+
+
+        <!-- Navigation -->
+
+        <nav class="dashboard-nav">
+
+
+            <!-- Dashboard -->
+
+            <a
+                href="dashboard.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-table-columns"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <!-- Programs -->
+
+            <a
+                href="program.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-campground"></i>
+
+                <span>Programs</span>
+
+            </a>
+
+
+            <!-- My Children -->
+
+            <a
+                href="children.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-children"></i>
+
+                <span>My Children</span>
+
+            </a>
+
+
+            <!-- Enrollments -->
+
+            <a
+                href="enrollments.html"
+                class="dashboard-nav-link active">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                <span>Enrollments</span>
+
+            </a>
+
+
+            <!-- Schedule -->
+
+            <a
+                href="schedules.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span>Schedule & Calendar</span>
+
+            </a>
+
+
+            <!-- Daily Activities -->
+
+            <a
+                href="activities.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>Daily Activities</span>
+
+            </a>
+
+
+            <!-- Payments -->
+
+            <a
+                href="payments.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <span>Payments</span>
+
+            </a>
+
+
+            
+
+        </nav>
+
+
+
+        <!-- Logout -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <a
+    href="javascript:void(0)"
+    class="logout-btn"
+    id="logoutBtn"
+>
+    <i class="fas fa-sign-out-alt"></i>
+    <span>Logout</span>
+</a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="dashboard-header">
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                type="button"
+                class="dashboard-menu-toggle"
+                id="dashboardMenuToggle"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+            <!-- Header Title -->
+
+            <div class="dashboard-header-title">
+
+                <span>
+                    Parent Portal
+                </span>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+
+            <!-- Header Actions -->
+
+            <div class="dashboard-header-actions">
+
+
+                <!-- Notification -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button notification-button"
+                    aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+
+                <!-- Settings -->
+
+                <a
+                    href="#"
+                    class="dashboard-icon-button"
+                    aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </a>
+
+
+
+                <!-- Dark Mode -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button"
+                    id="dashboardDarkMode"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button dashboard-rtl-button"
+                    id="dashboardRtl"
+                    aria-label="Toggle RTL">
+
+                    <span>RTL</span>
+
+                </button>
+
+
+
+                <!-- Parent Profile -->
+
+                <a
+                    href="profile.html"
+                    class="dashboard-user">
+
+
+                    <div class="dashboard-user-avatar">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="dashboard-user-info">
+
+                        <strong>
+                            Parent
+                        </strong>
+
+                        <span>
+                            Parent Account
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+<!-- =========================================================
+     ENROLLMENT PAGE
+========================================================= -->
+
+<section class="enrollment-page">
+
+    <!-- Page Header -->
+    <div class="enrollment-header">
+
+        <div class="enrollment-header-content">
+
+            <span class="dashboard-section-label">
+                ENROLLMENT
+            </span>
+
+            <h1>Enroll Your Child</h1>
+
+            <p>
+                Choose a program and enroll your child in the
+                activities that best match their interests.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Enrollment Progress -->
+    <div class="enrollment-progress">
+
+        <div class="enrollment-step active">
+            <span class="enrollment-step-number">1</span>
+
+            <div>
+                <strong>Select Child</strong>
+                <small>Choose your child</small>
+            </div>
+        </div>
+
+
+        <div class="enrollment-progress-line"></div>
+
+
+        <div class="enrollment-step">
+            <span class="enrollment-step-number">2</span>
+
+            <div>
+                <strong>Choose Program</strong>
+                <small>Select a program</small>
+            </div>
+        </div>
+
+
+        <div class="enrollment-progress-line"></div>
+
+
+        <div class="enrollment-step">
+            <span class="enrollment-step-number">3</span>
+
+            <div>
+                <strong>Enrollment Details</strong>
+                <small>Provide details</small>
+            </div>
+        </div>
+
+
+        <div class="enrollment-progress-line"></div>
+
+
+        <div class="enrollment-step">
+            <span class="enrollment-step-number">4</span>
+
+            <div>
+                <strong>Confirmation</strong>
+                <small>Complete enrollment</small>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Select Child -->
+    <div class="enrollment-section">
+
+        <div class="enrollment-section-header">
+
+            <div>
+                <span class="dashboard-section-label">
+                    STEP 1
+                </span>
+
+                <h2>Select Your Child</h2>
+
+                <p>
+                    Select the child you want to enroll.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="enrollment-child-grid">
+
+            <!-- Child 1 -->
+            <div class="enrollment-child-card active">
+
+                <div class="enrollment-child-check">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <div class="enrollment-child-image">
+                    <img
+                        src="images/noha.jpg"
+                        alt="Alex"
+                    >
+                </div>
+
+                <div class="enrollment-child-info">
+
+                    <h3>Noah</h3>
+
+                    <span>8 Years Old</span>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="enrollment-select-btn"
+                >
+                    Select Child
+                </button>
+
+            </div>
+
+
+            <!-- Child 2 -->
+            <div class="enrollment-child-card">
+
+                <div class="enrollment-child-check">
+                    <i class="fas fa-check"></i>
+                </div>
+
+                <div class="enrollment-child-image">
+                    <img
+                        src="images/emma.jpg"
+                        alt="Emma"
+                    >
+                </div>
+
+                <div class="enrollment-child-info">
+
+                    <h3>Emma</h3>
+
+                    <span>6 Years Old</span>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="enrollment-select-btn"
+                >
+                    Select Child
+                </button>
+
+            </div>
+
+
+            <!-- Add Child -->
+            <a
+                href="#"
+                class="enrollment-add-child-card"
+            >
+
+                <div class="enrollment-add-child-icon">
+                    <i class="fas fa-plus"></i>
+                </div>
+
+                <h3>Add Another Child</h3>
+
+                <p>
+                    Add a child before starting enrollment.
+                </p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Available Programs -->
+    <div class="enrollment-section">
+
+        <div class="enrollment-section-header">
+
+            <div>
+                <span class="dashboard-section-label">
+                    STEP 2
+                </span>
+
+                <h2>Choose a Program</h2>
+
+                <p>
+                    Select a program for your child.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="enrollment-program-grid">
+
+            <!-- Program 1 -->
+            <div class="enrollment-program-card">
+
+                <div class="enrollment-program-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+
+                <div class="enrollment-program-info">
+
+                    <h3>Creative Arts</h3>
+
+                    <p>
+                        Explore creativity through art,
+                        drawing and hands-on activities.
+                    </p>
+
+                    <div class="enrollment-program-meta">
+
+                        <span>
+                            <i class="fas fa-child"></i>
+                            Ages 6–10
+                        </span>
+
+                        <span>
+                            <i class="fas fa-clock"></i>
+                            2 Hours
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="enrollment-program-btn"
+                >
+                    Enroll
+                </button>
+
+            </div>
+
+
+            <!-- Program 2 -->
+            <div class="enrollment-program-card">
+
+                <div class="enrollment-program-icon">
+                    <i class="fas fa-running"></i>
+                </div>
+
+                <div class="enrollment-program-info">
+
+                    <h3>Kids Sports</h3>
+
+                    <p>
+                        Fun sports activities designed
+                        to build confidence and teamwork.
+                    </p>
+
+                    <div class="enrollment-program-meta">
+
+                        <span>
+                            <i class="fas fa-child"></i>
+                            Ages 6–12
+                        </span>
+
+                        <span>
+                            <i class="fas fa-clock"></i>
+                            2 Hours
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="enrollment-program-btn"
+                >
+                    Enroll
+                </button>
+
+            </div>
+
+
+            <!-- Program 3 -->
+            <div class="enrollment-program-card">
+
+                <div class="enrollment-program-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+
+                <div class="enrollment-program-info">
+
+                    <h3>Music &amp; Rhythm</h3>
+
+                    <p>
+                        Discover music, rhythm and
+                        creative expression.
+                    </p>
+
+                    <div class="enrollment-program-meta">
+
+                        <span>
+                            <i class="fas fa-child"></i>
+                            Ages 5–10
+                        </span>
+
+                        <span>
+                            <i class="fas fa-clock"></i>
+                            1.5 Hours
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="enrollment-program-btn"
+                >
+                    Enroll
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- =========================================================
+     STEP 3 — ENROLLMENT DETAILS
+========================================================= -->
+
+<div class="enrollment-section enrollment-details-section">
+
+    <!-- Section Header -->
+    <div class="enrollment-section-header">
+
+        <div>
+            <span class="dashboard-section-label">
+                STEP 3
+            </span>
+
+            <h2>Enrollment Details</h2>
+
+            <p>
+                Provide the details needed to complete the enrollment.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Details Card -->
+    <div class="enrollment-details-card">
+
+        <!-- Selected Child -->
+        <div class="enrollment-selected-info">
+
+            <div class="enrollment-selected-icon">
+                <i class="fas fa-child"></i>
+            </div>
+
+            <div>
+                <span>Selected Child</span>
+                <strong>Alex</strong>
+            </div>
+
+        </div>
+
+
+        <!-- Selected Program -->
+        <div class="enrollment-selected-info">
+
+            <div class="enrollment-selected-icon">
+                <i class="fas fa-book-open"></i>
+            </div>
+
+            <div>
+                <span>Selected Program</span>
+                <strong>Creative Arts</strong>
+            </div>
+
+        </div>
+
+
+        <!-- Divider -->
+        <div class="enrollment-details-divider"></div>
+
+
+        <!-- Form -->
+        <form class="enrollment-details-form">
+
+            <!-- Preferred Date -->
+            <div class="enrollment-form-group">
+
+                <label for="enrollment-date">
+                    Preferred Date
+                </label>
+
+                <div class="enrollment-input-wrapper">
+
+                    <i class="fas fa-calendar-alt"></i>
+
+                    <input
+                        type="date"
+                        id="enrollment-date"
+                        name="enrollment_date"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Preferred Time -->
+            <div class="enrollment-form-group">
+
+                <label for="enrollment-time">
+                    Preferred Time
+                </label>
+
+                <div class="enrollment-input-wrapper">
+
+                    <i class="fas fa-clock"></i>
+
+                    <select
+                        id="enrollment-time"
+                        name="enrollment_time"
+                    >
+                        <option value="">
+                            Select a time
+                        </option>
+
+                        <option value="09:00">
+                            9:00 AM
+                        </option>
+
+                        <option value="11:00">
+                            11:00 AM
+                        </option>
+
+                        <option value="14:00">
+                            2:00 PM
+                        </option>
+
+                        <option value="16:00">
+                            4:00 PM
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Guardian Name -->
+            <div class="enrollment-form-group">
+
+                <label for="guardian-name">
+                    Parent / Guardian Name
+                </label>
+
+                <div class="enrollment-input-wrapper">
+
+                    <i class="fas fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="guardian-name"
+                        name="guardian_name"
+                        placeholder="Enter your name"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Number -->
+            <div class="enrollment-form-group">
+
+                <label for="guardian-phone">
+                    Contact Number
+                </label>
+
+                <div class="enrollment-input-wrapper">
+
+                    <i class="fas fa-phone"></i>
+
+                    <input
+                        type="tel"
+                        id="guardian-phone"
+                        name="guardian_phone"
+                        placeholder="Enter contact number"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- Additional Notes -->
+            <div class="enrollment-form-group enrollment-form-full">
+
+                <label for="enrollment-notes">
+                    Additional Notes
+                    <span>(Optional)</span>
+                </label>
+
+                <div class="enrollment-input-wrapper textarea-wrapper">
+
+                    <i class="fas fa-comment-alt"></i>
+
+                    <textarea
+                        id="enrollment-notes"
+                        name="enrollment_notes"
+                        rows="4"
+                        placeholder="Add any information you would like us to know..."
+                    ></textarea>
+
+                </div>
+
+            </div>
+
+
+            <!-- Continue -->
+            <div class="enrollment-form-actions">
+
+                <button
+                    type="submit"
+                    class="enrollment-continue-btn"
+                >
+                    Continue to Confirmation
+
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+<!-- =========================================================
+     STEP 4 — ENROLLMENT CONFIRMATION
+========================================================= -->
+
+<div class="enrollment-section enrollment-confirmation-section">
+
+    <!-- Section Header -->
+    <div class="enrollment-section-header">
+
+        <div>
+            <span class="dashboard-section-label">
+                STEP 4
+            </span>
+
+            <h2>Confirm Enrollment</h2>
+
+            <p>
+                Review your enrollment details before submitting.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- Confirmation Card -->
+    <div class="enrollment-confirmation-card">
+
+        <!-- Confirmation Icon -->
+        <div class="enrollment-confirmation-icon">
+            <i class="fas fa-clipboard-check"></i>
+        </div>
+
+
+        <!-- Confirmation Heading -->
+        <div class="enrollment-confirmation-heading">
+
+            <h3>Review Your Enrollment</h3>
+
+            <p>
+                Please make sure all the information below is correct.
+            </p>
+
+        </div>
+
+
+        <!-- Enrollment Summary -->
+        <div class="enrollment-summary">
+
+            <!-- Child -->
+            <div class="enrollment-summary-item">
+
+                <span class="enrollment-summary-label">
+                    Child
+                </span>
+
+                <div class="enrollment-summary-value">
+                    <i class="fas fa-child"></i>
+                    <strong>Alex</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Program -->
+            <div class="enrollment-summary-item">
+
+                <span class="enrollment-summary-label">
+                    Program
+                </span>
+
+                <div class="enrollment-summary-value">
+                    <i class="fas fa-book-open"></i>
+                    <strong>Creative Arts</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Date -->
+            <div class="enrollment-summary-item">
+
+                <span class="enrollment-summary-label">
+                    Preferred Date
+                </span>
+
+                <div class="enrollment-summary-value">
+                    <i class="fas fa-calendar-alt"></i>
+                    <strong>August 30, 2026</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Time -->
+            <div class="enrollment-summary-item">
+
+                <span class="enrollment-summary-label">
+                    Preferred Time
+                </span>
+
+                <div class="enrollment-summary-value">
+                    <i class="fas fa-clock"></i>
+                    <strong>4:00 PM</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Guardian -->
+            <div class="enrollment-summary-item">
+
+                <span class="enrollment-summary-label">
+                    Parent / Guardian
+                </span>
+
+                <div class="enrollment-summary-value">
+                    <i class="fas fa-user"></i>
+                    <strong>Parent Name</strong>
+                </div>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="enrollment-summary-item">
+
+                <span class="enrollment-summary-label">
+                    Contact Number
+                </span>
+
+                <div class="enrollment-summary-value">
+                    <i class="fas fa-phone"></i>
+                    <strong>+91 XXXXX XXXXX</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Confirmation Notice -->
+        <div class="enrollment-confirmation-notice">
+
+            <i class="fas fa-info-circle"></i>
+
+            <p>
+                After confirmation, your enrollment request
+                will be submitted for review.
+            </p>
+
+        </div>
+
+
+        <!-- Agreement -->
+        <div class="enrollment-agreement">
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    id="enrollment-agreement"
+                    name="enrollment_agreement"
+                >
+
+                <span class="enrollment-custom-checkbox">
+                    <i class="fas fa-check"></i>
+                </span>
+
+                <span class="enrollment-agreement-text">
+                    I confirm that the information provided is
+                    correct and agree to the enrollment terms.
+                </span>
+
+            </label>
+
+        </div>
+
+
+        <!-- Actions -->
+        <div class="enrollment-confirmation-actions">
+
+            <button
+                type="button"
+                class="enrollment-back-btn"
+            >
+                <i class="fas fa-arrow-left"></i>
+
+                Back to Details
+            </button>
+
+
+            <button
+                type="button"
+                class="enrollment-confirm-btn"
+                disabled
+            >
+                Confirm Enrollment
+
+                <i class="fas fa-check"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+</main>
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="logout-overlay"
+    id="logoutOverlay"
+    hidden
+>
+
+    <div
+        class="logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="logoutPopupTitle"
+    >
+
+        <!-- Icon -->
+
+        <div class="logout-popup-icon">
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+
+
+        <!-- Content -->
+
+        <div class="logout-popup-content">
+
+            <h2 id="logoutPopupTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout
+                from your account?
+            </p>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="logout-popup-actions">
+
+            <button
+                type="button"
+                class="logout-no-btn"
+                id="logoutNoBtn"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="logout-yes-btn"
+                id="logoutYesBtn"
+            >
+                <i class="fas fa-sign-out-alt"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+        <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

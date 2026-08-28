@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | KidCamp</title>
+    <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Dashboard Responsive CSS -->
+    <link rel="stylesheet" href="css/dashboard-responsive.css">
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+
+    <div
+        class="dashboard-overlay"
+        id="dashboardOverlay">
+    </div>
+
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="dashboard-sidebar"
+        id="dashboardSidebar">
+
+
+        <!-- Logo -->
+
+        <div class="dashboard-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.png"
+                    alt="KidCamp"
+                >
+
+            </a>
+
+        </div>
+
+
+
+        <!-- Navigation -->
+
+        <nav class="dashboard-nav">
+
+
+            <!-- Dashboard -->
+
+            <a
+                href="dashboard.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-table-columns"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <!-- Programs -->
+
+            <a
+                href="program.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-campground"></i>
+
+                <span>Programs</span>
+
+            </a>
+
+
+            <!-- My Children -->
+
+            <a
+                href="children.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-children"></i>
+
+                <span>My Children</span>
+
+            </a>
+
+
+            <!-- Enrollments -->
+
+            <a
+                href="enrollments.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                <span>Enrollments</span>
+
+            </a>
+
+
+            <!-- Schedule -->
+
+            <a
+                href="schedules.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span>Schedule & Calendar</span>
+
+            </a>
+
+
+            <!-- Daily Activities -->
+
+            <a
+                href="activities.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>Daily Activities</span>
+
+            </a>
+
+
+            <!-- Payments -->
+
+            <a
+                href="payments.html"
+                class="dashboard-nav-link active">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <span>Payments</span>
+
+            </a>
+
+
+           
+
+        </nav>
+
+
+
+        <!-- Logout -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <a
+    href="javascript:void(0)"
+    class="logout-btn"
+    id="logoutBtn"
+>
+    <i class="fas fa-sign-out-alt"></i>
+    <span>Logout</span>
+</a>
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="dashboard-header">
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                type="button"
+                class="dashboard-menu-toggle"
+                id="dashboardMenuToggle"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+            <!-- Header Title -->
+
+            <div class="dashboard-header-title">
+
+                <span>
+                    Parent Portal
+                </span>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+
+            <!-- Header Actions -->
+
+            <div class="dashboard-header-actions">
+
+
+                <!-- Notification -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button notification-button"
+                    aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+
+                <!-- Settings -->
+
+                <a
+                    href="#"
+                    class="dashboard-icon-button"
+                    aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </a>
+
+
+
+                <!-- Dark Mode -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button"
+                    id="dashboardDarkMode"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button dashboard-rtl-button"
+                    id="dashboardRtl"
+                    aria-label="Toggle RTL">
+
+                    <span>RTL</span>
+
+                </button>
+
+
+
+                <!-- Parent Profile -->
+
+                <a
+                    href="profile.html"
+                    class="dashboard-user">
+
+
+                    <div class="dashboard-user-avatar">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="dashboard-user-info">
+
+                        <strong>
+                            Parent
+                        </strong>
+
+                        <span>
+                            Parent Account
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+<!-- =========================================================
+     PAYMENT PAGE
+     PART 1 — HTML
+     Fee Payment + Downloadable Receipt
+========================================================= -->
+
+<section class="payment-page">
+
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+
+    <div class="payment-page-header">
+
+        <div class="payment-header-content">
+
+            <span class="dashboard-section-label">
+                PAYMENTS
+            </span>
+
+            <h1>Fee Payments</h1>
+
+            <p>
+                Complete your children's fee payments
+                and download your payment receipts.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FEE SUMMARY
+    ====================================================== -->
+
+    <div class="payment-summary-grid">
+
+        <div class="payment-summary-card">
+
+            <div class="payment-summary-icon">
+                <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+
+            <div class="payment-summary-content">
+
+                <span>Total Fee</span>
+
+                <h2 id="totalFeeAmount">
+                    ₹24,000
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="payment-summary-card">
+
+            <div class="payment-summary-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+
+            <div class="payment-summary-content">
+
+                <span>Paid Amount</span>
+
+                <h2 id="paidFeeAmount">
+                    ₹16,000
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="payment-summary-card">
+
+            <div class="payment-summary-icon">
+                <i class="fas fa-clock"></i>
+            </div>
+
+            <div class="payment-summary-content">
+
+                <span>Pending Amount</span>
+
+                <h2 id="pendingFeeAmount">
+                    ₹8,000
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="payment-summary-card">
+
+            <div class="payment-summary-icon">
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+
+            <div class="payment-summary-content">
+
+                <span>Next Due Date</span>
+
+                <h2 id="nextDueDate">
+                    Sep 10, 2026
+                </h2>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         PENDING FEE
+    ====================================================== -->
+
+    <section class="payment-pending-section">
+
+        <div class="payment-section-header">
+
+            <span class="dashboard-section-label">
+                PAYMENT DUE
+            </span>
+
+            <h2>Pending Fee</h2>
+
+            <p>
+                Complete the payment before the due date.
+            </p>
+
+        </div>
+
+
+        <article class="pending-fee-card">
+
+            <div class="pending-fee-main">
+
+                <div class="pending-fee-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+
+                <div class="pending-fee-info">
+
+                    <h3>
+                        Annual Program Fee
+                    </h3>
+
+                    <p>
+                        Alex • Creative Learning Program
+                    </p>
+
+                    <div class="pending-fee-meta">
+
+                        <span>
+                            <i class="fas fa-calendar"></i>
+                            Due: September 10, 2026
+                        </span>
+
+                        <span>
+                            <i class="fas fa-receipt"></i>
+                            Fee ID: FEE-2026-001
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="pending-fee-payment">
+
+                <div class="pending-fee-amount">
+
+                    <span>Amount Due</span>
+
+                    <strong>
+                        ₹8,000
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="pay-now-btn"
+                    id="payNowBtn"
+                >
+                    <i class="fas fa-credit-card"></i>
+                    Pay Now
+                </button>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- =====================================================
+         COMPLETE PAYMENT
+         NORMAL PAGE SECTION — NOT POPUP
+    ====================================================== -->
+
+    <section
+        class="payment-checkout-section"
+        id="paymentCheckoutSection"
+    >
+
+        <div class="payment-section-header">
+
+            <span class="dashboard-section-label">
+                SECURE PAYMENT
+            </span>
+
+            <h2>Complete Payment</h2>
+
+            <p>
+                Review your fee details and choose
+                your preferred payment method.
+            </p>
+
+        </div>
+
+
+        <div class="payment-checkout-card">
+
+
+            <!-- =================================================
+                 PAYMENT DETAILS
+            ================================================== -->
+
+            <div class="payment-checkout-details">
+
+                <h3>
+                    Payment Details
+                </h3>
+
+
+                <div class="payment-detail-row">
+
+                    <span>Child</span>
+
+                    <strong>
+                        Alex
+                    </strong>
+
+                </div>
+
+
+                <div class="payment-detail-row">
+
+                    <span>Program</span>
+
+                    <strong>
+                        Creative Learning Program
+                    </strong>
+
+                </div>
+
+
+                <div class="payment-detail-row">
+
+                    <span>Fee</span>
+
+                    <strong>
+                        Annual Program Fee
+                    </strong>
+
+                </div>
+
+
+                <div class="payment-detail-row">
+
+                    <span>Due Date</span>
+
+                    <strong>
+                        September 10, 2026
+                    </strong>
+
+                </div>
+
+
+                <div class="payment-total-row">
+
+                    <span>
+                        Total Payable
+                    </span>
+
+                    <strong id="checkoutAmount">
+                        ₹8,000
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 PAYMENT METHOD
+            ================================================== -->
+
+            <div class="payment-method-section">
+
+                <h3>
+                    Select Payment Method
+                </h3>
+
+
+                <div class="payment-method-options">
+
+
+                    <!-- CARD -->
+
+                    <label class="payment-method-option">
+
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="card"
+                            checked
+                        >
+
+                        <span class="payment-method-box">
+
+                            <i class="fas fa-credit-card"></i>
+
+                            <span>
+
+                                <strong>
+                                    Card
+                                </strong>
+
+                                <small>
+                                    Credit / Debit Card
+                                </small>
+
+                            </span>
+
+                        </span>
+
+                    </label>
+
+
+                    <!-- UPI -->
+
+                    <label class="payment-method-option">
+
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="upi"
+                        >
+
+                        <span class="payment-method-box">
+
+                            <i class="fas fa-mobile-alt"></i>
+
+                            <span>
+
+                                <strong>
+                                    UPI
+                                </strong>
+
+                                <small>
+                                    UPI Payment
+                                </small>
+
+                            </span>
+
+                        </span>
+
+                    </label>
+
+
+                    <!-- NET BANKING -->
+
+                    <label class="payment-method-option">
+
+                        <input
+                            type="radio"
+                            name="paymentMethod"
+                            value="netbanking"
+                        >
+
+                        <span class="payment-method-box">
+
+                            <i class="fas fa-university"></i>
+
+                            <span>
+
+                                <strong>
+                                    Net Banking
+                                </strong>
+
+                                <small>
+                                    Online Banking
+                                </small>
+
+                            </span>
+
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- =================================================
+                     CARD DETAILS
+                ================================================== -->
+
+                <div
+                    class="payment-card-fields"
+                    id="paymentCardFields"
+                >
+
+                    <div class="payment-input-group">
+
+                        <label for="cardNumber">
+                            Card Number
+                        </label>
+
+                        <div class="payment-input-wrapper">
+
+                            <i class="fas fa-credit-card"></i>
+
+                            <input
+                                type="text"
+                                id="cardNumber"
+                                placeholder="1234 5678 9012 3456"
+                                maxlength="19"
+                                inputmode="numeric"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-input-row">
+
+                        <div class="payment-input-group">
+
+                            <label for="cardExpiry">
+                                Expiry Date
+                            </label>
+
+                            <input
+                                type="text"
+                                id="cardExpiry"
+                                placeholder="MM / YY"
+                                maxlength="7"
+                                inputmode="numeric"
+                            >
+
+                        </div>
+
+
+                        <div class="payment-input-group">
+
+                            <label for="cardCvv">
+                                CVV
+                            </label>
+
+                            <input
+                                type="password"
+                                id="cardCvv"
+                                placeholder="•••"
+                                maxlength="4"
+                                inputmode="numeric"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment-input-group">
+
+                        <label for="cardName">
+                            Cardholder Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cardName"
+                            placeholder="Enter cardholder name"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     UPI DETAILS
+                ================================================== -->
+
+                <div
+                    class="payment-upi-fields"
+                    id="paymentUpiFields"
+                    hidden
+                >
+
+                    <div class="payment-input-group">
+
+                        <label for="upiId">
+                            UPI ID
+                        </label>
+
+                        <div class="payment-input-wrapper">
+
+                            <i class="fas fa-at"></i>
+
+                            <input
+                                type="text"
+                                id="upiId"
+                                placeholder="example@upi"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     NET BANKING
+                ================================================== -->
+
+                <div
+                    class="payment-bank-fields"
+                    id="paymentBankFields"
+                    hidden
+                >
+
+                    <div class="payment-input-group">
+
+                        <label for="bankSelect">
+                            Select Bank
+                        </label>
+
+                        <div class="payment-select-wrapper">
+
+                            <select id="bankSelect">
+
+                                <option value="">
+                                    Select your bank
+                                </option>
+
+                                <option value="sbi">
+                                    State Bank of India
+                                </option>
+
+                                <option value="hdfc">
+                                    HDFC Bank
+                                </option>
+
+                                <option value="icici">
+                                    ICICI Bank
+                                </option>
+
+                                <option value="axis">
+                                    Axis Bank
+                                </option>
+
+                            </select>
+
+                            <i class="fas fa-chevron-down"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     CONFIRM PAYMENT
+                ================================================== -->
+
+                <button
+                    type="button"
+                    class="confirm-payment-btn"
+                    id="confirmPaymentBtn"
+                >
+                    <i class="fas fa-lock"></i>
+                    Confirm &amp; Pay ₹8,000
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PAYMENT SUCCESS
+         NORMAL PAGE SECTION
+    ====================================================== -->
+
+    <section
+        class="payment-success-section"
+        id="paymentSuccessSection"
+        hidden
+    >
+
+        <div class="payment-success-card">
+
+            <div class="payment-success-icon">
+
+                <i class="fas fa-check"></i>
+
+            </div>
+
+
+            <span class="dashboard-section-label">
+                PAYMENT SUCCESSFUL
+            </span>
+
+
+            <h2>
+                Payment Completed Successfully
+            </h2>
+
+
+            <p>
+                Your fee payment has been completed successfully.
+                Your payment receipt is ready to download.
+            </p>
+
+
+            <div class="payment-success-details">
+
+                <div>
+
+                    <span>
+                        Receipt Number
+                    </span>
+
+                    <strong id="successReceiptNumber">
+                        RCP-2026-0004
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Amount Paid
+                    </span>
+
+                    <strong id="successPaidAmount">
+                        ₹8,000
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Payment Date
+                    </span>
+
+                    <strong id="successPaymentDate">
+                        August 27, 2026
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="download-receipt-btn"
+                id="downloadReceiptBtn"
+            >
+                <i class="fas fa-download"></i>
+                Download Payment Receipt
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PAYMENT RECEIPT
+         NORMAL PAGE SECTION — NOT POPUP
+    ====================================================== -->
+
+    <section
+        class="payment-receipt-section"
+        id="paymentReceiptSection"
+        hidden
+    >
+
+        <div class="payment-section-header">
+
+            <span class="dashboard-section-label">
+                RECEIPT
+            </span>
+
+            <h2>Payment Receipt</h2>
+
+            <p>
+                View and download your payment receipt.
+            </p>
+
+        </div>
+
+
+        <div class="payment-receipt-card">
+
+
+            <!-- Receipt Header -->
+
+            <div class="receipt-brand">
+
+                <div class="receipt-logo">
+
+                    <i class="fas fa-heart"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Little Steps
+                    </h3>
+
+                    <span>
+                        Official Payment Receipt
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Payment Status -->
+
+            <div class="receipt-status">
+
+                <i class="fas fa-check-circle"></i>
+
+                <span>
+                    Payment Successful
+                </span>
+
+            </div>
+
+
+            <!-- Receipt Number -->
+
+            <div class="receipt-number">
+
+                <span>
+                    Receipt Number
+                </span>
+
+                <strong id="receiptNumber">
+                    RCP-2026-0004
+                </strong>
+
+            </div>
+
+
+            <!-- Receipt Details -->
+
+            <div class="receipt-details">
+
+                <div class="receipt-detail-row">
+
+                    <span>
+                        Parent Name
+                    </span>
+
+                    <strong>
+                        Parent Name
+                    </strong>
+
+                </div>
+
+
+                <div class="receipt-detail-row">
+
+                    <span>
+                        Child
+                    </span>
+
+                    <strong id="receiptChild">
+                        Alex
+                    </strong>
+
+                </div>
+
+
+                <div class="receipt-detail-row">
+
+                    <span>
+                        Program
+                    </span>
+
+                    <strong id="receiptProgram">
+                        Creative Learning Program
+                    </strong>
+
+                </div>
+
+
+                <div class="receipt-detail-row">
+
+                    <span>
+                        Fee Description
+                    </span>
+
+                    <strong id="receiptDescription">
+                        Annual Program Fee
+                    </strong>
+
+                </div>
+
+
+                <div class="receipt-detail-row">
+
+                    <span>
+                        Payment Date
+                    </span>
+
+                    <strong id="receiptDate">
+                        August 27, 2026
+                    </strong>
+
+                </div>
+
+
+                <div class="receipt-detail-row">
+
+                    <span>
+                        Payment Method
+                    </span>
+
+                    <strong id="receiptMethod">
+                        Card
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Total -->
+
+            <div class="receipt-total">
+
+                <span>
+                    Amount Paid
+                </span>
+
+                <strong id="receiptAmount">
+                    ₹8,000
+                </strong>
+
+            </div>
+
+
+            <!-- Receipt Footer -->
+
+            <div class="receipt-footer">
+
+                <p>
+                    Thank you for your payment.
+                </p>
+
+                <small>
+                    This is a computer-generated payment receipt.
+                </small>
+
+            </div>
+
+
+            <!-- Receipt Actions -->
+
+            <div class="receipt-actions">
+
+                <button
+                    type="button"
+                    class="receipt-download-btn"
+                    id="receiptDownloadBtn"
+                >
+                    <i class="fas fa-download"></i>
+                    Download Receipt
+                </button>
+
+
+                <button
+                    type="button"
+                    class="receipt-print-btn"
+                    id="receiptPrintBtn"
+                >
+                    <i class="fas fa-print"></i>
+                    Print Receipt
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PAYMENT HISTORY
+    ====================================================== -->
+
+    <section class="payment-history-section">
+
+        <div class="payment-section-header">
+
+            <span class="dashboard-section-label">
+                TRANSACTIONS
+            </span>
+
+            <h2>
+                Payment History
+            </h2>
+
+            <p>
+                View your previous payments and download receipts.
+            </p>
+
+        </div>
+
+
+        <div class="payment-history-table-wrapper">
+
+            <table class="payment-history-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Receipt
+                        </th>
+
+                        <th>
+                            Date
+                        </th>
+
+                        <th>
+                            Child
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Amount
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                        <th>
+                            Receipt
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="paymentHistoryBody">
+
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                RCP-2026-0001
+                            </strong>
+                        </td>
+
+                        <td>
+                            Aug 05, 2026
+                        </td>
+
+                        <td>
+                            Alex
+                        </td>
+
+                        <td>
+                            Registration Fee
+                        </td>
+
+                        <td>
+                            ₹4,000
+                        </td>
+
+                        <td>
+
+                            <span class="payment-status paid">
+                                Paid
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="history-download-btn"
+                                data-receipt="RCP-2026-0001"
+                            >
+                                <i class="fas fa-download"></i>
+                                Download
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                RCP-2026-0002
+                            </strong>
+                        </td>
+
+                        <td>
+                            Aug 12, 2026
+                        </td>
+
+                        <td>
+                            Emma
+                        </td>
+
+                        <td>
+                            Monthly Program Fee
+                        </td>
+
+                        <td>
+                            ₹6,000
+                        </td>
+
+                        <td>
+
+                            <span class="payment-status paid">
+                                Paid
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="history-download-btn"
+                                data-receipt="RCP-2026-0002"
+                            >
+                                <i class="fas fa-download"></i>
+                                Download
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            <strong>
+                                RCP-2026-0003
+                            </strong>
+                        </td>
+
+                        <td>
+                            Aug 20, 2026
+                        </td>
+
+                        <td>
+                            Alex
+                        </td>
+
+                        <td>
+                            Activity Fee
+                        </td>
+
+                        <td>
+                            ₹6,000
+                        </td>
+
+                        <td>
+
+                            <span class="payment-status paid">
+                                Paid
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button
+                                type="button"
+                                class="history-download-btn"
+                                data-receipt="RCP-2026-0003"
+                            >
+                                <i class="fas fa-download"></i>
+                                Download
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- Empty History -->
+
+        <div
+            class="payment-history-empty"
+            id="paymentHistoryEmpty"
+            hidden
+        >
+
+            <div class="payment-empty-icon">
+
+                <i class="fas fa-receipt"></i>
+
+            </div>
+
+            <h3>
+                No Payment History
+            </h3>
+
+            <p>
+                Your completed payments and receipts
+                will appear here.
+            </p>
+
+        </div>
+
+    </section>
+
+</section>
+</main>
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="logout-overlay"
+    id="logoutOverlay"
+    hidden
+>
+
+    <div
+        class="logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="logoutPopupTitle"
+    >
+
+        <!-- Icon -->
+
+        <div class="logout-popup-icon">
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+
+
+        <!-- Content -->
+
+        <div class="logout-popup-content">
+
+            <h2 id="logoutPopupTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout
+                from your account?
+            </p>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="logout-popup-actions">
+
+            <button
+                type="button"
+                class="logout-no-btn"
+                id="logoutNoBtn"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="logout-yes-btn"
+                id="logoutYesBtn"
+            >
+                <i class="fas fa-sign-out-alt"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+        <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

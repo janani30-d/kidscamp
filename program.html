@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | KidCamp</title>
+    <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Dashboard Responsive CSS -->
+    <link rel="stylesheet" href="css/dashboard-responsive.css">
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+
+    <div
+        class="dashboard-overlay"
+        id="dashboardOverlay">
+    </div>
+
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside
+        class="dashboard-sidebar"
+        id="dashboardSidebar">
+
+
+        <!-- Logo -->
+
+        <div class="dashboard-logo">
+
+            <a href="index.html">
+
+                <img
+                    src="images/logo.png"
+                    alt="KidCamp"
+                >
+
+            </a>
+
+        </div>
+
+
+
+        <!-- Navigation -->
+
+        <nav class="dashboard-nav">
+
+
+            <!-- Dashboard -->
+
+            <a
+                href="dashboard.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-table-columns"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <!-- Programs -->
+
+            <a
+                href="programs.html"
+                class="dashboard-nav-link active">
+
+                <i class="fa-solid fa-campground"></i>
+
+                <span>Programs</span>
+
+            </a>
+
+
+            <!-- My Children -->
+
+            <a
+                href="children.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-children"></i>
+
+                <span>My Children</span>
+
+            </a>
+
+
+            <!-- Enrollments -->
+
+            <a
+                href="enrollments.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-clipboard-check"></i>
+
+                <span>Enrollments</span>
+
+            </a>
+
+
+            <!-- Schedule -->
+
+            <a
+                href="schedules.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span>Schedule & Calendar</span>
+
+            </a>
+
+
+            <!-- Daily Activities -->
+
+            <a
+                href="activities.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>Daily Activities</span>
+
+            </a>
+
+
+            <!-- Payments -->
+
+            <a
+                href="payments.html"
+                class="dashboard-nav-link">
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                <span>Payments</span>
+
+            </a>
+
+
+            
+
+        </nav>
+
+
+
+        <!-- Logout -->
+
+        <div class="dashboard-sidebar-bottom">
+
+            <a
+    href="javascript:void(0)"
+    class="logout-btn"
+    id="logoutBtn"
+>
+    <i class="fas fa-sign-out-alt"></i>
+    <span>Logout</span>
+</a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="dashboard-main">
+
+
+
+        <!-- =================================================
+             HEADER
+        ================================================== -->
+
+        <header class="dashboard-header">
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                type="button"
+                class="dashboard-menu-toggle"
+                id="dashboardMenuToggle"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+
+            <!-- Header Title -->
+
+            <div class="dashboard-header-title">
+
+                <span>
+                    Parent Portal
+                </span>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+
+            <!-- Header Actions -->
+
+            <div class="dashboard-header-actions">
+
+
+                <!-- Notification -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button notification-button"
+                    aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span class="notification-count">
+                        3
+                    </span>
+
+                </button>
+
+
+
+                <!-- Settings -->
+
+                <a
+                    href="#"
+                    class="dashboard-icon-button"
+                    aria-label="Settings">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                </a>
+
+
+
+                <!-- Dark Mode -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button"
+                    id="dashboardDarkMode"
+                    aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+
+                <!-- RTL -->
+
+                <button
+                    type="button"
+                    class="dashboard-icon-button dashboard-rtl-button"
+                    id="dashboardRtl"
+                    aria-label="Toggle RTL">
+
+                    <span>RTL</span>
+
+                </button>
+
+
+
+                <!-- Parent Profile -->
+
+                <a
+                    href="profile.html"
+                    class="dashboard-user">
+
+
+                    <div class="dashboard-user-avatar">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </div>
+
+
+                    <div class="dashboard-user-info">
+
+                        <strong>
+                            Parent
+                        </strong>
+
+                        <span>
+                            Parent Account
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </header>
+<!-- =========================================================
+     PROGRAMS PAGE
+     PART 1 — HERO + CATEGORIES
+========================================================= -->
+
+<main class="programs-page">
+
+
+    <!-- =====================================================
+         PROGRAMS HERO
+    ====================================================== -->
+
+    <section class="programs-hero">
+
+        <div class="programs-hero-container">
+
+            <div class="programs-hero-content">
+
+                <span class="programs-hero-badge">
+                    <i class="fas fa-compass"></i>
+                    Explore Our Programs
+                </span>
+
+                <h1>
+                    Fun, Learning &amp;
+                    <span>Adventure</span>
+                    for Every Child
+                </h1>
+
+                <p>
+                    Discover exciting camp programs designed to
+                    help children learn new skills, make friends,
+                    and create unforgettable memories.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROGRAM CATEGORIES
+    ====================================================== -->
+
+    <section class="programs-section">
+
+        <div class="programs-container">
+
+
+            <!-- Section Heading -->
+
+            <div class="programs-section-heading">
+
+                <div class="programs-heading-content">
+
+                    <span class="programs-small-title">
+                        FIND YOUR PROGRAM
+                    </span>
+
+                    <h2>
+                        Explore Our Programs
+                    </h2>
+
+                    <p>
+                        Choose from a variety of activities
+                        created for different ages and interests.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CATEGORY FILTER
+            ================================================== -->
+
+            <div
+                class="programs-filter"
+                role="tablist"
+                aria-label="Program categories"
+            >
+
+                <button
+                    type="button"
+                    class="program-filter-btn active"
+                    data-filter="all"
+                    role="tab"
+                    aria-selected="true"
+                >
+                    <i class="fas fa-th-large"></i>
+                    <span>All Programs</span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="program-filter-btn"
+                    data-filter="sports"
+                    role="tab"
+                    aria-selected="false"
+                >
+                    <i class="fas fa-running"></i>
+                    <span>Sports</span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="program-filter-btn"
+                    data-filter="arts"
+                    role="tab"
+                    aria-selected="false"
+                >
+                    <i class="fas fa-palette"></i>
+                    <span>Arts &amp; Crafts</span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="program-filter-btn"
+                    data-filter="science"
+                    role="tab"
+                    aria-selected="false"
+                >
+                    <i class="fas fa-flask"></i>
+                    <span>Science</span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="program-filter-btn"
+                    data-filter="adventure"
+                    role="tab"
+                    aria-selected="false"
+                >
+                    <i class="fas fa-mountain"></i>
+                    <span>Adventure</span>
+                </button>
+
+
+                <button
+                    type="button"
+                    class="program-filter-btn"
+                    data-filter="technology"
+                    role="tab"
+                    aria-selected="false"
+                >
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Technology</span>
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 AGE FILTER
+            ================================================== -->
+
+            <div class="programs-age-filter">
+
+                <label for="programAge">
+                    Age Group
+                </label>
+
+                <div class="program-age-select-wrap">
+
+                    <i class="fas fa-child"></i>
+
+                    <select
+                        id="programAge"
+                        class="program-age-select"
+                    >
+
+                        <option value="all">
+                            All Ages
+                        </option>
+
+                        <option value="4-6">
+                            Ages 4–6
+                        </option>
+
+                        <option value="7-9">
+                            Ages 7–9
+                        </option>
+
+                        <option value="10-12">
+                            Ages 10–12
+                        </option>
+
+                        <option value="13-15">
+                            Ages 13–15
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- =========================================================
+     PROGRAM CARDS
+========================================================= -->
+
+<div class="programs-results">
+
+    <!-- =====================================================
+         PROGRAMS RESULTS HEADER
+    ====================================================== -->
+
+    <div class="programs-results-heading">
+
+        <div>
+            <span class="programs-results-label">
+                OUR PROGRAMS
+            </span>
+
+            <h2>
+                Choose Your Adventure
+            </h2>
+        </div>
+
+        <span class="programs-count">
+            6 Programs
+        </span>
+
+    </div>
+
+
+    <!-- =====================================================
+         PROGRAM CARDS GRID
+    ====================================================== -->
+
+    <div class="programs-grid">
+
+
+        <!-- =================================================
+             PROGRAM 1 — SPORTS
+        ================================================== -->
+
+        <article
+            class="program-card"
+            data-category="sports"
+            data-age="7-9"
+        >
+
+            <div class="program-card-image">
+
+                <img
+                    src="images/program-sports.jpg"
+                    alt="Children enjoying sports activities"
+                >
+
+                <span class="program-card-category">
+                    <i class="fas fa-running"></i>
+                    Sports
+                </span>
+
+            </div>
+
+
+            <div class="program-card-content">
+
+                <div class="program-card-age">
+                    <i class="fas fa-child"></i>
+                    Ages 7–9
+                </div>
+
+                <h3>
+                    Junior Sports Camp
+                </h3>
+
+                <p>
+                    An energetic program where children
+                    develop teamwork, coordination, and
+                    confidence through fun sports activities.
+                </p>
+
+
+                <div class="program-card-meta">
+
+                    <span>
+                        <i class="far fa-clock"></i>
+                        5 Days
+                    </span>
+
+                    <span>
+                        <i class="fas fa-users"></i>
+                        12 Spots
+                    </span>
+
+                </div>
+
+
+                <div class="program-card-footer">
+
+                    <div class="program-price">
+                        <small>Starting from</small>
+                        <strong>₹2,499</strong>
+                    </div>
+
+                    <a
+                        href="program-details.html"
+                        class="program-view-btn"
+                    >
+                        View Details
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROGRAM 2 — ARTS
+        ================================================== -->
+
+        <article
+            class="program-card"
+            data-category="arts"
+            data-age="4-6"
+        >
+
+            <div class="program-card-image">
+
+                <img
+                    src="images/program-arts.jpg"
+                    alt="Children creating arts and crafts"
+                >
+
+                <span class="program-card-category">
+                    <i class="fas fa-palette"></i>
+                    Arts &amp; Crafts
+                </span>
+
+            </div>
+
+
+            <div class="program-card-content">
+
+                <div class="program-card-age">
+                    <i class="fas fa-child"></i>
+                    Ages 4–6
+                </div>
+
+                <h3>
+                    Little Artists
+                </h3>
+
+                <p>
+                    A creative space for young children to
+                    explore colors, painting, crafts, and
+                    imaginative projects.
+                </p>
+
+
+                <div class="program-card-meta">
+
+                    <span>
+                        <i class="far fa-clock"></i>
+                        5 Days
+                    </span>
+
+                    <span>
+                        <i class="fas fa-users"></i>
+                        10 Spots
+                    </span>
+
+                </div>
+
+
+                <div class="program-card-footer">
+
+                    <div class="program-price">
+                        <small>Starting from</small>
+                        <strong>₹2,199</strong>
+                    </div>
+
+                    <a
+                        href="program-details.html"
+                        class="program-view-btn"
+                    >
+                        View Details
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROGRAM 3 — SCIENCE
+        ================================================== -->
+
+        <article
+            class="program-card"
+            data-category="science"
+            data-age="10-12"
+        >
+
+            <div class="program-card-image">
+
+                <img
+                    src="images/program-science.jpg"
+                    alt="Children exploring science experiments"
+                >
+
+                <span class="program-card-category">
+                    <i class="fas fa-flask"></i>
+                    Science
+                </span>
+
+            </div>
+
+
+            <div class="program-card-content">
+
+                <div class="program-card-age">
+                    <i class="fas fa-child"></i>
+                    Ages 10–12
+                </div>
+
+                <h3>
+                    Young Scientists
+                </h3>
+
+                <p>
+                    Hands-on experiments and exciting discoveries
+                    that encourage curiosity, problem-solving,
+                    and scientific thinking.
+                </p>
+
+
+                <div class="program-card-meta">
+
+                    <span>
+                        <i class="far fa-clock"></i>
+                        5 Days
+                    </span>
+
+                    <span>
+                        <i class="fas fa-users"></i>
+                        15 Spots
+                    </span>
+
+                </div>
+
+
+                <div class="program-card-footer">
+
+                    <div class="program-price">
+                        <small>Starting from</small>
+                        <strong>₹2,799</strong>
+                    </div>
+
+                    <a
+                        href="program-details.html"
+                        class="program-view-btn"
+                    >
+                        View Details
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROGRAM 4 — ADVENTURE
+        ================================================== -->
+
+        <article
+            class="program-card"
+            data-category="adventure"
+            data-age="10-12"
+        >
+
+            <div class="program-card-image">
+
+                <img
+                    src="images/program-adventure.jpg"
+                    alt="Children enjoying an outdoor adventure"
+                >
+
+                <span class="program-card-category">
+                    <i class="fas fa-mountain"></i>
+                    Adventure
+                </span>
+
+            </div>
+
+
+            <div class="program-card-content">
+
+                <div class="program-card-age">
+                    <i class="fas fa-child"></i>
+                    Ages 10–12
+                </div>
+
+                <h3>
+                    Adventure Explorers
+                </h3>
+
+                <p>
+                    Outdoor challenges, team activities, and
+                    exciting adventures designed to build
+                    courage and leadership.
+                </p>
+
+
+                <div class="program-card-meta">
+
+                    <span>
+                        <i class="far fa-clock"></i>
+                        7 Days
+                    </span>
+
+                    <span>
+                        <i class="fas fa-users"></i>
+                        14 Spots
+                    </span>
+
+                </div>
+
+
+                <div class="program-card-footer">
+
+                    <div class="program-price">
+                        <small>Starting from</small>
+                        <strong>₹3,499</strong>
+                    </div>
+
+                    <a
+                        href="program-details.html"
+                        class="program-view-btn"
+                    >
+                        View Details
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROGRAM 5 — TECHNOLOGY
+        ================================================== -->
+
+        <article
+            class="program-card"
+            data-category="technology"
+            data-age="13-15"
+        >
+
+            <div class="program-card-image">
+
+                <img
+                    src="images/program-technology.jpg"
+                    alt="Children learning technology"
+                >
+
+                <span class="program-card-category">
+                    <i class="fas fa-laptop-code"></i>
+                    Technology
+                </span>
+
+            </div>
+
+
+            <div class="program-card-content">
+
+                <div class="program-card-age">
+                    <i class="fas fa-child"></i>
+                    Ages 13–15
+                </div>
+
+                <h3>
+                    Future Tech Camp
+                </h3>
+
+                <p>
+                    Explore coding, technology, creative digital
+                    projects, and problem-solving through
+                    interactive learning.
+                </p>
+
+
+                <div class="program-card-meta">
+
+                    <span>
+                        <i class="far fa-clock"></i>
+                        5 Days
+                    </span>
+
+                    <span>
+                        <i class="fas fa-users"></i>
+                        12 Spots
+                    </span>
+
+                </div>
+
+
+                <div class="program-card-footer">
+
+                    <div class="program-price">
+                        <small>Starting from</small>
+                        <strong>₹3,199</strong>
+                    </div>
+
+                    <a
+                        href="program-details.html"
+                        class="program-view-btn"
+                    >
+                        View Details
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================================
+             PROGRAM 6 — CREATIVE
+        ================================================== -->
+
+        <article
+            class="program-card"
+            data-category="arts"
+            data-age="7-9"
+        >
+
+            <div class="program-card-image">
+
+                <img
+                    src="images/program-creative.jpg"
+                    alt="Children participating in creative activities"
+                >
+
+                <span class="program-card-category">
+                    <i class="fas fa-music"></i>
+                    Creative
+                </span>
+
+            </div>
+
+
+            <div class="program-card-content">
+
+                <div class="program-card-age">
+                    <i class="fas fa-child"></i>
+                    Ages 7–9
+                </div>
+
+                <h3>
+                    Creative Stars
+                </h3>
+
+                <p>
+                    Music, drama, storytelling, and creative
+                    activities that encourage self-expression
+                    and confidence.
+                </p>
+
+
+                <div class="program-card-meta">
+
+                    <span>
+                        <i class="far fa-clock"></i>
+                        5 Days
+                    </span>
+
+                    <span>
+                        <i class="fas fa-users"></i>
+                        12 Spots
+                    </span>
+
+                </div>
+
+
+                <div class="program-card-footer">
+
+                    <div class="program-price">
+                        <small>Starting from</small>
+                        <strong>₹2,599</strong>
+                    </div>
+
+                    <a
+                        href="program-details.html"
+                        class="program-view-btn"
+                    >
+                        View Details
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</div>
+
+    </section>
+    
+
+</main>
+<!-- =========================================================
+     LOGOUT CONFIRMATION POPUP
+========================================================= -->
+
+<div
+    class="logout-overlay"
+    id="logoutOverlay"
+    hidden
+>
+
+    <div
+        class="logout-popup"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="logoutPopupTitle"
+    >
+
+        <!-- Icon -->
+
+        <div class="logout-popup-icon">
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+
+
+        <!-- Content -->
+
+        <div class="logout-popup-content">
+
+            <h2 id="logoutPopupTitle">
+                Logout?
+            </h2>
+
+            <p>
+                Are you sure you want to logout
+                from your account?
+            </p>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="logout-popup-actions">
+
+            <button
+                type="button"
+                class="logout-no-btn"
+                id="logoutNoBtn"
+            >
+                No, Stay
+            </button>
+
+            <button
+                type="button"
+                class="logout-yes-btn"
+                id="logoutYesBtn"
+            >
+                <i class="fas fa-sign-out-alt"></i>
+                Yes, Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+     
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
