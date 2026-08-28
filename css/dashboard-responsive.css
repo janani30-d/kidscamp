@@ -9355,3 +9355,332 @@ html[dir="rtl"] .enrollment-details-form .enrollment-input-wrapper textarea::pla
         z-index: 1;
     }
 }
+
+/* =========================================================
+   IPAD MINI + TABLET
+   FIX DASHBOARD HEADER ALIGNMENT
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 768px) {
+
+    /* Main area */
+    .dashboard-main {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 90px 16px 40px !important;
+        box-sizing: border-box;
+    }
+
+    /* Header */
+    .dashboard-header {
+        position: relative !important;
+
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        min-height: 64px !important;
+        height: 64px !important;
+
+        margin: 0 !important;
+        padding: 10px 12px !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        gap: 8px !important;
+
+        box-sizing: border-box !important;
+    }
+
+    /* Menu button */
+    .dashboard-menu-toggle {
+        width: 42px !important;
+        height: 42px !important;
+        min-width: 42px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Hide large desktop title on tablet */
+    .dashboard-header-title {
+        display: none !important;
+    }
+
+    /* Header action buttons */
+    .dashboard-header-actions {
+        margin-left: auto !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        gap: 6px !important;
+
+        min-width: 0 !important;
+    }
+
+    .dashboard-icon-button {
+        width: 42px !important;
+        height: 42px !important;
+        min-width: 42px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Parent profile */
+    .dashboard-user {
+        flex-shrink: 0 !important;
+        max-width: 105px !important;
+        overflow: hidden !important;
+    }
+
+    .dashboard-user-info {
+        min-width: 0 !important;
+    }
+
+    .dashboard-user-info strong,
+    .dashboard-user-info span {
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+
+    .dashboard-main {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 20px 16px 40px !important;
+        box-sizing: border-box;
+    }
+
+    /* =========================================================
+   FIXED HEADER - RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .dashboard-header {
+        position: fixed !important;
+        top: 10px !important;
+        left: 10px !important;
+        right: 10px !important;
+
+        width: auto !important;
+        max-width: none !important;
+
+        z-index: 9999 !important;
+
+        margin: 0 !important;
+    }
+
+    /* Keep page content below fixed header */
+    .dashboard-main {
+        padding-top: 90px !important;
+    }
+}
+}
+@media (max-width: 768px) {
+    .dashboard-hero-badge {
+        display: inline-flex !important;
+        width: fit-content !important;
+        max-width: max-content !important;
+        align-self: flex-start !important;
+    }
+}
+
+/* =========================================================
+   MOBILE HEADER
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .dashboard-header {
+        position: fixed !important;
+        top: 10px !important;
+        left: 10px !important;
+        right: 10px !important;
+
+        width: auto !important;
+        height: 64px !important;
+        min-height: 64px !important;
+
+        padding: 8px !important;
+        margin: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        overflow: hidden !important;
+        box-sizing: border-box !important;
+
+        z-index: 9999 !important;
+    }
+
+    .dashboard-main {
+        margin-left: 0 !important;
+        width: 100% !important;
+
+        padding: 85px 12px 40px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Menu */
+    .dashboard-menu-toggle {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Header actions */
+    .dashboard-header-actions {
+        margin-left: auto !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        gap: 5px !important;
+
+        min-width: 0 !important;
+        flex-shrink: 1 !important;
+    }
+
+    .dashboard-icon-button {
+        width: 38px !important;
+        height: 38px !important;
+        min-width: 38px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* Parent profile */
+    .dashboard-user {
+        max-width: 65px !important;
+        min-width: 0 !important;
+        flex-shrink: 1 !important;
+        overflow: hidden !important;
+    }
+
+    .dashboard-user-info {
+        min-width: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .dashboard-user-info strong,
+    .dashboard-user-info span {
+        display: block !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    /* Hide desktop title */
+    .dashboard-header-title {
+        display: none !important;
+    }
+}
+
+
+/* =========================================================
+   IPAD / TABLET HEADER
+========================================================= */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .dashboard-header {
+        position: fixed !important;
+
+        top: 12px !important;
+        left: 50% !important;
+        right: auto !important;
+
+        width: calc(100% - 40px) !important;
+        max-width: 900px !important;
+
+        height: 70px !important;
+        min-height: 70px !important;
+
+        transform: translateX(-50%) !important;
+
+        margin: 0 !important;
+        padding: 10px 14px !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        box-sizing: border-box !important;
+
+        z-index: 9999 !important;
+    }
+
+    .dashboard-main {
+        margin-left: 0 !important;
+        width: 100% !important;
+
+        padding: 95px 20px 50px !important;
+
+        box-sizing: border-box !important;
+    }
+
+    .dashboard-menu-toggle {
+        flex-shrink: 0 !important;
+    }
+
+    .dashboard-header-actions {
+        margin-left: auto !important;
+
+        display: flex !important;
+        align-items: center !important;
+
+        gap: 7px !important;
+    }
+
+    .dashboard-icon-button {
+        flex-shrink: 0 !important;
+    }
+}
+
+/* =========================================================
+   ENROLLMENT STEPPER - MOBILE FIX
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .enrollment-progress {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .enrollment-progress::-webkit-scrollbar {
+        display: none;
+    }
+
+    .enrollment-progress-line {
+        flex: 0 0 35px;
+    }
+
+    .enrollment-step {
+        flex: 0 0 auto;
+        min-width: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    .enrollment-step-number {
+        flex-shrink: 0;
+    }
+
+    .enrollment-step > div {
+        min-width: 0;
+        white-space: nowrap;
+    }
+
+    .enrollment-step strong,
+    .enrollment-step small {
+        white-space: nowrap;
+    }
+}
