@@ -450,7 +450,76 @@ body.dashboard-page button {
         border-color var(--transition);
 }
 
+/* =========================================================
+   DASHBOARD HEADER - FIXED DESKTOP
+========================================================= */
 
+@media (min-width: 1025px) {
+
+    .dashboard-header {
+        position: fixed;
+
+        top: 15px;
+        left: 398px;
+        right: 54px;
+
+        width: auto;
+        min-height: 102px;
+
+        z-index: 1000;
+        box-sizing: border-box;
+    }
+
+}
+/* =========================================================
+   FIXED DASHBOARD HEADER - PREVENT CONTENT FROM HIDING
+========================================================= */
+
+.dashboard-header {
+    position: fixed;
+    top: 18px;
+    left: 398px;
+    right: 38px;
+    z-index: 1000;
+
+    min-height: 102px;
+    box-sizing: border-box;
+}
+
+
+/* Push all dashboard page content below the fixed header */
+.dashboard-main {
+    padding-top: 150px;
+    box-sizing: border-box;
+}
+.dashboard-header {
+ 
+    position: fixed;
+    top: 18px;
+    left: 398px;
+    right: 38px;
+    z-index: 1000;
+}
+.children-page-header,
+.enrollment-header,
+.schedule-page-header,
+.daily-activities-header,
+.payment-page-header,
+.programs-page-header {
+    margin-top: 0px;
+}
+/* =========================================================
+   SPACE FOR FIXED DASHBOARD HEADER
+========================================================= */
+
+.payment-page-header,
+.dashboard-hero,
+.programs-hero {
+    margin-top: 500px;
+}
+.dashboard-main {
+    padding-top: 150px;
+}
 /* =========================================================
    HEADER TITLE
 ========================================================= */
@@ -2560,7 +2629,7 @@ html[dir="rtl"] .dashboard-children-section
    PROGRAMS PAGE VARIABLES
 ========================================================= */
 
-.programs-page {
+.program-page {
     width: 100%;
     min-height: 100vh;
 
@@ -2575,9 +2644,9 @@ html[dir="rtl"] .dashboard-children-section
 }
 
 
-.programs-page *,
-.programs-page *::before,
-.programs-page *::after {
+.program-page *,
+.program-page *::before,
+.program-page *::after {
     box-sizing: border-box;
 }
 
@@ -2586,8 +2655,8 @@ html[dir="rtl"] .dashboard-children-section
    COMMON CONTAINER
 ========================================================= */
 
-.programs-container,
-.programs-hero-container {
+.program-container,
+.program-hero-container {
     width: min(1180px, calc(100% - 40px));
 
     margin: 0 auto;
@@ -2598,7 +2667,7 @@ html[dir="rtl"] .dashboard-children-section
    PROGRAMS HERO
 ========================================================= */
 
-.programs-hero {
+.program-hero {
     width: 100%;
 
     min-height: 320px;
@@ -2614,20 +2683,20 @@ html[dir="rtl"] .dashboard-children-section
 }
 
 
-.programs-hero-container {
+.program-hero-container {
     position: relative;
     z-index: 2;
 }
 
 
-.programs-hero-content {
+.program-hero-content {
     max-width: 720px;
 
     padding: 65px 0;
 }
 
 
-.programs-hero-badge {
+.program-hero-badge {
     display: inline-flex;
 
     align-items: center;
@@ -2650,12 +2719,12 @@ html[dir="rtl"] .dashboard-children-section
 }
 
 
-.programs-hero-badge i {
+.program-hero-badge i {
     font-size: 11px;
 }
 
 
-.programs-hero-content h1 {
+.program-hero-content h1 {
     margin: 0;
 
     color: #ffffff;
@@ -2669,7 +2738,7 @@ html[dir="rtl"] .dashboard-children-section
 }
 
 
-.programs-hero-content h1 span {
+.program-hero-content h1 span {
     color: #ffffff;
 
     text-decoration: underline;
@@ -2678,7 +2747,7 @@ html[dir="rtl"] .dashboard-children-section
 }
 
 
-.programs-hero-content p {
+.program-hero-content p {
     max-width: 650px;
 
     margin: 18px 0 0;
@@ -3298,7 +3367,7 @@ html[dir="rtl"] .dashboard-children-section
    DARK MODE
 ========================================================= */
 
-body.dark-mode .programs-page {
+body.dark-mode .program-page {
     background: var(--bg-color);
 
     color: var(--text-primary);
@@ -11482,4 +11551,54 @@ body.dark-mode .programs-hero-badge {
 
 body.dark-mode .programs-hero-badge i {
     color: var(--primary);
+}
+/* =========================================================
+   CHILDREN PAGE HEADER - SPACE BELOW MAIN HEADER
+========================================================= */
+
+.children-page-header {
+    padding-top: 45px;
+}
+/* Space below main header */
+.enrollment-header {
+    padding-top: 45px;
+}
+/* =========================================================
+   SCHEDULE PAGE - SPACE BELOW DASHBOARD HEADER
+========================================================= */
+
+.schedule-page {
+    padding-top: 45px;
+}
+/* =========================================================
+   DAILY ACTIVITIES - SPACE BELOW DASHBOARD HEADER
+========================================================= */
+
+.daily-activities-header {
+    padding-top: 45px;
+}
+.payment-page-header {
+    margin-top: 40px;
+}
+/* =========================================================
+   FIXED HEADER - CONTENT SPACING
+   Keeps all page content below the fixed header
+========================================================= */
+
+.dashboard-main {
+    padding-top: 100px !important;
+}
+.dashboard-main {
+    margin-left: 290px;
+    padding: 150px 30px 50px;
+}
+
+.dashboard-header {
+    position: fixed;
+    top: 20px;
+    left: 335px;   /* was 320px */
+    right: 30px;
+
+    width: auto;
+    z-index: 1000;
 }

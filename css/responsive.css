@@ -26169,3 +26169,279 @@ html[dir="rtl"] .site-footer .footer-bottom-links {
     }
 
 }
+body[dir="rtl"] #contact-phone {
+    direction: ltr !important;
+    text-align: left !important;
+    padding-left: 42px !important;
+    padding-right: 15px !important;
+}
+
+body[dir="rtl"] #contact-phone::placeholder {
+    text-align: left !important;
+}
+
+html[dir="rtl"] #contact-phone {
+    direction: ltr !important;
+    text-align: left !important;
+    padding-left: 42px !important;
+    padding-right: 15px !important;
+}
+
+html[dir="rtl"] #contact-phone::placeholder {
+    text-align: left !important;
+}
+
+html[dir="rtl"] .contact-form-input-wrap:has(#contact-phone),
+body[dir="rtl"] .contact-form-input-wrap:has(#contact-phone) {
+    direction: ltr !important;
+}
+
+html[dir="rtl"] .contact-form-input-wrap:has(#contact-phone) > i,
+body[dir="rtl"] .contact-form-input-wrap:has(#contact-phone) > i {
+    left: 15px !important;
+    right: auto !important;
+}
+
+html[dir="rtl"] .contact-form .contact-form-input-wrap #contact-phone,
+body[dir="rtl"] .contact-form .contact-form-input-wrap #contact-phone {
+    direction: ltr !important;
+    unicode-bidi: plaintext !important;
+    text-align: left !important;
+    padding-left: 42px !important;
+    padding-right: 15px !important;
+}
+
+html[dir="rtl"] .contact-form .contact-form-input-wrap #contact-phone::placeholder,
+body[dir="rtl"] .contact-form .contact-form-input-wrap #contact-phone::placeholder {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+html[dir="rtl"] .register-input-wrap:has(#register-phone),
+body[dir="rtl"] .register-input-wrap:has(#register-phone) {
+    direction: ltr !important;
+}
+
+html[dir="rtl"] .register-input-wrap:has(#register-phone) > i,
+body[dir="rtl"] .register-input-wrap:has(#register-phone) > i {
+    left: 15px !important;
+    right: auto !important;
+}
+
+html[dir="rtl"] .register-input-wrap #register-phone,
+body[dir="rtl"] .register-input-wrap #register-phone {
+    direction: ltr !important;
+    unicode-bidi: plaintext !important;
+    text-align: left !important;
+    padding-left: 42px !important;
+    padding-right: 43px !important;
+}
+
+html[dir="rtl"] .register-input-wrap #register-phone::placeholder,
+body[dir="rtl"] .register-input-wrap #register-phone::placeholder {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+html[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap,
+body[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap,
+html[dir="rtl"] label[for="register-phone"] + .register-input-wrap,
+body[dir="rtl"] label[for="register-phone"] + .register-input-wrap {
+    direction: ltr !important;
+}
+
+html[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > i,
+body[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > i,
+html[dir="rtl"] label[for="register-phone"] + .register-input-wrap > i,
+body[dir="rtl"] label[for="register-phone"] + .register-input-wrap > i {
+    left: 15px !important;
+    right: auto !important;
+}
+
+html[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > input,
+body[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > input,
+html[dir="rtl"] label[for="register-phone"] + .register-input-wrap > input,
+body[dir="rtl"] label[for="register-phone"] + .register-input-wrap > input {
+    direction: ltr !important;
+    unicode-bidi: plaintext !important;
+    text-align: left !important;
+    padding-left: 42px !important;
+    padding-right: 15px !important;
+}
+
+html[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > input::placeholder,
+body[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > input::placeholder,
+html[dir="rtl"] label[for="register-phone"] + .register-input-wrap > input::placeholder,
+body[dir="rtl"] label[for="register-phone"] + .register-input-wrap > input::placeholder {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap,
+[dir="rtl"] label[for="register-phone"] + .register-input-wrap {
+    direction: ltr !important;
+}
+
+[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > i,
+[dir="rtl"] label[for="register-phone"] + .register-input-wrap > i {
+    left: 15px !important;
+    right: auto !important;
+}
+
+[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > input,
+[dir="rtl"] label[for="register-phone"] + .register-input-wrap > input {
+    direction: ltr !important;
+    unicode-bidi: plaintext !important;
+    text-align: left !important;
+    padding-left: 42px !important;
+    padding-right: 15px !important;
+}
+
+[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > input::placeholder,
+[dir="rtl"] label[for="register-phone"] + .register-input-wrap > input::placeholder {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+/* =========================================================
+   CONTACT + REGISTER RTL FORM FINAL FIX
+========================================================= */
+
+[dir="rtl"] .contact-form,
+[dir="rtl"] .contact-form-row,
+[dir="rtl"] .contact-form-group,
+[dir="rtl"] .contact-form-input-wrap,
+[dir="rtl"] .register-form,
+[dir="rtl"] .register-form-group,
+[dir="rtl"] .register-input-wrap {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+[dir="rtl"] .contact-form-row {
+    direction: rtl !important;
+}
+
+[dir="rtl"] .contact-form-group,
+[dir="rtl"] .register-form-group {
+    min-width: 0 !important;
+}
+
+[dir="rtl"] .contact-form-group label,
+[dir="rtl"] .register-form-group > label {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+[dir="rtl"] .contact-form-input-wrap > i,
+[dir="rtl"] .register-input-wrap > i {
+    left: auto !important;
+    right: 15px !important;
+}
+
+[dir="rtl"] .contact-form input,
+[dir="rtl"] .contact-form textarea,
+[dir="rtl"] .register-input-wrap input {
+    direction: rtl !important;
+    text-align: right !important;
+    padding-left: 15px !important;
+    padding-right: 42px !important;
+}
+
+[dir="rtl"] .contact-form input::placeholder,
+[dir="rtl"] .contact-form textarea::placeholder,
+[dir="rtl"] .register-input-wrap input::placeholder {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap,
+[dir="rtl"] label[for="register-phone"] + .register-input-wrap {
+    direction: ltr !important;
+}
+
+[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > i,
+[dir="rtl"] label[for="register-phone"] + .register-input-wrap > i {
+    left: 15px !important;
+    right: auto !important;
+}
+
+[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > input,
+[dir="rtl"] label[for="register-phone"] + .register-input-wrap > input {
+    direction: ltr !important;
+    unicode-bidi: plaintext !important;
+    text-align: left !important;
+    padding-left: 42px !important;
+    padding-right: 15px !important;
+}
+
+[dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > input::placeholder,
+[dir="rtl"] label[for="register-phone"] + .register-input-wrap > input::placeholder {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+[dir="rtl"] .register-password-toggle {
+    left: 13px !important;
+    right: auto !important;
+}
+
+@media (max-width: 650px) {
+
+    [dir="rtl"] .contact-form-input-wrap > i,
+    [dir="rtl"] .register-input-wrap > i {
+        right: 14px !important;
+    }
+
+    [dir="rtl"] .contact-form input,
+    [dir="rtl"] .contact-form textarea,
+    [dir="rtl"] .register-input-wrap input {
+        padding-left: 14px !important;
+        padding-right: 40px !important;
+    }
+
+    [dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > i,
+    [dir="rtl"] label[for="register-phone"] + .register-input-wrap > i {
+        left: 14px !important;
+        right: auto !important;
+    }
+
+    [dir="rtl"] label[for="contact-phone"] + .contact-form-input-wrap > input,
+    [dir="rtl"] label[for="register-phone"] + .register-input-wrap > input {
+        padding-left: 40px !important;
+        padding-right: 14px !important;
+    }
+
+    [dir="rtl"] .register-password-toggle {
+        left: 12px !important;
+        right: auto !important;
+    }
+}
+/* =========================================================
+   HOME2 - CENTER LAST EVENT CARD ON TABLET
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .camp-event-card:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+}
+/* =========================================================
+   CENTER TWO MEMORY IMAGES
+========================================================= */
+
+.camp-memories-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.camp-memory-item.memory-one,
+.camp-memory-item.memory-two {
+    margin: 0;
+}

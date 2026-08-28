@@ -156,6 +156,16 @@ document.addEventListener("DOMContentLoaded", function () {
             enabled ? "enabled" : "disabled"
         );
 
+        localStorage.setItem(
+            "campTheme",
+            enabled ? "dark" : "light"
+        );
+
+        localStorage.setItem(
+            "theme",
+            enabled ? "dark" : "light"
+        );
+
 
         /* Update icon */
 
@@ -180,8 +190,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const savedDarkMode =
         localStorage.getItem("kidcamp-dark-mode");
 
+    const savedCampTheme =
+        localStorage.getItem("campTheme");
 
-    if (savedDarkMode === "enabled") {
+    const savedTheme =
+        localStorage.getItem("theme");
+
+    if (
+        savedDarkMode === "enabled" ||
+        savedCampTheme === "dark" ||
+        savedTheme === "dark"
+    ) {
 
         setDarkMode(true);
 
@@ -220,12 +239,25 @@ document.addEventListener("DOMContentLoaded", function () {
         document.documentElement.dir =
             enabled ? "rtl" : "ltr";
 
+        document.body.dir =
+            enabled ? "rtl" : "ltr";
+
         document.documentElement.lang =
             enabled ? "ar" : "en";
 
         localStorage.setItem(
             "kidcamp-rtl",
             enabled ? "enabled" : "disabled"
+        );
+
+        localStorage.setItem(
+            "campDirection",
+            enabled ? "rtl" : "ltr"
+        );
+
+        localStorage.setItem(
+            "direction",
+            enabled ? "rtl" : "ltr"
         );
 
 
@@ -247,8 +279,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const savedRTL =
         localStorage.getItem("kidcamp-rtl");
 
+    const savedCampDirection =
+        localStorage.getItem("campDirection");
 
-    if (savedRTL === "enabled") {
+    const savedDirection =
+        localStorage.getItem("direction");
+
+    if (
+        savedRTL === "enabled" ||
+        savedCampDirection === "rtl" ||
+        savedDirection === "rtl"
+    ) {
 
         setRTL(true);
 

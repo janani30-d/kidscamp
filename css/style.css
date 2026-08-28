@@ -51075,3 +51075,306 @@ html[dir="rtl"] .auth-controls {
     }
 
 }
+/* =========================================================
+   HOME 2 — DARK MODE TEXT FIX
+   Remove black text in dark mode
+========================================================= */
+
+body.dark-mode .camp-team-section,
+body.dark-mode .camp-benefits-section,
+body.dark-mode .camp-memories-section,
+body.dark-mode .why-camp-section,
+body.dark-mode .camp-activities-section,
+body.dark-mode .camp-events-section {
+    color: #ffffff;
+}
+
+
+/* OUR CAMP TEAM */
+
+body.dark-mode .camp-team-title {
+    color: #ffffff;
+}
+
+body.dark-mode .camp-team-intro p {
+    color: #d5d5d5;
+}
+
+body.dark-mode .camp-team-info h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .camp-team-info p {
+    color: #d5d5d5;
+}
+
+
+/* WHY KIDS LOVE CAMP */
+
+body.dark-mode .why-camp-title {
+    color: #ffffff;
+}
+
+body.dark-mode .why-camp-description {
+    color: #d5d5d5;
+}
+
+body.dark-mode .why-camp-highlight {
+    color: #ffffff;
+}
+
+
+/* CAMP BENEFITS */
+
+body.dark-mode .camp-benefits-title {
+    color: #ffffff;
+}
+
+body.dark-mode .camp-benefit-item h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .camp-benefit-item p {
+    color: #d5d5d5;
+}
+
+
+/* CAMP MEMORIES */
+
+body.dark-mode .camp-memories-title {
+    color: #ffffff;
+}
+
+body.dark-mode .camp-memories-description {
+    color: #d5d5d5;
+}
+
+
+/* CAMP ACTIVITIES */
+
+body.dark-mode .camp-activities-title {
+    color: #ffffff;
+}
+
+body.dark-mode .camp-activity-content h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .camp-activity-content p {
+    color: #d5d5d5;
+}
+
+
+/* GENERAL HOME 2 HEADINGS */
+
+body.dark-mode .camp-team-section h1,
+body.dark-mode .camp-team-section h2,
+body.dark-mode .camp-team-section h3,
+body.dark-mode .camp-benefits-section h1,
+body.dark-mode .camp-benefits-section h2,
+body.dark-mode .camp-benefits-section h3,
+body.dark-mode .why-camp-section h1,
+body.dark-mode .why-camp-section h2,
+body.dark-mode .why-camp-section h3,
+body.dark-mode .camp-memories-section h1,
+body.dark-mode .camp-memories-section h2,
+body.dark-mode .camp-memories-section h3,
+body.dark-mode .camp-activities-section h1,
+body.dark-mode .camp-activities-section h2,
+body.dark-mode .camp-activities-section h3,
+body.dark-mode .camp-events-section h1,
+body.dark-mode .camp-events-section h2,
+body.dark-mode .camp-events-section h3 {
+    color: #ffffff;
+}
+.featured-event-register-btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: 1px solid var(--primary-color);
+}
+
+.featured-event-register-btn:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+}
+/* =========================================================
+   UPCOMING EVENTS - VIEW CALENDAR BUTTON
+   KEEP COLOR ON HOVER
+========================================================= */
+
+.upcoming-events-calendar-btn,
+.upcoming-events-calendar-btn:hover,
+.upcoming-events-calendar-btn:focus,
+.upcoming-events-calendar-btn:active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    text-decoration: none;
+}
+
+.upcoming-events-calendar-btn:hover {
+    transform: translateY(-2px);
+}
+
+.upcoming-events-calendar-btn i,
+.upcoming-events-calendar-btn span {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FEATURED EVENT - REGISTER NOW BUTTON
+   KEEP COLOR ON HOVER
+========================================================= */
+
+.featured-event-register-btn,
+.featured-event-register-btn:hover,
+.featured-event-register-btn:focus,
+.featured-event-register-btn:active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-color: var(--primary-color);
+    text-decoration: none;
+}
+
+.featured-event-register-btn:hover {
+    transform: translateY(-2px);
+}
+
+.featured-event-register-btn i,
+.featured-event-register-btn span {
+    color: #ffffff;
+}
+@media (min-width: 1025px) {
+
+    /* LOGIN */
+    .login-logo img {
+        width: 230px !important;
+        max-width: none !important;
+        height: auto !important;
+        max-height: 100px !important;
+        object-fit: contain !important;
+    }
+
+    /* REGISTER */
+    .register-logo img {
+        width: 230px !important;
+        max-width: none !important;
+        height: auto !important;
+        max-height: 100px !important;
+        object-fit: contain !important;
+    }
+
+}
+/* CODING SKILL NUMBER - RTL */
+.rtl .coding-skill-number,
+[dir="rtl"] .coding-skill-number {
+    position: absolute !important;
+    left: auto !important;
+    right: 20px !important;
+}
+/* =========================================================
+   AGE GROUPS - RTL CARD NUMBER
+========================================================= */
+
+.age-explore-card {
+    position: relative;
+}
+
+.age-explore-number {
+    position: absolute !important;
+
+    top: 18px !important;
+    right: 28px !important;
+    left: auto !important;
+
+    z-index: 5;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+/* RTL - move number to the right */
+[dir="rtl"] .age-explore-number {
+    left: auto !important;
+    right: 20px !important;
+}
+/* =========================================================
+   SCROLL TO TOP BUTTON
+========================================================= */
+
+.scroll-top-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+
+    background: var(--primary-color);
+    color: #fff;
+
+    font-size: 18px;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+
+    transition:
+        opacity var(--transition),
+        visibility var(--transition),
+        transform var(--transition),
+        background-color var(--transition);
+
+    z-index: 9999;
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* RTL */
+body.rtl .scroll-top-btn {
+    right: auto;
+    left: 25px;
+}
+/* Main headings */
+.main-content h1,
+.page-content h1 {
+    font-size: 32px !important;
+}
+
+/* Section headings */
+.dashboard-main h2,
+.main-content h2,
+.page-content h2 {
+    font-size: 24px !important;
+}
+
+/* Card headings */
+.dashboard-main h3,
+.main-content h3,
+.page-content h3 {
+    font-size: 17px !important;
+}
+
+/* Normal text */
+.dashboard-main p,
+.main-content p,
+.page-content p {
+    font-size: 13px !important;
+}
