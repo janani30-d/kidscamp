@@ -11434,3 +11434,52 @@ body.dark-mode .dashboard-icon-button .notification-count {
 
     overflow: hidden !important;
 }
+/* =========================================================
+   ENROLLMENT PAGE - DATE CALENDAR ICON
+   DARK MODE
+========================================================= */
+
+body.dark-mode
+.enrollment-details-form
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+    cursor: pointer;
+}
+/* =========================================================
+   PROGRAMS HERO - DARK MODE
+========================================================= */
+
+body.dark-mode .programs-hero {
+    background: transparent !important;
+}
+
+body.dark-mode .programs-hero-container {
+    background: var(--card-bg) !important;
+    border: 1px solid var(--border-color);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .programs-hero-content h1 {
+    color: var(--text-primary) !important;
+}
+
+body.dark-mode .programs-hero-content h1 span {
+    color: var(--primary) !important;
+}
+
+body.dark-mode .programs-hero-content p {
+    color: var(--text-secondary) !important;
+}
+
+body.dark-mode .programs-hero-badge {
+    background: var(--primary-light);
+    border-color: rgba(244, 119, 85, 0.35);
+    color: var(--primary);
+}
+
+body.dark-mode .programs-hero-badge i {
+    color: var(--primary);
+}
