@@ -26546,3 +26546,421 @@ body[dir="rtl"] label[for="register-phone"] + .register-input-wrap > input::plac
         line-height: 1.35;
     }
 }
+/* =========================================================
+   REGISTER PAGE - RTL & DARK MODE BUTTONS
+   MOVE BUTTONS OUTSIDE THE CARD
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* Registration card */
+    .register-card {
+        position: relative;
+    }
+
+    /* Button container */
+    .register-theme-controls {
+        position: absolute;
+        top: -55px;
+        right: 0;
+
+        display: flex;
+        gap: 8px;
+
+        z-index: 20;
+    }
+
+    /* Individual buttons */
+    .register-theme-controls button {
+        width: 44px;
+        height: 44px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 8px;
+    }
+}
+@media (max-width: 767px) {
+
+    .auth-card {
+        position: relative;
+        margin-top: 84px;
+    }
+
+    .auth-controls {
+        position: absolute;
+        top: -70px;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        z-index: 999;
+    }
+
+    .auth-control-button {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* =========================================================
+   REGISTER PAGE — CONTROLS OUTSIDE CARD
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* Keep the register card below the buttons */
+    .register-card {
+        margin-top: 60px !important;
+    }
+
+    /* Buttons are outside the card */
+    body:has(.register-page) .auth-controls {
+        position: absolute !important;
+
+        top: 20px !important;
+        right: 14px !important;
+        left: auto !important;
+
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+
+        z-index: 99999 !important;
+    }
+
+    body:has(.register-page) .auth-control-button {
+        width: 46px !important;
+        height: 46px !important;
+        min-width: 46px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 0 !important;
+    }
+
+    /* RTL */
+    html[dir="rtl"] body:has(.register-page) .auth-controls {
+        right: auto !important;
+        left: 14px !important;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    body:has(.register-page) .auth-controls {
+        top: 15px !important;
+        right: 10px !important;
+        gap: 6px !important;
+    }
+
+    body:has(.register-page) .auth-control-button {
+        width: 44px !important;
+        height: 44px !important;
+        min-width: 44px !important;
+    }
+
+    html[dir="rtl"] body:has(.register-page) .auth-controls {
+        right: auto !important;
+        left: 10px !important;
+    }
+}
+/* =========================================================
+   CAMP ADVENTURE - RESPONSIVE ALIGNMENT
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .camp-adventure-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 22px;
+        box-sizing: border-box;
+    }
+
+    .camp-adventure-content {
+        width: 100%;
+        max-width: 330px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .camp-adventure-label {
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+
+    .camp-adventure-content h2 {
+        width: 100%;
+        margin: 0 0 20px;
+        text-align: left;
+        line-height: 1.15;
+    }
+
+    /* Schedule */
+    .camp-schedule {
+        width: 100%;
+        margin: 0 0 22px;
+    }
+
+    .camp-schedule-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        margin-bottom: 14px;
+        text-align: left;
+    }
+
+    .schedule-arrow {
+        flex: 0 0 20px;
+        width: 20px;
+        text-align: center;
+    }
+
+    .camp-schedule-item > span:last-child {
+        flex: 1;
+        min-width: 0;
+        line-height: 1.5;
+    }
+
+    .camp-schedule-item strong {
+        display: block;
+        margin-top: 3px;
+        line-height: 1.4;
+    }
+}
+@media (max-width: 767px) {
+
+    .camp-adventure-content {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding-top: 28px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .camp-adventure-label {
+        display: block;
+        margin-bottom: 14px;
+        text-align: left;
+    }
+
+    .camp-adventure-content h2 {
+        margin: 0 auto 24px;
+        text-align: left;
+        line-height: 1.15;
+    }
+
+    .camp-schedule {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .camp-schedule-item {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 22px;
+        text-align: left;
+    }
+
+    .camp-schedule-item .schedule-arrow {
+        flex: 0 0 22px;
+        width: 22px;
+        text-align: center;
+    }
+
+    .camp-schedule-item > span:last-child {
+        flex: 0 0 230px;
+        text-align: left;
+    }
+}
+/* =========================================================
+   CODING HERO - MOBILE SPACING
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .coding-hero-buttons {
+        position: relative;
+        z-index: 5;
+        margin-bottom: 28px;
+    }
+
+    .coding-hero-visual {
+        position: relative;
+        z-index: 1;
+        margin-top: 12px;
+        padding-top: 8px;
+    }
+
+    .coding-hero-image-wrap {
+        position: relative;
+        z-index: 1;
+        margin-top: 8px;
+    }
+
+    .coding-hero-image {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Keep decorative coding icon behind the image */
+    .coding-hero-icon {
+        z-index: 0;
+    }
+}
+/* =========================================================
+   SWIMMING PROGRAM CARD - MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .swimming-program-card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .swimming-program-featured-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 5;
+
+        padding: 6px 10px;
+        border-radius: 20px;
+
+        white-space: nowrap;
+    }
+
+    .swimming-program-top {
+        position: relative;
+        z-index: 2;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 767px) {
+
+    .swimming-program-card {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .swimming-program-featured-badge {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        z-index: 10;
+    }
+
+    .swimming-program-icon {
+        position: relative;
+        z-index: 2;
+        margin-top: 45px;
+    }
+}
+/* =========================================================
+   SCHEDULE HERO - DECORATIVE STARS
+========================================================= */
+
+.schedule-page-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.schedule-hero-shape {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-hero-shape i {
+    position: relative;
+    z-index: 2;
+}
+
+/* Keep hero text above decorations */
+.schedule-hero-content {
+    position: relative;
+    z-index: 3;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .schedule-hero-shape-orange {
+        top: 18px;
+        right: 18px;
+        z-index: 1;
+    }
+
+    .schedule-hero-shape-green {
+        top: 12px;
+        right: 45px;
+        z-index: 1;
+    }
+
+    .schedule-hero-shape-pink {
+        left: 38px;
+        bottom: 42px;
+        z-index: 1;
+    }
+}
+/* =========================================
+   MOBILE RTL + DARK MODE - EQUAL SIZE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .header-action-btn.rtl-toggle,
+    .header-action-btn.theme-toggle {
+        width: 70px;
+        height: 46px;
+        min-width: 70px;
+        max-width: 70px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+        margin: 0;
+
+        box-sizing: border-box;
+    }
+
+    .header-action-btn.rtl-toggle {
+        font-size: 14px;
+    }
+
+    .header-action-btn.theme-toggle i {
+        margin: 0;
+        font-size: 16px;
+    }
+}

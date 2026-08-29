@@ -2741,9 +2741,7 @@ html[dir="rtl"] .dashboard-children-section
 .program-hero-content h1 span {
     color: #ffffff;
 
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
+   
 }
 
 
@@ -3745,61 +3743,7 @@ html[dir="rtl"] .program-view-btn {
 
 @media (max-width: 600px) {
 
-    .programs-container,
-    .programs-hero-container {
-        width: calc(100% - 28px);
-    }
-
-
-    /* =====================================================
-       HERO
-    ===================================================== */
-
-    .programs-hero {
-        min-height: 280px;
-    }
-
-
-    .programs-hero-content {
-        padding: 45px 0;
-    }
-
-
-    .programs-hero-badge {
-        margin-bottom: 13px;
-
-        padding: 6px 10px;
-
-        font-size: 10px;
-    }
-
-
-    .programs-hero-content h1 {
-        font-size: 30px;
-
-        line-height: 1.18;
-
-        letter-spacing: -0.3px;
-    }
-
-
-    .programs-hero-content h1 span {
-        text-decoration-thickness: 2px;
-
-        text-underline-offset: 5px;
-    }
-
-
-    .programs-hero-content p {
-        margin-top: 14px;
-
-        font-size: 12px;
-
-        line-height: 1.6;
-    }
-
-
-    /* =====================================================
+       /* =====================================================
        MAIN SECTION
     ===================================================== */
 
