@@ -48497,7 +48497,8 @@ body.dark-mode .swimming-hero::after {
 }
 
 
-.contact-location-detail-text p {
+.contact-location-detail-text p,
+.contact-location-detail-text a {
     margin: 0;
 
     color: var(--text-muted);
@@ -48514,14 +48515,7 @@ body.dark-mode .swimming-hero::after {
 
     max-width: 100%;
 
-    color: var(--text-muted);
-
-    font-size: 11px;
-    line-height: 1.7;
-
     text-decoration: none;
-
-    overflow-wrap: anywhere;
 
     transition: color 0.25s ease;
 }
