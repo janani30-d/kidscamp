@@ -29890,3 +29890,38 @@ body.dark-mode .fees-overview-image-note span {
 
 
 
+/* =========================================================
+   PROGRAMS HERO — FORCE ALL BREADCRUMB TEXT WHITE
+========================================================= */
+
+.programs-page-hero .programs-hero-content .programs-breadcrumb > span:last-child {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.programs-page-hero .programs-hero-content .programs-breadcrumb > a {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+.programs-page-hero .programs-hero-content .programs-breadcrumb .breadcrumb-arrow {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+
+
+
+
+/* =========================================================
+   SAFETY HERO — BREADCRUMB WHITE
+========================================================= */
+
+.safety-hero .safety-breadcrumb,
+.safety-hero .safety-breadcrumb a,
+.safety-hero .safety-breadcrumb-current,
+.safety-hero .safety-breadcrumb-arrow,
+.safety-hero .safety-breadcrumb-arrow i {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}

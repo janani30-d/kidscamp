@@ -11537,7 +11537,7 @@ body.dark-mode .camp-memories-btn {
 
 
 .programs-breadcrumb a {
-    color: #111;
+    color: black;
 
     text-decoration: none;
 
@@ -11546,7 +11546,7 @@ body.dark-mode .camp-memories-btn {
 
 
 .programs-breadcrumb a:hover {
-    color: #ff5b45;
+    color: black;
 }
 
 
@@ -11560,7 +11560,7 @@ body.dark-mode .camp-memories-btn {
 
 
 .programs-breadcrumb span:last-child {
-    color: #394b4a;
+    color: black;
 }
 
 
@@ -53427,16 +53427,16 @@ body.dark-mode .sports-final-cta-label {
 }
 
 .programs-breadcrumb a {
-    color: #173b3d;
+    color: black;
     text-decoration: none;
 }
 
 .programs-breadcrumb > span {
-    color: #173b3d;
+    color: black;
 }
 
 .programs-breadcrumb .breadcrumb-arrow {
-    color: #ff6f4d;
+    color: black;
     font-size: 20px;
     font-weight: 700;
 }
@@ -54804,3 +54804,228 @@ body.dark-mode .programs-page-hero {
 
 
 
+
+
+
+
+
+/* =========================================================
+   PROGRAMS HERO — FIX TEXT VISIBILITY
+========================================================= */
+
+.programs-page-hero {
+    overflow: hidden;
+}
+
+.programs-hero-container {
+    position: relative;
+    z-index: 5;
+}
+
+.programs-hero-content {
+    position: relative;
+    z-index: 6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.programs-page-hero h1 {
+    position: relative;
+    z-index: 7;
+
+    margin: 0 0 20px !important;
+
+    color: #ffffff !important;
+
+    font-size: clamp(42px, 5vw, 64px) !important;
+    line-height: 1.1 !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.programs-hero-label {
+    position: relative;
+    z-index: 7;
+
+    color: #ffffff !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.programs-breadcrumb {
+    position: relative;
+    z-index: 7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.programs-breadcrumb a,
+.programs-breadcrumb span {
+    color: #ffffff !important;
+}
+
+.programs-breadcrumb .breadcrumb-arrow {
+    color: #f26b4f !important;
+}
+
+
+
+
+
+/* =========================================================
+   SCHEDULE HERO — BREADCRUMB WHITE
+========================================================= */
+
+.schedule-breadcrumb-current {
+    color: #ffffff !important;
+}
+
+.schedule-breadcrumb-arrow {
+    color: #ffffff !important;
+}
+
+
+
+
+/* =========================================================
+   PROGRAMS — FORCE BREADCRUMB BLACK
+========================================================= */
+
+section.programs-page-hero
+.programs-hero-container
+.programs-hero-content
+.programs-breadcrumb
+a {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    text-shadow: none !important;
+}
+
+section.programs-page-hero
+.programs-hero-container
+.programs-hero-content
+.programs-breadcrumb
+.breadcrumb-arrow {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+section.programs-page-hero
+.programs-hero-container
+.programs-hero-content
+.programs-breadcrumb
+> span:last-child {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    text-shadow: none !important;
+}
+
+
+
+/* =========================================================
+   PROGRAMS BREADCRUMB — LIGHT MODE
+========================================================= */
+
+.programs-page-hero .programs-breadcrumb a,
+.programs-page-hero .programs-breadcrumb .breadcrumb-arrow,
+.programs-page-hero .programs-breadcrumb > span:last-child {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+
+/* =========================================================
+   PROGRAMS BREADCRUMB — DARK MODE
+========================================================= */
+
+body.dark-mode .programs-page-hero .programs-breadcrumb a,
+body.dark-mode .programs-page-hero .programs-breadcrumb .breadcrumb-arrow,
+body.dark-mode .programs-page-hero .programs-breadcrumb > span:last-child {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   PROGRAMS BREADCRUMB
+   LIGHT = BLACK / DARK = WHITE
+========================================================= */
+
+/* LIGHT MODE */
+body:not(.dark-mode) section.programs-page-hero
+.programs-hero-container
+.programs-hero-content
+.programs-breadcrumb
+a,
+body:not(.dark-mode) section.programs-page-hero
+.programs-hero-container
+.programs-hero-content
+.programs-breadcrumb
+.breadcrumb-arrow,
+body:not(.dark-mode) section.programs-page-hero
+.programs-hero-container
+.programs-hero-content
+.programs-breadcrumb
+> span:last-child {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    text-shadow: none !important;
+}
+
+
+/* DARK MODE */
+body.dark-mode section.programs-page-hero
+.programs-hero-container
+.programs-hero-content
+.programs-breadcrumb
+a,
+body.dark-mode section.programs-page-hero
+.programs-hero-container
+.programs-hero-content
+.programs-breadcrumb
+.breadcrumb-arrow,
+body.dark-mode section.programs-page-hero
+.programs-hero-container
+.programs-hero-content
+.programs-breadcrumb
+> span:last-child {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    text-shadow: none !important;
+
+    background: none !important;
+    background-image: none !important;
+    background-clip: initial !important;
+    -webkit-background-clip: initial !important;
+}
