@@ -55029,3 +55029,95 @@ body.dark-mode section.programs-page-hero
     background-clip: initial !important;
     -webkit-background-clip: initial !important;
 }
+
+
+
+
+/* =========================================================
+   SCHEDULE BREADCRUMB
+   LIGHT MODE = BLACK
+   DARK MODE  = WHITE
+========================================================= */
+
+/* ---------- LIGHT MODE ---------- */
+
+body:not(.dark-mode) .schedule-page-hero .schedule-breadcrumb,
+body:not(.dark-mode) .schedule-page-hero .schedule-breadcrumb a,
+body:not(.dark-mode) .schedule-page-hero .schedule-breadcrumb .schedule-breadcrumb-arrow,
+body:not(.dark-mode) .schedule-page-hero .schedule-breadcrumb .schedule-breadcrumb-current {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+
+/* ---------- DARK MODE ---------- */
+
+body.dark-mode .schedule-page-hero .schedule-breadcrumb,
+body.dark-mode .schedule-page-hero .schedule-breadcrumb a,
+body.dark-mode .schedule-page-hero .schedule-breadcrumb .schedule-breadcrumb-arrow,
+body.dark-mode .schedule-page-hero .schedule-breadcrumb .schedule-breadcrumb-current {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+
+
+
+
+/* =========================================================
+   AGE GROUP BREADCRUMB
+   LIGHT MODE = BLACK
+   DARK MODE  = WHITE
+========================================================= */
+
+/* ---------- LIGHT MODE ---------- */
+
+body:not(.dark-mode) .age-group-breadcrumb,
+body:not(.dark-mode) .age-group-breadcrumb a,
+body:not(.dark-mode) .age-group-breadcrumb .age-breadcrumb-arrow,
+body:not(.dark-mode) .age-group-breadcrumb .age-breadcrumb-current {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+
+/* ---------- DARK MODE ---------- */
+
+body.dark-mode .age-group-breadcrumb,
+body.dark-mode .age-group-breadcrumb a,
+body.dark-mode .age-group-breadcrumb .age-breadcrumb-arrow,
+body.dark-mode .age-group-breadcrumb .age-breadcrumb-current {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
+
+
+
+
+
+/* =========================================================
+   AGE GROUP BREADCRUMB
+   LIGHT MODE = BLACK
+   DARK MODE  = WHITE
+========================================================= */
+
+/* ---------- LIGHT MODE ---------- */
+
+body:not(.dark-mode) .age-group-breadcrumb,
+body:not(.dark-mode) .age-group-breadcrumb a,
+body:not(.dark-mode) .age-group-breadcrumb .age-breadcrumb-arrow,
+body:not(.dark-mode) .age-group-breadcrumb .age-breadcrumb-current {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+
+/* ---------- DARK MODE ---------- */
+
+body.dark-mode .age-group-breadcrumb,
+body.dark-mode .age-group-breadcrumb a,
+body.dark-mode .age-group-breadcrumb .age-breadcrumb-arrow,
+body.dark-mode .age-group-breadcrumb .age-breadcrumb-current {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+}
