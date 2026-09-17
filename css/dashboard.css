@@ -12134,3 +12134,237 @@ body.dark-mode #dailyEmptyState p {
     }
 
 }
+
+
+
+
+
+/* =========================================================
+   ENROLLMENT — ADDITIONAL NOTES TEXTAREA OVERRIDE
+========================================================= */
+
+.enrollment-form-full .textarea-wrapper {
+    position: relative !important;
+    display: block !important;
+}
+
+
+/* ---------------------------------------------------------
+   COMMENT ICON
+--------------------------------------------------------- */
+
+.enrollment-form-full .textarea-wrapper > i {
+    position: absolute !important;
+
+    top: 16px !important;
+    left: 16px !important;
+
+    width: 18px !important;
+    height: 18px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 1 !important;
+
+    color: #173b3d !important;
+
+    z-index: 3 !important;
+
+    pointer-events: none !important;
+
+    transform: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   TEXTAREA
+--------------------------------------------------------- */
+
+.enrollment-form-full .textarea-wrapper textarea {
+    position: relative !important;
+
+    display: block !important;
+
+    width: 100% !important;
+    min-height: 110px !important;
+
+    padding: 16px 16px 16px 48px !important;
+
+    box-sizing: border-box !important;
+
+    resize: vertical !important;
+
+    line-height: 1.6 !important;
+
+    font-family: inherit !important;
+}
+
+
+/* ---------------------------------------------------------
+   PLACEHOLDER
+--------------------------------------------------------- */
+
+.enrollment-form-full .textarea-wrapper textarea::placeholder {
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .enrollment-form-full .textarea-wrapper > i {
+    color: #d9e5e1 !important;
+}
+
+
+
+
+/* =========================================================
+   DAILY ACTIVITIES — EMPTY STATE SPACING OVERRIDE
+========================================================= */
+
+.daily-empty-state {
+    margin-top: 0 !important;
+    padding-top: 38px !important;
+    padding-bottom: 38px !important;
+
+    min-height: 190px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+
+
+/* ---------------------------------------------------------
+   EMPTY STATE ICON
+--------------------------------------------------------- */
+
+.daily-empty-icon {
+    margin-top: 0 !important;
+    margin-bottom: 14px !important;
+}
+
+
+/* ---------------------------------------------------------
+   EMPTY STATE TITLE
+--------------------------------------------------------- */
+
+.daily-empty-state h3 {
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+}
+
+
+/* ---------------------------------------------------------
+   EMPTY STATE DESCRIPTION
+--------------------------------------------------------- */
+
+.daily-empty-state p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+
+
+.daily-empty-state {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+    min-height: 180px !important;
+}
+
+
+
+
+/* =========================================================
+   DAILY EMPTY STATE — TOP SPACING FIX
+========================================================= */
+
+.daily-empty-state {
+    margin-top: 24px !important;
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   PREVIOUS ACTIVITY CARD — BOTTOM SPACING
+========================================================= */
+
+.daily-activity-card:last-of-type {
+    margin-bottom: 24px !important;
+}
+
+
+/* =========================================================
+   DAILY ACTIVITIES — EMPTY STATE GAP
+========================================================= */
+
+.daily-empty-state {
+    position: relative !important;
+    margin-top: 28px !important;
+    clear: both !important;
+}
+
+
+
+/* =========================================================
+   FORCE GAP ABOVE EMPTY STATE
+========================================================= */
+
+.daily-empty-state {
+    position: relative !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    margin-top: 32px !important;
+    padding: 32px 24px !important;
+
+    clear: both !important;
+
+    transform: translateY(0) !important;
+}
+
+
+
+.daily-activities-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+}
+
+
+
+
+/* =========================================================
+   DAILY ACTIVITIES — EMPTY STATE GAP
+========================================================= */
+
+/* Create space after the last activity card */
+.daily-activity-list {
+    padding-bottom: 24px !important;
+}
+
+
+/* Empty state starts after the gap */
+.daily-activity-section .daily-empty-state {
+    margin-top: 0 !important;
+
+    position: relative !important;
+    top: 0 !important;
+    transform: none !important;
+
+    box-sizing: border-box !important;
+}

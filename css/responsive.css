@@ -29701,3 +29701,192 @@ body.dark-mode .fees-overview-image-note span {
     }
 
 }
+
+
+
+
+
+
+/* =========================================================
+   HERO SLIDER — MOBILE HEADING POSITION
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero-slide-content {
+        position: relative !important;
+    }
+
+    /* Move both headings down */
+    .hero-welcome {
+        position: relative !important;
+        top: 32px !important;
+        margin-bottom: 32px !important;
+    }
+
+    .hero-image-text {
+        position: relative !important;
+        top: 32px !important;
+        margin-bottom: 32px !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   HERO WELCOME — REMOVE CLIPPING
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero-slide-content {
+        overflow: visible !important;
+    }
+
+    .hero-welcome {
+        position: relative !important;
+
+        top: 0 !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+
+        transform: none !important;
+        animation: none !important;
+
+        height: auto !important;
+        max-height: none !important;
+
+        overflow: visible !important;
+        clip: auto !important;
+        clip-path: none !important;
+
+        margin-top: 0 !important;
+        margin-bottom: 8px !important;
+
+        line-height: 1.4 !important;
+
+        display: block !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        z-index: 50 !important;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   ART & CRAFT HERO — MOBILE GAP
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .artcraft-hero-visual {
+        margin-top: 28px !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .artcraft-hero-visual {
+        margin-top: 30px !important;
+    }
+
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .artcraft-hero-visual {
+        margin-top: 32px !important;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   ART & CRAFT SKILLS — MOBILE DECORATION FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .artcraft-skills-visual {
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    .artcraft-skills-dot {
+        position: absolute !important;
+
+        right: 12px !important;
+
+        left: auto !important;
+
+        z-index: 10 !important;
+
+        display: block !important;
+
+        transform: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .artcraft-skills-visual {
+        overflow: visible !important;
+    }
+
+    .artcraft-skills-dot {
+        right: 10px !important;
+    }
+
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .artcraft-skills-dot {
+        right: 8px !important;
+    }
+
+}
+
+
+
+
+
+

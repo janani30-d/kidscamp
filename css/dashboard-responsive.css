@@ -11533,3 +11533,106 @@ body.dark-mode {
     }
 
 }
+
+
+
+
+
+/* =========================================================
+   MOBILE PROFILE — PERFECT CIRCLE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .dashboard-user {
+        width: 34px !important;
+        height: 34px !important;
+
+        min-width: 34px !important;
+        min-height: 34px !important;
+        max-width: 34px !important;
+        max-height: 34px !important;
+
+        padding: 0 !important;
+        margin: 0 !important;
+
+        border-radius: 50% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        flex: 0 0 34px !important;
+
+        overflow: hidden !important;
+    }
+
+    .dashboard-user-avatar {
+        width: 34px !important;
+        height: 34px !important;
+
+        min-width: 34px !important;
+        min-height: 34px !important;
+        max-width: 34px !important;
+        max-height: 34px !important;
+
+        padding: 0 !important;
+        margin: 0 !important;
+
+        border-radius: 50% !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        aspect-ratio: 1 / 1 !important;
+
+        flex: 0 0 34px !important;
+
+        box-sizing: border-box !important;
+    }
+
+    .dashboard-user-avatar i {
+        margin: 0 !important;
+        line-height: 1 !important;
+    }
+
+    .dashboard-user-info {
+        display: none !important;
+    }
+}
+
+
+/* =========================================================
+   360px — SMALLER CIRCLE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .dashboard-user {
+        width: 32px !important;
+        height: 32px !important;
+
+        min-width: 32px !important;
+        min-height: 32px !important;
+
+        max-width: 32px !important;
+        max-height: 32px !important;
+
+        flex-basis: 32px !important;
+    }
+
+    .dashboard-user-avatar {
+        width: 32px !important;
+        height: 32px !important;
+
+        min-width: 32px !important;
+        min-height: 32px !important;
+
+        max-width: 32px !important;
+        max-height: 32px !important;
+
+        flex-basis: 32px !important;
+    }
+
+}

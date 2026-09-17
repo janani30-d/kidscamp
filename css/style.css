@@ -53950,7 +53950,25 @@ body.dark-mode .sports-final-cta-label {
 
     overflow: hidden;
 }
+/* =========================================================
+   AGE GROUP HERO — DARK MODE
+========================================================= */
 
+body.dark-mode .age-group-hero {
+
+    background-image:
+        linear-gradient(
+            rgba(13, 31, 32, 0.42),
+            rgba(13, 31, 32, 0.42)
+        ),
+        url("../images/age-groups-hero.jpg") !important;
+
+    background-color: #0d1f20 !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
 
 /* =========================================================
    HERO CONTENT
@@ -54687,3 +54705,102 @@ body.dark-mode .sports-final-cta-label {
         gap: 6px;
     }
 }
+
+
+
+
+
+/* =========================================================
+   SAFETY HERO — DARK MODE
+========================================================= */
+
+body.dark-mode .safety-hero {
+
+    background-image:
+        linear-gradient(
+            rgba(13, 31, 32, 0.48),
+            rgba(13, 31, 32, 0.48)
+        ),
+        url("../images/safety-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* =========================================================
+   SAFETY HERO — FINAL DARK MODE OVERRIDE
+   IMPORTANT: KEEP THIS AT THE VERY END
+========================================================= */
+
+body.dark-mode .safety-hero {
+    background-image:
+        linear-gradient(
+            rgba(13, 31, 32, 0.42),
+            rgba(13, 31, 32, 0.42)
+        ),
+        url("../images/safety-hero.jpg") !important;
+
+    background-color: #0d1f20 !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+
+
+
+/* =========================================================
+   SCHEDULE PAGE HERO — DARK MODE
+========================================================= */
+
+body.dark-mode .schedule-page-hero {
+
+    background-image:
+        linear-gradient(
+            rgba(13, 31, 32, 0.42),
+            rgba(13, 31, 32, 0.42)
+        ),
+        url("../images/schedule-hero.jpg") !important;
+
+    background-color: #0d1f20 !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+
+
+/* =========================================================
+   PROGRAMS PAGE HERO — DARK MODE
+========================================================= */
+
+body.dark-mode .programs-page-hero {
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(13, 31, 32, 0.42) 0%,
+            rgba(13, 31, 32, 0.42) 38%,
+            rgba(13, 31, 32, 0.42) 70%,
+            rgba(13, 31, 32, 0.42) 100%
+        ),
+        url("../images/program-hero.jpg") !important;
+
+    background-color: #0d1f20 !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+
+
