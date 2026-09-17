@@ -51372,3 +51372,3318 @@ body.rtl .scroll-top-btn {
 .page-content p {
     font-size: 13px !important;
 }
+
+
+
+
+
+/* =========================================================
+   COMMON INNER-PAGE HERO HEIGHT
+   Excludes Home pages
+   ========================================================= */
+
+.programs-page-hero,
+.schedule-page-hero,
+.age-group-hero,
+.safety-hero {
+    height: 520px;
+    min-height: 520px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Keep hero content vertically consistent */
+.programs-page-hero .programs-hero-container,
+.schedule-page-hero .schedule-hero-content,
+.age-group-hero .age-hero-content,
+.safety-hero .safety-hero-content {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    .programs-page-hero,
+    .schedule-page-hero,
+    .age-group-hero,
+    .safety-hero {
+        height: 460px;
+        min-height: 460px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+    .programs-page-hero,
+    .schedule-page-hero,
+    .age-group-hero,
+    .safety-hero {
+        height: 400px;
+        min-height: 400px;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   CENTER HERO CONTENT
+   ========================================================= */
+
+.programs-page-hero,
+.schedule-page-hero,
+.age-group-hero,
+.safety-hero {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Programs */
+.programs-page-hero .programs-hero-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Schedule */
+.schedule-page-hero .schedule-hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Age Group */
+.age-group-hero .age-hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Safety */
+.safety-hero .safety-hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   SPORTS ACTIVITY IMAGE
+========================================================= */
+
+.sports-activity-image {
+    width: 100%;
+    height: 125px;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.sports-activity-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+
+/* Image hover effect */
+
+.sports-activity-card:hover .sports-activity-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.sports-activity-content {
+    padding: 0 4px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .sports-activity-image {
+        height: 120px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .sports-activity-image {
+        height: 150px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .sports-activity-image {
+
+
+        height: 170px;
+    }
+
+}
+
+
+
+
+
+/* =========================================================
+   ART & CRAFTS HERO BUTTONS
+========================================================= */
+
+.artcraft-hero-primary,
+.artcraft-hero-secondary {
+    border-radius: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   ART & CRAFTS ACTIVITIES SECTION
+========================================================= */
+
+.artcraft-activities {
+    width: 100%;
+    padding: 100px 0;
+    background: var(--bg-light);
+    overflow: hidden;
+}
+
+.artcraft-activities-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.artcraft-activities-header {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.artcraft-activities-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 15px;
+
+    border-radius: 50px;
+
+    background: rgba(91, 189, 219, 0.12);
+    color: var(--primary-color);
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 1;
+
+    text-transform: uppercase;
+}
+
+.artcraft-activities-header h2 {
+    margin: 16px 0 14px;
+
+    color: var(--heading-color);
+
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.artcraft-activities-header h2 span {
+    color: var(--primary-color);
+}
+
+.artcraft-activities-header p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: var(--text-color);
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ACTIVITIES GRID
+========================================================= */
+
+.artcraft-activities-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   ACTIVITY CARD
+========================================================= */
+
+.artcraft-activity-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 440px;
+
+    padding: 0 0 28px;
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* Card hover */
+
+.artcraft-activity-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
+
+    border-color: rgba(91, 189, 219, 0.35);
+}
+
+
+/* =========================================================
+   ACTIVITY IMAGE
+========================================================= */
+
+.artcraft-activity-image {
+    width: 100%;
+    height: 205px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    background: #eef4f5;
+}
+
+.artcraft-activity-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* Image hover */
+
+.artcraft-activity-card:hover
+.artcraft-activity-image img {
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   ACTIVITY CONTENT
+========================================================= */
+
+.artcraft-activity-content {
+    flex: 1;
+
+    padding: 28px 28px 10px;
+}
+
+.artcraft-activity-content h3 {
+    margin: 0 0 12px;
+
+    color: var(--heading-color);
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.artcraft-activity-content p {
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   EXPLORE LINK
+========================================================= */
+
+.artcraft-activity-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    width: fit-content;
+
+    margin: 0 28px;
+
+    color: var(--primary-color);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease,
+        gap 0.3s ease;
+}
+
+.artcraft-activity-link span:last-child {
+    font-size: 18px;
+    line-height: 1;
+
+    transition: transform 0.3s ease;
+}
+
+.artcraft-activity-link:hover {
+    color: var(--secondary-color);
+    gap: 12px;
+}
+
+.artcraft-activity-link:hover span:last-child {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   REMOVE OLD ICON
+========================================================= */
+
+.artcraft-activity-icon {
+    display: none !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .artcraft-activities {
+    background: var(--dark-bg);
+}
+
+body.dark-mode .artcraft-activity-card {
+    background: var(--dark-card-bg);
+
+    border-color: var(--dark-border-color);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+body.dark-mode .artcraft-activity-card:hover {
+    border-color: rgba(91, 189, 219, 0.45);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .artcraft-activity-image {
+    background: #17282d;
+}
+
+body.dark-mode .artcraft-activities-header h2,
+body.dark-mode .artcraft-activity-content h3 {
+    color: var(--dark-heading-color);
+}
+
+body.dark-mode .artcraft-activities-header p,
+body.dark-mode .artcraft-activity-content p {
+    color: var(--dark-text-color);
+}
+
+body.dark-mode .artcraft-activities-label {
+    background: rgba(91, 189, 219, 0.14);
+    color: var(--primary-color);
+}
+
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .artcraft-activities {
+        padding: 85px 0;
+    }
+
+    .artcraft-activities-grid {
+        gap: 22px;
+    }
+
+    .artcraft-activity-card {
+        min-height: 420px;
+    }
+
+    .artcraft-activity-image {
+        height: 190px;
+    }
+
+    .artcraft-activity-content {
+        padding: 24px 24px 10px;
+    }
+
+    .artcraft-activity-link {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .artcraft-activities {
+        padding: 75px 0;
+    }
+
+    .artcraft-activities-header {
+        margin-bottom: 45px;
+    }
+
+    .artcraft-activities-header h2 {
+        font-size: 34px;
+    }
+
+    .artcraft-activities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .artcraft-activity-card {
+        min-height: 410px;
+    }
+
+    .artcraft-activity-image {
+        height: 190px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .artcraft-activities {
+        padding: 65px 0;
+    }
+
+    .artcraft-activities-container {
+        width: min(92%, 600px);
+    }
+
+    .artcraft-activities-header {
+        margin-bottom: 35px;
+    }
+
+    .artcraft-activities-header h2 {
+        font-size: 30px;
+    }
+
+    .artcraft-activities-header p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .artcraft-activities-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .artcraft-activity-card {
+        min-height: auto;
+    }
+
+    .artcraft-activity-image {
+        height: 210px;
+    }
+
+    .artcraft-activity-content {
+        padding: 24px 24px 14px;
+    }
+
+    .artcraft-activity-content h3 {
+        font-size: 21px;
+    }
+
+    .artcraft-activity-content p {
+        font-size: 14px;
+    }
+
+    .artcraft-activity-link {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .artcraft-activities {
+        padding: 55px 0;
+    }
+
+    .artcraft-activities-header h2 {
+        font-size: 27px;
+    }
+
+    .artcraft-activities-header p {
+        font-size: 13px;
+    }
+
+    .artcraft-activity-image {
+        height: 190px;
+    }
+
+    .artcraft-activity-content {
+        padding: 22px 20px 12px;
+    }
+
+    .artcraft-activity-content h3 {
+        font-size: 20px;
+    }
+
+    .artcraft-activity-link {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   NATURE EXPERIENCES
+   PART 2 — 4 CARDS IN ONE ROW
+========================================================= */
+
+.nature-experiences {
+    width: 100%;
+    padding: 90px 0;
+    background: var(--bg-light);
+    overflow: hidden;
+}
+
+.nature-experiences-container {
+    width: min(1460px, 94%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.nature-experiences-header {
+    max-width: 720px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.nature-experiences-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 7px 15px;
+
+    border-radius: 50px;
+
+    background: rgba(112, 180, 42, 0.10);
+    color: var(--primary-color);
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1;
+
+    text-transform: uppercase;
+}
+
+.nature-experiences-header .nature-experiences-title {
+    margin: 16px 0 12px;
+
+    color: var(--heading-color);
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.nature-experiences-header .nature-experiences-title span {
+    color: var(--primary-color);
+}
+
+.nature-experiences-header .nature-experiences-description {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: var(--text-color);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   EXPERIENCE GRID
+   DESKTOP — 4 CARDS IN ONE ROW
+========================================================= */
+
+.nature-experiences-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 22px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   EXPERIENCE CARD
+========================================================= */
+
+.nature-experience-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 520px;
+    min-height: 520px;
+
+    padding: 0;
+
+    background: var(--card-bg);
+
+    border: 1px solid var(--border-color);
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.nature-experience-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.08);
+
+    border-color: rgba(112, 180, 42, 0.35);
+}
+
+
+/* =========================================================
+   CARD IMAGE
+========================================================= */
+
+.nature-experience-image {
+    width: 100%;
+    height: 205px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    background: #edf4e9;
+}
+
+.nature-experience-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.nature-experience-card:hover
+.nature-experience-image img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.nature-experience-top {
+    display: flex;
+    align-items: center;
+
+    padding: 20px 24px 0;
+}
+
+.nature-experience-number {
+    color: var(--text-muted);
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.nature-experience-category {
+    display: block;
+
+    margin: 18px 24px 7px;
+
+    color: var(--primary-color);
+
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.nature-experience-card .nature-experience-title {
+    margin: 0 24px 12px;
+
+    color: var(--heading-color);
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.nature-experience-card .nature-experience-description {
+    margin: 0 24px;
+
+    color: var(--text-color);
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   DISCOVER MORE LINK
+========================================================= */
+
+.nature-experience-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: calc(100% - 48px);
+
+    margin: auto 24px 20px;
+    padding-top: 15px;
+
+    border-top: 1px solid var(--border-color);
+
+    color: var(--primary-color);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.nature-experience-link:hover {
+    color: var(--secondary-color);
+}
+
+
+/* =========================================================
+   LINK CIRCLE
+========================================================= */
+
+.nature-experience-link-icon {
+    width: 22px;
+    height: 22px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: rgba(112, 180, 42, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.nature-experience-link-icon i {
+    font-size: 8px;
+}
+
+.nature-experience-link:hover
+.nature-experience-link-icon {
+    transform: translateX(3px);
+
+    background: rgba(112, 180, 42, 0.18);
+}
+
+
+/* =========================================================
+   REMOVE OLD ACTIVITY ICON
+========================================================= */
+
+.nature-experience-icon {
+    display: none !important;
+}
+
+
+/* =========================================================
+   BOTTOM NOTE
+========================================================= */
+
+.nature-experiences-note {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    max-width: 850px;
+
+    margin: 40px auto 0;
+    padding: 17px 22px;
+
+    background: rgba(112, 180, 42, 0.06);
+
+    border: 1px solid rgba(112, 180, 42, 0.13);
+    border-radius: 15px;
+}
+
+.nature-experiences-note-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: rgba(112, 180, 42, 0.10);
+
+    color: var(--primary-color);
+}
+
+.nature-experiences-note-icon i {
+    font-size: 14px;
+}
+
+.nature-experiences-note-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.nature-experiences-note-content strong {
+    color: var(--heading-color);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.nature-experiences-note-content span {
+    color: var(--text-color);
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .nature-experiences {
+    background: var(--dark-bg);
+}
+
+body.dark-mode .nature-experience-card {
+    background: var(--dark-card-bg);
+    border-color: var(--dark-border-color);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+body.dark-mode .nature-experience-card:hover {
+    border-color: rgba(112, 180, 42, 0.4);
+
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .nature-experience-image {
+    background: #182519;
+}
+
+body.dark-mode .nature-experiences-header .nature-experiences-title,
+body.dark-mode .nature-experience-card .nature-experience-title,
+body.dark-mode .nature-experiences-note-content strong {
+    color: var(--dark-heading-color);
+}
+
+body.dark-mode .nature-experiences-header .nature-experiences-description,
+body.dark-mode .nature-experience-card .nature-experience-description,
+body.dark-mode .nature-experiences-note-content span {
+    color: var(--dark-text-color);
+}
+
+body.dark-mode .nature-experience-link {
+    border-color: var(--dark-border-color);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .nature-experiences-container {
+        width: min(94%, 900px);
+    }
+
+    .nature-experiences-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .nature-experience-card {
+        height: 510px;
+        min-height: 510px;
+    }
+
+    .nature-experience-image {
+        height: 220px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .nature-experiences {
+        padding: 65px 0;
+    }
+
+    .nature-experiences-container {
+        width: min(92%, 600px);
+    }
+
+    .nature-experiences-header {
+        margin-bottom: 35px;
+    }
+
+    .nature-experiences-header .nature-experiences-title {
+        font-size: 30px;
+    }
+
+    .nature-experiences-header .nature-experiences-description {
+        font-size: 13px;
+    }
+
+    .nature-experiences-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .nature-experience-card {
+        height: auto;
+        min-height: 0;
+    }
+
+    .nature-experience-image {
+        height: 230px;
+    }
+
+    .nature-experience-top {
+        padding: 20px 28px 0;
+    }
+
+    .nature-experience-category {
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+
+    .nature-experience-card .nature-experience-title {
+        margin-left: 28px;
+        margin-right: 28px;
+        font-size: 22px;
+    }
+
+    .nature-experience-card .nature-experience-description {
+        margin-left: 28px;
+        margin-right: 28px;
+        font-size: 14px;
+    }
+
+    .nature-experience-link {
+        width: calc(100% - 56px);
+
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .nature-experiences {
+        padding: 55px 0;
+    }
+
+    .nature-experiences-header .nature-experiences-title {
+        font-size: 27px;
+    }
+
+    .nature-experience-image {
+        height: 210px;
+    }
+
+    .nature-experiences-note {
+        align-items: flex-start;
+        padding: 15px 17px;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   NATURE CARD — FIX DISCOVER MORE BUTTON
+========================================================= */
+
+.nature-experience-card {
+    height: auto !important;
+    min-height: 520px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.nature-experience-image {
+    width: 100%;
+    height: 205px;
+
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TOP NUMBER
+========================================================= */
+
+.nature-experience-top {
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.nature-experience-card .nature-experience-title {
+    flex-shrink: 0;
+}
+
+.nature-experience-card .nature-experience-description {
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   DISCOVER MORE LINK
+   ALWAYS VISIBLE AT CARD BOTTOM
+========================================================= */
+
+.nature-experience-link {
+    position: relative;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+
+    width: calc(100% - 48px);
+
+    margin-top: auto !important;
+    margin-right: 24px !important;
+    margin-bottom: 22px !important;
+    margin-left: 24px !important;
+
+    padding-top: 15px;
+
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+
+    border-top: 1px solid var(--border-color);
+
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   LINK ICON
+========================================================= */
+
+.nature-experience-link-icon {
+    display: inline-flex !important;
+
+    width: 22px;
+    height: 22px;
+
+    flex-shrink: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .nature-experience-card {
+        height: auto !important;
+        min-height: 510px !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .nature-experience-card {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .nature-experience-link {
+        margin-top: 25px !important;
+        margin-bottom: 22px !important;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   AGE GROUP CTA — LABEL VISIBILITY FIX
+========================================================= */
+
+.age-group-cta-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    background: #ffffff;
+    color: #1f4250 !important;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* =========================================================
+   REMOVE ANY OLD LOW-CONTRAST EFFECT
+========================================================= */
+
+.age-group-cta-label::before,
+.age-group-cta-label::after {
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .age-group-cta-label {
+    background: #ffffff;
+    color: #1f4250 !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   SPORTS FINAL CTA — LABEL VISIBILITY FIX
+========================================================= */
+
+.sports-final-cta-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 12px;
+
+    background: #ffffff;
+    color: #1f4250 !important;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* =========================================================
+   REMOVE OLD LOW-CONTRAST EFFECT
+========================================================= */
+
+.sports-final-cta-label::before,
+.sports-final-cta-label::after {
+    opacity: 1 !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .sports-final-cta-label {
+    background: #ffffff;
+    color: #1f4250 !important;
+}
+
+
+
+
+
+
+
+.swimming-hero-image-wrap {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+.swimming-hero-image {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+
+
+
+/* =========================================================
+   SWIMMING HERO — FORCE IMAGE BELOW HEADER
+========================================================= */
+
+.swimming-hero-visual {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding-top: 35px !important;
+    box-sizing: border-box !important;
+}
+
+.swimming-hero-image-wrap {
+    margin-top: 0 !important;
+    transform: translateY(0) !important;
+}
+
+
+
+
+
+.swimming-hero-visual {
+    padding-top: 35px !important;
+}
+
+
+
+
+
+
+
+/* =========================================================
+   SCHEDULE & CALENDAR — SPAN FONT SIZE FIX
+========================================================= */
+
+/* Event information labels */
+.featured-event-info-text span {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+    font-weight: 500;
+}
+
+
+/* Event information values */
+.featured-event-info-text strong {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+}
+
+
+/* Calendar / event action text */
+.featured-event-calendar-link span {
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+
+/* Event category text */
+.featured-event-category span {
+    font-size: 11px !important;
+    line-height: 1.4 !important;
+}
+
+
+/* Featured event badge */
+.featured-event-badge {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .featured-event-info-text span {
+        font-size: 11px !important;
+    }
+
+    .featured-event-info-text strong {
+        font-size: 13px !important;
+    }
+
+    .featured-event-calendar-link span {
+        font-size: 12px !important;
+    }
+
+    .featured-event-category span {
+        font-size: 10px !important;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   SCHEDULE & CALENDAR — BACK TO CALENDAR TEXT
+========================================================= */
+
+.featured-event-calendar-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+.featured-event-calendar-link span {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+
+    white-space: nowrap;
+}
+
+.featured-event-calendar-link i {
+    font-size: 14px !important;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .featured-event-calendar-link {
+        font-size: 12px !important;
+    }
+
+    .featured-event-calendar-link span {
+        font-size: 12px !important;
+    }
+
+    .featured-event-calendar-link i {
+        font-size: 13px !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* =========================================================
+   SCHEDULE & CALENDAR — VIEW EVENTS LINK
+========================================================= */
+
+.event-category-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+
+    color: var(--primary-color);
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.event-category-link span {
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+}
+
+.event-category-link i {
+    font-size: 11px !important;
+
+    flex-shrink: 0;
+
+    transition: transform 0.3s ease;
+}
+
+.event-category-link:hover i {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .event-category-link {
+        font-size: 12px !important;
+    }
+
+    .event-category-link span {
+        font-size: 12px !important;
+    }
+
+    .event-category-link i {
+        font-size: 10px !important;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   CONTACT INFO — STRAIGHT LINE ALIGNMENT
+========================================================= */
+
+.contact-info-card {
+    display: grid !important;
+
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+    align-items: start !important;
+
+    column-gap: 16px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTACT ICON
+========================================================= */
+
+.contact-info-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   CONTACT CONTENT
+========================================================= */
+
+.contact-info-content {
+    min-width: 0;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.contact-info-number {
+    display: block;
+
+    margin: 0 0 6px !important;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.contact-info-content h3 {
+    margin: 0 0 8px !important;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.contact-info-content p {
+    margin: 0 0 14px !important;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CONTACT LINKS
+========================================================= */
+
+.contact-info-content a {
+    display: inline-flex !important;
+    align-items: center;
+
+    gap: 6px;
+
+    margin: 0 !important;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   OPENING HOURS
+========================================================= */
+
+.contact-info-hours {
+    display: flex !important;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 4px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.contact-info-hours span,
+.contact-info-hours strong {
+    display: block;
+
+    margin: 0 !important;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   CONTACT CARD — CONSISTENT CONTENT START
+========================================================= */
+
+.contact-info-card > .contact-info-content {
+    grid-column: 2;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .contact-info-card {
+        grid-template-columns: 42px minmax(0, 1fr) !important;
+
+        column-gap: 13px;
+    }
+
+    .contact-info-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+}
+
+
+
+/* =========================================================
+   CONTACT — OPENING HOURS INLINE
+========================================================= */
+
+.contact-info-hours {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 10px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex-wrap: nowrap;
+}
+
+.contact-info-hours span,
+.contact-info-hours strong {
+    display: inline-flex !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SEPARATOR
+========================================================= */
+
+.contact-info-hours span::after {
+    content: "|";
+
+    margin-left: 10px;
+
+    color: var(--text-muted);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .contact-info-hours {
+        gap: 7px;
+    }
+
+    .contact-info-hours span,
+    .contact-info-hours strong {
+        font-size: 10px;
+    }
+
+    .contact-info-hours span::after {
+        margin-left: 7px;
+    }
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+   PROGRAMS PAGE HERO — CENTER CONTENT
+========================================================= */
+
+.programs-page-hero {
+    position: relative;
+    min-height: 430px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255, 250, 241, 0.92) 0%,
+            rgba(255, 250, 241, 0.78) 38%,
+            rgba(255, 250, 241, 0.20) 70%,
+            rgba(255, 250, 241, 0.05) 100%
+        ),
+        url("../images/program-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+========================================================= */
+
+.programs-hero-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 60px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HERO CONTENT — CENTER
+========================================================= */
+
+.programs-hero-content {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.programs-hero-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 16px;
+    padding: 8px 18px;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: #ff6f4d;
+    background: rgba(255, 226, 215, 0.95);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.programs-hero-content h1 {
+    margin: 0 0 20px;
+
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    font-weight: 800;
+
+    text-align: center;
+
+    color: #173b3d;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.programs-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+.programs-breadcrumb a {
+    color: #173b3d;
+    text-decoration: none;
+}
+
+.programs-breadcrumb > span {
+    color: #173b3d;
+}
+
+.programs-breadcrumb .breadcrumb-arrow {
+    color: #ff6f4d;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   DECORATIVE STARS
+========================================================= */
+
+.programs-hero-star {
+    position: absolute;
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+.programs-star-one {
+    top: 18%;
+    left: 12%;
+}
+
+.programs-star-two {
+    top: 12%;
+    right: 15%;
+}
+
+.programs-star-three {
+    bottom: 18%;
+    left: 18%;
+}
+
+.programs-hero-star i {
+    color: #ffbf3f;
+    font-size: 22px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .programs-page-hero {
+        min-height: 360px;
+
+        background-position: center;
+    }
+
+    .programs-hero-container {
+        padding: 50px 20px;
+    }
+
+    .programs-hero-content {
+        max-width: 100%;
+    }
+
+    .programs-hero-label {
+        margin-bottom: 12px;
+        padding: 7px 15px;
+
+        font-size: 11px;
+        letter-spacing: 1.2px;
+    }
+
+    .programs-hero-content h1 {
+        margin-bottom: 16px;
+
+        font-size: 42px;
+        line-height: 1.08;
+    }
+
+    .programs-breadcrumb {
+        gap: 7px;
+        font-size: 13px;
+    }
+
+    .programs-breadcrumb .breadcrumb-arrow {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .programs-page-hero {
+        min-height: 330px;
+
+        background-position: center;
+    }
+
+    .programs-hero-container {
+        padding: 40px 16px;
+    }
+
+    .programs-hero-label {
+        margin-bottom: 10px;
+
+        padding: 6px 13px;
+
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .programs-hero-content h1 {
+        margin-bottom: 14px;
+
+        font-size: 34px;
+        line-height: 1.08;
+    }
+
+    .programs-breadcrumb {
+        gap: 5px;
+
+        font-size: 12px;
+    }
+
+    .programs-breadcrumb .breadcrumb-arrow {
+        font-size: 15px;
+    }
+
+    .programs-hero-star {
+        display: none;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   SCHEDULE & CALENDAR HERO
+========================================================= */
+
+.schedule-page-hero {
+    position: relative;
+    min-height: 430px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 250, 241, 0.78),
+            rgba(255, 250, 241, 0.78)
+        ),
+        url("../images/schedule-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.schedule-hero-content {
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 60px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   HERO LABEL
+========================================================= */
+
+.schedule-hero-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 16px;
+    padding: 8px 18px;
+
+    background: rgba(255, 255, 255, 0.82);
+    color: #f26b4f;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.schedule-hero-title {
+    margin: 0;
+
+    color: #173b3d;
+
+    font-size: clamp(38px, 5vw, 64px);
+    font-weight: 800;
+    line-height: 1.1;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.schedule-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 22px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #173b3d;
+}
+
+
+.schedule-breadcrumb a {
+    color: #173b3d;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.schedule-breadcrumb a:hover {
+    color: #f26b4f;
+}
+
+
+.schedule-breadcrumb-current {
+    color: #173b3d;
+}
+
+
+.schedule-breadcrumb-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #f26b4f;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   DECORATIVE STARS
+========================================================= */
+
+.schedule-hero-shape {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.schedule-hero-shape i {
+    font-size: 22px;
+}
+
+
+.schedule-hero-shape-orange {
+    top: 18%;
+    left: 12%;
+
+    color: #f5b335;
+
+    transform: rotate(-12deg);
+}
+
+
+.schedule-hero-shape-green {
+    top: 20%;
+    right: 14%;
+
+    color: #8acb68;
+
+    transform: rotate(15deg);
+}
+
+
+.schedule-hero-shape-pink {
+    bottom: 20%;
+    right: 10%;
+
+    color: #f47b73;
+
+    transform: rotate(-10deg);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .schedule-page-hero {
+        min-height: 400px;
+
+        background-position: center;
+    }
+
+    .schedule-hero-content {
+        padding: 50px 25px;
+    }
+
+    .schedule-hero-title {
+        font-size: 48px;
+    }
+
+    .schedule-hero-shape-orange {
+        left: 7%;
+    }
+
+    .schedule-hero-shape-green {
+        right: 8%;
+    }
+
+    .schedule-hero-shape-pink {
+        right: 6%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .schedule-page-hero {
+        min-height: 360px;
+
+        background-position: center;
+    }
+
+    .schedule-hero-content {
+        padding: 50px 20px;
+    }
+
+    .schedule-hero-label {
+        font-size: 12px;
+        padding: 7px 15px;
+        margin-bottom: 14px;
+    }
+
+    .schedule-hero-title {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .schedule-breadcrumb {
+        gap: 8px;
+        margin-top: 18px;
+        font-size: 13px;
+    }
+
+    .schedule-hero-shape {
+        transform: scale(0.75);
+    }
+
+    .schedule-hero-shape-orange {
+        left: 4%;
+        top: 15%;
+    }
+
+    .schedule-hero-shape-green {
+        right: 4%;
+        top: 15%;
+    }
+
+    .schedule-hero-shape-pink {
+        right: 5%;
+        bottom: 12%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .schedule-page-hero {
+        min-height: 340px;
+
+        background-position: center;
+    }
+
+    .schedule-hero-content {
+        padding: 45px 16px;
+    }
+
+    .schedule-hero-label {
+        font-size: 11px;
+        padding: 7px 13px;
+        letter-spacing: 1px;
+    }
+
+    .schedule-hero-title {
+        font-size: 32px;
+    }
+
+    .schedule-breadcrumb {
+        font-size: 12px;
+        gap: 7px;
+    }
+
+    .schedule-hero-shape {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .schedule-page-hero {
+        min-height: 330px;
+    }
+
+    .schedule-hero-content {
+        padding: 40px 14px;
+    }
+
+    .schedule-hero-label {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .schedule-hero-title {
+        font-size: 29px;
+        line-height: 1.15;
+    }
+
+    .schedule-breadcrumb {
+        margin-top: 16px;
+        font-size: 11px;
+        gap: 6px;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   AGE GROUPS HERO
+========================================================= */
+
+.age-group-hero {
+    position: relative;
+    min-height: 430px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 250, 241, 0.78),
+            rgba(255, 250, 241, 0.78)
+        ),
+        url("../images/age-groups-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.age-group-hero-content {
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 60px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   HERO LABEL
+========================================================= */
+
+.age-group-hero-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 16px;
+    padding: 8px 18px;
+
+    background: rgba(255, 255, 255, 0.84);
+    color: #f26b4f;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.age-group-hero-title {
+    margin: 0;
+
+    color: #173b3d;
+
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 800;
+    line-height: 1.1;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.age-group-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 22px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #173b3d;
+}
+
+
+.age-group-breadcrumb a {
+    color: #173b3d;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.age-group-breadcrumb a:hover {
+    color: #f26b4f;
+}
+
+
+.age-breadcrumb-current {
+    color: #173b3d;
+}
+
+
+.age-breadcrumb-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #f26b4f;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   DECORATIVE STARS
+========================================================= */
+
+.age-hero-shape {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.age-hero-shape i {
+    font-size: 22px;
+}
+
+
+.age-hero-star-orange {
+    top: 17%;
+    left: 12%;
+
+    color: #f5b335;
+
+    transform: rotate(-12deg);
+}
+
+
+.age-hero-star-green {
+    top: 20%;
+    right: 14%;
+
+    color: #8acb68;
+
+    transform: rotate(15deg);
+}
+
+
+.age-hero-star-pink {
+    bottom: 19%;
+    right: 10%;
+
+    color: #f47b73;
+
+    transform: rotate(-10deg);
+}
+
+
+/* =========================================================
+   SOFT BACKGROUND CIRCLES
+========================================================= */
+
+.age-hero-circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+.age-hero-circle-top {
+    width: 180px;
+    height: 180px;
+
+    top: -80px;
+    right: 18%;
+
+    background: rgba(255, 193, 95, 0.16);
+}
+
+
+.age-hero-circle-bottom {
+    width: 220px;
+    height: 220px;
+
+    bottom: -120px;
+    left: 12%;
+
+    background: rgba(113, 190, 145, 0.14);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .age-group-hero {
+        min-height: 400px;
+    }
+
+    .age-group-hero-content {
+        padding: 50px 25px;
+    }
+
+    .age-group-hero-title {
+        font-size: 48px;
+    }
+
+    .age-hero-star-orange {
+        left: 7%;
+    }
+
+    .age-hero-star-green {
+        right: 8%;
+    }
+
+    .age-hero-star-pink {
+        right: 6%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .age-group-hero {
+        min-height: 360px;
+
+        background-position: center;
+    }
+
+    .age-group-hero-content {
+        padding: 50px 20px;
+    }
+
+    .age-group-hero-label {
+        font-size: 12px;
+        padding: 7px 15px;
+        margin-bottom: 14px;
+    }
+
+    .age-group-hero-title {
+        font-size: 38px;
+    }
+
+    .age-group-breadcrumb {
+        gap: 8px;
+        margin-top: 18px;
+        font-size: 13px;
+    }
+
+    .age-hero-shape {
+        transform: scale(0.75);
+    }
+
+    .age-hero-star-orange {
+        left: 4%;
+    }
+
+    .age-hero-star-green {
+        right: 4%;
+    }
+
+    .age-hero-star-pink {
+        right: 5%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .age-group-hero {
+        min-height: 340px;
+    }
+
+    .age-group-hero-content {
+        padding: 45px 16px;
+    }
+
+    .age-group-hero-label {
+        font-size: 11px;
+        padding: 7px 13px;
+        letter-spacing: 1px;
+    }
+
+    .age-group-hero-title {
+        font-size: 32px;
+    }
+
+    .age-group-breadcrumb {
+        font-size: 12px;
+        gap: 7px;
+    }
+
+    .age-hero-shape {
+        display: none;
+    }
+
+    .age-hero-circle {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .age-group-hero {
+        min-height: 330px;
+    }
+
+    .age-group-hero-content {
+        padding: 40px 14px;
+    }
+
+    .age-group-hero-label {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .age-group-hero-title {
+        font-size: 29px;
+        line-height: 1.15;
+    }
+
+    .age-group-breadcrumb {
+        margin-top: 16px;
+        font-size: 11px;
+        gap: 6px;
+    }
+}
+
+
+
+
+/* =========================================================
+   SAFETY & SUPERVISION HERO
+========================================================= */
+
+.safety-hero {
+    position: relative;
+    min-height: 430px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 250, 241, 0.80),
+            rgba(255, 250, 241, 0.80)
+        ),
+        url("../images/safety-hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.safety-hero-content {
+    position: relative;
+    z-index: 3;
+
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 60px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   HERO LABEL
+========================================================= */
+
+.safety-hero-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 16px;
+    padding: 8px 18px;
+
+    background: rgba(255, 255, 255, 0.86);
+    color: #f26b4f;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.safety-hero-title {
+    margin: 0;
+
+    color: #173b3d;
+
+    font-size: clamp(38px, 5vw, 62px);
+    font-weight: 800;
+    line-height: 1.1;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.safety-breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 22px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #173b3d;
+}
+
+
+.safety-breadcrumb a {
+    color: #173b3d;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.safety-breadcrumb a:hover {
+    color: #f26b4f;
+}
+
+
+.safety-breadcrumb-current {
+    color: #173b3d;
+}
+
+
+.safety-breadcrumb-arrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #f26b4f;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   DECORATIVE STARS
+========================================================= */
+
+.safety-hero-star {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.safety-hero-star i {
+    font-size: 22px;
+}
+
+
+.safety-hero-star-orange {
+    top: 17%;
+    left: 12%;
+
+    color: #f5b335;
+
+    transform: rotate(-12deg);
+}
+
+
+.safety-hero-star-green {
+    top: 20%;
+    right: 14%;
+
+    color: #8acb68;
+
+    transform: rotate(15deg);
+}
+
+
+.safety-hero-star-pink {
+    bottom: 19%;
+    right: 10%;
+
+    color: #f47b73;
+
+    transform: rotate(-10deg);
+}
+
+
+/* =========================================================
+   BACKGROUND CIRCLES
+========================================================= */
+
+.safety-hero-circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+.safety-hero-circle-top {
+    width: 180px;
+    height: 180px;
+
+    top: -80px;
+    right: 18%;
+
+    background: rgba(255, 193, 95, 0.16);
+}
+
+
+.safety-hero-circle-bottom {
+    width: 220px;
+    height: 220px;
+
+    bottom: -120px;
+    left: 12%;
+
+    background: rgba(113, 190, 145, 0.14);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .safety-hero {
+        min-height: 400px;
+    }
+
+    .safety-hero-content {
+        padding: 50px 25px;
+    }
+
+    .safety-hero-title {
+        font-size: 48px;
+    }
+
+    .safety-hero-star-orange {
+        left: 7%;
+    }
+
+    .safety-hero-star-green {
+        right: 8%;
+    }
+
+    .safety-hero-star-pink {
+        right: 6%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .safety-hero {
+        min-height: 360px;
+        background-position: center;
+    }
+
+    .safety-hero-content {
+        padding: 50px 20px;
+    }
+
+    .safety-hero-label {
+        font-size: 12px;
+        padding: 7px 15px;
+        margin-bottom: 14px;
+    }
+
+    .safety-hero-title {
+        font-size: 38px;
+        line-height: 1.15;
+    }
+
+    .safety-breadcrumb {
+        gap: 8px;
+        margin-top: 18px;
+        font-size: 13px;
+    }
+
+    .safety-hero-star {
+        transform: scale(0.75);
+    }
+
+    .safety-hero-star-orange {
+        left: 4%;
+    }
+
+    .safety-hero-star-green {
+        right: 4%;
+    }
+
+    .safety-hero-star-pink {
+        right: 5%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .safety-hero {
+        min-height: 340px;
+    }
+
+    .safety-hero-content {
+        padding: 45px 16px;
+    }
+
+    .safety-hero-label {
+        font-size: 11px;
+        padding: 7px 13px;
+        letter-spacing: 1px;
+    }
+
+    .safety-hero-title {
+        font-size: 32px;
+    }
+
+    .safety-breadcrumb {
+        font-size: 12px;
+        gap: 7px;
+    }
+
+    .safety-hero-star,
+    .safety-hero-circle {
+        display: none;
+    }
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .safety-hero {
+        min-height: 330px;
+    }
+
+    .safety-hero-content {
+        padding: 40px 14px;
+    }
+
+    .safety-hero-label {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .safety-hero-title {
+        font-size: 28px;
+        line-height: 1.15;
+    }
+
+    .safety-breadcrumb {
+        margin-top: 16px;
+        font-size: 11px;
+        gap: 6px;
+    }
+}

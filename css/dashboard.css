@@ -11597,3 +11597,540 @@ body.dark-mode .programs-hero-badge i {
         line-height: 1.5;
     }
 }
+
+
+
+
+
+
+
+/* =========================================================
+   DASHBOARD — ENROLLMENT FORM FIXES
+========================================================= */
+
+
+/* =========================================================
+   1. PREFERRED TIME SELECT — DARK MODE
+========================================================= */
+
+#enrollment-time {
+    color: var(--heading-color) !important;
+    background-color: var(--card-bg) !important;
+
+    font-size: 14px;
+    line-height: 1.4;
+
+    opacity: 1 !important;
+}
+
+
+/* Dropdown options */
+
+#enrollment-time option {
+    color: #1f2933 !important;
+    background-color: #ffffff !important;
+
+    font-size: 14px;
+}
+
+
+/* Dark mode select */
+
+body.dark-mode #enrollment-time {
+    color: #ffffff !important;
+    background-color: #1b3436 !important;
+}
+
+
+/* Dark mode dropdown options */
+
+body.dark-mode #enrollment-time option {
+    color: #ffffff !important;
+    background-color: #1b3436 !important;
+}
+
+
+/* Placeholder option */
+
+body.dark-mode #enrollment-time option[value=""] {
+    color: #b8c5c7 !important;
+}
+
+
+/* =========================================================
+   2. ENROLLMENT INPUT WRAPPER
+========================================================= */
+
+.enrollment-input-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   3. PREFERRED TIME CLOCK ICON
+========================================================= */
+
+.enrollment-input-wrapper > i {
+    position: absolute;
+
+    left: 16px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 18px;
+    height: 18px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 13px;
+
+    line-height: 1;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* Give select enough space for icon */
+
+.enrollment-input-wrapper select {
+    width: 100%;
+
+    padding-left: 48px !important;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   4. ADDITIONAL NOTE INPUT
+========================================================= */
+
+.enrollment-input-wrapper input,
+.enrollment-input-wrapper textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ADDITIONAL NOTE ICON ALIGNMENT
+========================================================= */
+
+.enrollment-input-wrapper .fa-note-sticky,
+.enrollment-input-wrapper .fa-pen,
+.enrollment-input-wrapper .fa-message,
+.enrollment-input-wrapper .fa-comment,
+.enrollment-input-wrapper .fa-file-lines {
+    position: absolute;
+
+    left: 16px;
+    top: 18px;
+
+    transform: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 18px;
+    height: 18px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 13px;
+
+    line-height: 1;
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* Textarea / input space for icon */
+
+.enrollment-input-wrapper input,
+.enrollment-input-wrapper textarea {
+    padding-left: 48px !important;
+}
+
+
+/* =========================================================
+   DARK MODE ICON VISIBILITY
+========================================================= */
+
+body.dark-mode .enrollment-input-wrapper > i,
+body.dark-mode .enrollment-input-wrapper .fa-note-sticky,
+body.dark-mode .enrollment-input-wrapper .fa-pen,
+body.dark-mode .enrollment-input-wrapper .fa-message,
+body.dark-mode .enrollment-input-wrapper .fa-comment,
+body.dark-mode .enrollment-input-wrapper .fa-file-lines {
+    color: #dcebed !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    #enrollment-time {
+        font-size: 13px;
+    }
+
+    #enrollment-time option {
+        font-size: 13px;
+    }
+
+    .enrollment-input-wrapper > i {
+        left: 14px;
+    }
+
+    .enrollment-input-wrapper select,
+    .enrollment-input-wrapper input,
+    .enrollment-input-wrapper textarea {
+        padding-left: 44px !important;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   DASHBOARD — DAILY ACTIVITIES EMPTY STATE
+========================================================= */
+
+.daily-empty-state {
+    width: 100%;
+
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   EMPTY STATE ICON
+========================================================= */
+
+.daily-empty-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    margin: 0 0 14px !important;
+
+    border-radius: 50%;
+
+    box-sizing: border-box;
+}
+
+.daily-empty-icon i {
+    font-size: 15px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   EMPTY STATE TITLE
+========================================================= */
+
+.daily-empty-state h3 {
+    margin: 0 0 8px !important;
+    padding: 0 !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+
+    line-height: 1.4 !important;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   EMPTY STATE DESCRIPTION
+========================================================= */
+
+.daily-empty-state p {
+    max-width: 320px;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 12px !important;
+    font-weight: 400 !important;
+
+    line-height: 1.6 !important;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .daily-empty-state h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .daily-empty-state p {
+    color: #c5d3d5 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .daily-empty-state {
+        min-height: 210px;
+        padding: 32px 22px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .daily-empty-state {
+        min-height: 190px;
+
+        padding: 28px 18px;
+    }
+
+    .daily-empty-icon {
+        width: 44px;
+        height: 44px;
+
+        margin-bottom: 12px !important;
+    }
+
+    .daily-empty-state h3 {
+        font-size: 13px !important;
+    }
+
+    .daily-empty-state p {
+        max-width: 280px;
+
+        font-size: 11px !important;
+        line-height: 1.5 !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   DAILY ACTIVITIES — FORCE EMPTY STATE SPACING
+   FINAL OVERRIDE
+========================================================= */
+
+#dailyEmptyState.daily-empty-state {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 230px !important;
+
+    margin: 0 !important;
+    padding: 40px 30px !important;
+
+    box-sizing: border-box !important;
+
+    text-align: center !important;
+
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+#dailyEmptyState .daily-empty-icon {
+    position: relative !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    min-width: 48px !important;
+    min-height: 48px !important;
+
+    margin: 0 0 18px 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex-shrink: 0 !important;
+
+    box-sizing: border-box !important;
+
+    transform: none !important;
+}
+
+#dailyEmptyState .daily-empty-icon i {
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 16px !important;
+    line-height: 1 !important;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+#dailyEmptyState h3 {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+
+    text-align: center !important;
+
+    position: relative !important;
+    transform: none !important;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+#dailyEmptyState p {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 330px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 1.65 !important;
+
+    text-align: center !important;
+
+    position: relative !important;
+    transform: none !important;
+}
+
+
+/* =========================================================
+   FORCE CHILDREN TO STAY IN NORMAL FLOW
+========================================================= */
+
+#dailyEmptyState > .daily-empty-icon,
+#dailyEmptyState > h3,
+#dailyEmptyState > p {
+    float: none !important;
+    clear: none !important;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode #dailyEmptyState h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode #dailyEmptyState p {
+    color: #c5d5d7 !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    #dailyEmptyState.daily-empty-state {
+        min-height: 200px !important;
+        padding: 32px 20px !important;
+    }
+
+    #dailyEmptyState .daily-empty-icon {
+        margin-bottom: 15px !important;
+    }
+
+    #dailyEmptyState h3 {
+        font-size: 13px !important;
+        margin-bottom: 8px !important;
+    }
+
+    #dailyEmptyState p {
+        max-width: 280px !important;
+        font-size: 11px !important;
+        line-height: 1.6 !important;
+    }
+
+}
