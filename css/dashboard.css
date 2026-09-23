@@ -12368,3 +12368,14 @@ body.dark-mode .enrollment-form-full .textarea-wrapper > i {
 
     box-sizing: border-box !important;
 }
+
+
+
+/* =========================================================
+   DASHBOARD HERO BUTTONS — ADD SPACE
+========================================================= */
+
+.dashboard-primary-btn,
+.dashboard-secondary-btn {
+    margin-top: 20px !important;
+}

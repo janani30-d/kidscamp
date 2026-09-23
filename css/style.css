@@ -38978,7 +38978,7 @@ body.dark-mode .swimming-hero::after {
 
 
 .safety-breadcrumb a {
-    color: #101010;
+    color: black;
 
     text-decoration: none;
 
@@ -38988,7 +38988,7 @@ body.dark-mode .swimming-hero::after {
 
 
 .safety-breadcrumb a:hover {
-    color: #FF604A;
+    color: black;
 }
 
 
@@ -38998,7 +38998,7 @@ body.dark-mode .swimming-hero::after {
     align-items: center;
     justify-content: center;
 
-    color: #FF604A;
+    color: black;
 }
 
 
@@ -39008,7 +39008,7 @@ body.dark-mode .swimming-hero::after {
 
 
 .safety-breadcrumb-current {
-    color: #49615F;
+    color: black;
 }
 
 
@@ -54440,7 +54440,7 @@ body.dark-mode .age-group-hero {
 
 
 .safety-breadcrumb a {
-    color: #173b3d;
+    color: black;
     text-decoration: none;
 
     transition: color 0.3s ease;
@@ -54448,12 +54448,12 @@ body.dark-mode .age-group-hero {
 
 
 .safety-breadcrumb a:hover {
-    color: #f26b4f;
+    color: black;
 }
 
 
 .safety-breadcrumb-current {
-    color: #173b3d;
+    color: black;
 }
 
 
@@ -54462,7 +54462,7 @@ body.dark-mode .age-group-hero {
     align-items: center;
     justify-content: center;
 
-    color: #f26b4f;
+    color: black;
 
     font-size: 12px;
 }
@@ -55120,4 +55120,241 @@ body.dark-mode .age-group-breadcrumb .age-breadcrumb-arrow,
 body.dark-mode .age-group-breadcrumb .age-breadcrumb-current {
     color: #ffffff !important;
     -webkit-text-fill-color: #ffffff !important;
+}
+
+
+
+
+/* =========================================================
+   ARTCRAFT HERO CTA — SAME SIZE
+========================================================= */
+
+.artcraft-hero-buttons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 18px !important;
+}
+
+.artcraft-hero-primary,
+.artcraft-hero-secondary {
+    height: 70px !important;
+    min-height: 70px !important;
+
+    box-sizing: border-box !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 28px !important;
+    line-height: 1 !important;
+}
+
+
+
+
+/* ARTCRAFT HERO — REDUCE BOTH BUTTON HEIGHTS */
+
+.artcraft-hero-primary,
+.artcraft-hero-secondary {
+    height: 56px !important;
+    min-height: 56px !important;
+
+    padding: 0 24px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-sizing: border-box !important;
+    line-height: 1 !important;
+}
+
+
+
+
+
+/* =========================================================
+   CAMP ACTIVITY CTA — ADD SPACE FROM TEXT
+========================================================= */
+
+.camp-activity-btn {
+    margin-top: 20px !important;
+}
+
+
+
+/* =========================================================
+   HOME2 / CAMP TEAM — CENTER HEADING + SUBHEADING
+========================================================= */
+
+.camp-team-header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.camp-team-heading {
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.camp-team-label {
+    display: block !important;
+    text-align: center !important;
+}
+
+.camp-team-title {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.camp-team-intro {
+    width: 100% !important;
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.camp-team-intro p {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+
+/* =========================================================
+   SCHEDULE HERO — LIGHT MODE IMAGE OVERLAY
+========================================================= */
+
+.schedule-page-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.88) 0%,
+            rgba(255, 255, 255, 0.68) 35%,
+            rgba(255, 255, 255, 0.42) 65%,
+            rgba(255, 255, 255, 0.20) 100%
+        ) !important;
+}
+
+/* Keep hero content above overlay */
+.schedule-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.schedule-page-hero::before {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.82) 0%,
+            rgba(255,255,255,0.60) 40%,
+            rgba(255,255,255,0.35) 70%,
+            rgba(255,255,255,0.15) 100%
+        ) !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   SCHEDULE HERO — LIGHT OVERLAY FIX
+========================================================= */
+
+.schedule-page-hero {
+    background-image:
+        linear-gradient(
+            rgba(255, 248, 232, 0.45),
+            rgba(255, 248, 232, 0.45)
+        ),
+        url("../images/schedule-hero.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+
+/* =========================================================
+   AGE GROUP HERO — LIGHT OVERLAY FIX
+========================================================= */
+
+.age-group-hero {
+    background-image:
+        linear-gradient(
+            rgba(255, 248, 232, 0.35),
+            rgba(255, 248, 232, 0.35)
+        ),
+        url("../images/age-groups-hero.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+
+/* =========================================================
+   SAFETY HERO — LIGHT OVERLAY FIX
+========================================================= */
+
+.safety-hero {
+    background-image:
+        linear-gradient(
+            rgba(255, 248, 232, 0.35),
+            rgba(255, 248, 232, 0.35)
+        ),
+        url("../images/safety-hero.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+/* =========================================================
+   SAFETY BREADCRUMB — BLACK
+========================================================= */
+
+.safety-breadcrumb a,
+.safety-breadcrumb-current,
+.safety-breadcrumb-arrow,
+.safety-breadcrumb-arrow i {
+    color: #000 !important;
+}
+
+
+/* Safety breadcrumb — black */
+.safety-breadcrumb a,
+.safety-breadcrumb-current,
+.safety-breadcrumb-arrow,
+.safety-breadcrumb-arrow i {
+    color: #000 !important;
+}
+
+
+/* =========================================================
+   SAFETY HERO BREADCRUMB — FORCE BLACK
+========================================================= */
+
+section.safety-hero .safety-hero-content .safety-breadcrumb a,
+section.safety-hero .safety-hero-content .safety-breadcrumb .safety-breadcrumb-current,
+section.safety-hero .safety-hero-content .safety-breadcrumb .safety-breadcrumb-arrow,
+section.safety-hero .safety-hero-content .safety-breadcrumb .safety-breadcrumb-arrow i {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
 }
