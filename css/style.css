@@ -55358,3 +55358,22 @@ section.safety-hero .safety-hero-content .safety-breadcrumb .safety-breadcrumb-a
     color: #000000 !important;
     -webkit-text-fill-color: #000000 !important;
 }
+
+
+
+/* =========================================================
+   SAFETY HERO — SOFT CREAM OVERLAY
+========================================================= */
+
+.safety-hero {
+    background-image:
+        linear-gradient(
+            rgba(255, 248, 232, 0.38),
+            rgba(255, 248, 232, 0.38)
+        ),
+        url("../images/safety-hero.jpg") !important;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
