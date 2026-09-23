@@ -55368,8 +55368,8 @@ section.safety-hero .safety-hero-content .safety-breadcrumb .safety-breadcrumb-a
 .safety-hero {
     background-image:
         linear-gradient(
-            rgba(255, 248, 232, 0.38),
-            rgba(255, 248, 232, 0.38)
+            rgba(255, 248, 232, 0.45),
+            rgba(255, 248, 232, 0.45)
         ),
         url("../images/safety-hero.jpg") !important;
 
